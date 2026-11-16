@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault：密码管理器与两步验证",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "零知识密码管理器。一键填充密码和两步验证码，保存新的登录信息，还能生成高强度密码。",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "在此页面填充登录信息或两步验证码",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "用 Pabbel Vault 填充登录信息",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "生成高强度密码",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "锁定 Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "打开网页版 Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "你的密码，严密封存。",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "使用你的 Pabbel 账号登录。保险库中的所有内容在存储之前，都会先在这台设备上加密。",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "使用 Pabbel 登录",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "正在等待 Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "将打开 accounts.pabbel.com，无需在这里输入密码。",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "隐私",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "登录未完成，请重试。",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "请先设置 Vault",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ 还没有保险库。请先在网页上创建一个（只需一分钟），然后再回到这里。",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "在网页上设置",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "切换账号",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "解锁你的保险库",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "保险库密码",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "解锁",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "正在解锁…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "你的保险库密码绝不会离开这台设备。",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "这不是保险库密码。",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "暂时无法解锁。请检查网络连接后重试。",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "在此浏览器上保持解锁",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "30 天内在这里无需输入密码。你可以随时在网页版保险库中移除此浏览器。",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "此浏览器的 30 天已到期。输入一次密码，即可继续保持解锁。",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "此浏览器已不再受信任：它已被移除，或你的保险库密码已更改。请输入密码。",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "已解锁，但暂时无法信任此浏览器。请在设置中重试。",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "在此浏览器上保持解锁",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "30 天内无需密码即可打开保险库。密钥一半由 Pabbel 保管，另一半在此浏览器中，任何一方都无法单独打开。如果这台电脑丢失，请在网页版保险库的“受信任的浏览器”中将其移除。",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "已开启，有效期至 $DATE$。",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "请先解锁保险库，才能开启此选项。",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "保险库密码",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "设置新的保险库密码。你的其他设备会要求输入新密码，受信任的浏览器也需要重新信任。",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "更改",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "新的保险库密码",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "确认新密码",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "请至少使用 12 个字符。",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "两次输入的密码不一致。",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "正在重新加密…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "保险库密码已更改。",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "无法更改保险库密码，请重试。",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "取消",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "更改保险库密码",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "你的保险库密码已在另一台设备上更改。请锁定保险库，再用新密码解锁，然后重试。",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "显示",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "隐藏",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "搜索你的保险库",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "保险库",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "全部",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "个人",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "当前网站",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "全部条目",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "搜索结果",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "此网站还没有保存任何内容。",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "没有与搜索匹配的条目。",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "你的保险库还是空的。添加第一条登录信息吧。",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "未命名",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "无法解密",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "新建条目",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "更多",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "锁定",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "立即同步",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "打开网页版保险库",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "设置",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "退出登录",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "填充",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "在此页面填充",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "复制用户名",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "复制密码",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "复制验证码",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "复制笔记",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "复制$FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "打开网站",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "编辑",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "置顶",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "取消置顶",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "返回",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "保存",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "更新",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "删除",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "永久删除",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "生成密码",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "重新生成",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "关闭",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "移除 $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "更改",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "已复制$FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "用户名已复制",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "密码已复制——45 秒后从剪贴板清除",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "两步验证码已复制",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "笔记已复制",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "已保存",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "已删除",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "已填充",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "已填入高强度密码",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "无法复制到剪贴板。",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "此页面上没有可填充的内容。",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "无法加载你的保险库，请重试。",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "无法保存，请重试。",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "这看起来不像两步验证的设置密钥或 otpauth:// 链接。",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "条目",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "新建条目",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "编辑条目",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "正在保存…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "类型",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "登录信息",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "两步验证码",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "安全笔记",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "名称",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "例如：北风贸易",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "用户名",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "密码",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "网站",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "笔记",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "笔记内容",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "设置密钥或 otpauth:// 链接",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "颁发方",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "账号",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "保险库",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "保险库（移动到）",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "移动时会为另一个保险库重新加密该条目。",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "置顶",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "密码生成器",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "长度",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "大写字母",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "数字",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "符号",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "在这台设备上用安全的随机数生成器生成。容易混淆的字符（l、1、O、0）已被排除。",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "一般",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "强",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "极强",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ 比特",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "使用 Pabbel Vault 填充",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "使用高强度密码",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "在此生成，注册时自动保存",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault 已锁定。",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "登录 Pabbel Vault 即可填充此表单。",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "登录",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "$SITE$ 没有已保存的登录信息。",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "$SITE$ 没有两步验证码。",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "更新已保存的密码？",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "将更新“$NAME$”。",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "解锁 Pabbel Vault 以保存此登录信息",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "保存到",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "此网站一律不保存",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "已保存到 Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "密码已更新",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "已锁定",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "已解锁",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "设置",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "账号",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "未登录",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "登录后即可填充和保存密码。",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "安全",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "自动锁定",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "保险库闲置达到所选时长后锁定。关闭浏览器时，保险库也一定会锁定。",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "1 分钟后",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "$MINUTES$ 分钟后",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "仅在关闭浏览器时",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "在网站上",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "登录输入框中的按钮",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "在你正在输入的输入框内显示 Pabbel Vault 按钮。",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "提示保存登录信息",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "当你使用尚未保存或已更改的密码登录后，询问是否保存。",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "填充后复制两步验证码",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "如果登录信息有对应的两步验证码，就把它放到剪贴板，方便下一步使用。45 秒后自动清除。",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "自动填入两步验证码",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "登录在密码之后要求输入验证码时，自动填入对应的两步验证码。登录仍由你自己确认。",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "已填入两步验证码",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "键盘快捷键",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "按 Ctrl+Shift+L 可为当前页面填充登录信息或验证码。",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "永不保存的网站",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "还没有网站。在保存提示中选择“此网站一律不保存”，网站就会出现在这里。",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "保存你的 $SITE$ 登录信息？",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "已填入密码",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "已填入密码 · 两步验证码已复制",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "正在加载你的登录信息",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "无法加载你的登录信息",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "重试",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "解锁后即可填充此页面",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "显示网站图标",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "每个图标都直接来自相应网站，绝不经过 Pabbel。关闭后，列表将显示字母。",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "使用新的邮件掩码",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "发到这里的邮件会进入你的 Pabbel 收件箱",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "你在此网站的邮件掩码",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "已填入邮件掩码",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "无法创建邮件掩码",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "最近新建的掩码过多。请稍后再试。",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "邮件掩码 · 邮件会进入你的 Pabbel 收件箱",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "邮件掩码 · 已暂停，发到这里的邮件会被退回",
+    "description": "The same line when that mask is paused."
+  }
+}

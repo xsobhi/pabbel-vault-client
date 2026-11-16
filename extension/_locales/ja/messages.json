@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault：パスワードマネージャーと2段階認証",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "ゼロ知識型のパスワードマネージャー。パスワードや2段階認証コードを自動入力し、新しいログイン情報の保存や強力なパスワードの生成もできます。",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "このページにログイン情報または2段階認証コードを入力",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Pabbel Vaultでログイン情報を入力",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "強力なパスワードを生成",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Pabbel Vaultをロック",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "ウェブ版Pabbel Vaultを開く",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "パスワードを、しっかり封印。",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Pabbelアカウントでログインしてください。保管庫の中身はすべて、保存される前にこのデバイス上で暗号化されます。",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Pabbelでログイン",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Pabbelを待っています…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "accounts.pabbel.comが開きます。ここでパスワードを入力することはありません。",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "プライバシー",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "ログインが完了しませんでした。もう一度お試しください。",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "まずVaultをセットアップ",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$にはまだ保管庫がありません。ウェブで作成してから（1分ほどで終わります）、ここに戻ってきてください。",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "ウェブでセットアップ",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "アカウントを切り替える",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "保管庫のロック解除",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "保管庫のパスワード",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "ロック解除",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "ロックを解除しています…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "保管庫のパスワードがこのデバイスから出ることはありません。",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "保管庫のパスワードが違います。",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "現在ロックを解除できません。接続を確認して、もう一度お試しください。",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "このブラウザでロック解除を維持",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "30日間、ここではパスワードが不要になります。このブラウザは、ウェブ版の保管庫からいつでも削除できます。",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "このブラウザの30日間が終了しました。ロック解除を維持するには、パスワードを一度入力してください。",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "このブラウザは信頼済みではなくなりました。削除されたか、保管庫のパスワードが変更されています。パスワードを入力してください。",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "ロックは解除されましたが、現在このブラウザを信頼済みにできませんでした。設定からもう一度お試しください。",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "このブラウザでロック解除を維持",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "30日間、パスワードなしで保管庫を開けます。鍵の半分をPabbelが、もう半分をこのブラウザが持つため、どちらか一方だけでは開けません。このパソコンを紛失した場合は、ウェブ版の保管庫の「信頼済みのブラウザ」から削除してください。",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "$DATE$まで有効です。",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "オンにするには、先に保管庫のロックを解除してください。",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "保管庫のパスワード",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "新しい保管庫のパスワードを設定します。ほかのデバイスでは新しいパスワードを求められ、信頼済みのブラウザは改めて信頼済みにする必要があります。",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "変更",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "新しい保管庫のパスワード",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "新しいパスワード（確認）",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "12文字以上にしてください。",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "2つのパスワードが一致しません。",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "再暗号化しています…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "保管庫のパスワードを変更しました。",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "保管庫のパスワードを変更できませんでした。もう一度お試しください。",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "キャンセル",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "保管庫のパスワードを変更",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "保管庫のパスワードが別のデバイスで変更されました。保管庫をロックし、新しいパスワードでロックを解除してから、もう一度お試しください。",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "表示",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "非表示",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "保管庫を検索",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "保管庫",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "すべて",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "個人",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "このサイト",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "すべてのアイテム",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "検索結果",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "このサイトにはまだ何も保存されていません。",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "検索に一致するアイテムはありません。",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "保管庫は空です。最初のログイン情報を追加しましょう。",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "無題",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "復号できません",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "新しいアイテム",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "その他",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "ロック",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "今すぐ同期",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "ウェブ版の保管庫を開く",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "設定",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "ログアウト",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "入力",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "このページに入力",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "ユーザー名をコピー",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "パスワードをコピー",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "コードをコピー",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "メモをコピー",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "$FIELD$をコピー",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "ウェブサイトを開く",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "編集",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "ピン留め",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "ピン留めを解除",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "戻る",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "保存",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "更新",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "削除",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "完全に削除",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "パスワードを生成",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "再生成",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "閉じる",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "$SITE$を削除",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "変更",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$をコピーしました",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "ユーザー名をコピーしました",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "パスワードをコピーしました（45秒後に消去）",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "2段階認証コードをコピーしました",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "メモをコピーしました",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "保存しました",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "削除しました",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "入力しました",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "強力なパスワードを入力しました",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "クリップボードにコピーできませんでした。",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "このページには入力できる項目がありません。",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "保管庫を読み込めませんでした。もう一度お試しください。",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "保存できませんでした。もう一度お試しください。",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "2段階認証のセットアップキーまたはotpauth://リンクではないようです。",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "アイテム",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "新しいアイテム",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "アイテムを編集",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "保存しています…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "種類",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "ログイン情報",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "2段階認証コード",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "セキュアメモ",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "名前",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "例：ノースウィンド商事",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "ユーザー名",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "パスワード",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "ウェブサイト",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "メモ",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "メモの内容",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "セットアップキーまたはotpauth://リンク",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "発行元",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "アカウント",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "保管庫",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "保管庫（移動先）",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "移動すると、アイテムは移動先の保管庫用に再暗号化されます。",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "ピン留め",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "パスワード生成",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "長さ",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "大文字",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "数字",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "記号",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "このデバイス上で、安全な乱数生成器を使って作成します。見分けにくい文字（l、1、O、0）は使いません。",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "普通",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "強力",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "非常に強力",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ビット",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Pabbel Vaultで入力",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "強力なパスワードを使用",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "ここで生成し、登録時に保存します",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vaultはロックされています。",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "このフォームに入力するには、Pabbel Vaultにログインしてください。",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "ログイン",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "$SITE$の保存済みログイン情報はありません。",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "$SITE$の2段階認証コードはありません。",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "保存済みのパスワードを更新しますか？",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "「$NAME$」を更新します。",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "このログイン情報を保存するには、Pabbel Vaultのロックを解除してください",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "保存先",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "このサイトでは保存しない",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Pabbel Vaultに保存しました",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "パスワードを更新しました",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "ロック中",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "ロック解除済み",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "設定",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "アカウント",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "ログインしていません",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "ログインすると、パスワードの入力と保存ができます。",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "セキュリティ",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "自動ロック",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "保管庫を使わない状態がこの時間続くとロックします。ブラウザを閉じたときは、保管庫は必ずロックされます。",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "1分後",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "$MINUTES$分後",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "ブラウザを閉じたときのみ",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "ウェブサイト上",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "ログイン欄のボタン",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "入力中の欄の中にPabbel Vaultのボタンを表示します。",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "ログイン情報の保存を提案",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "まだ保存されていないパスワードや、変更されたパスワードでログインしたときに確認します。",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "入力後に2段階認証コードをコピー",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "ログイン情報に対応する2段階認証コードがある場合、次のステップ用にクリップボードへコピーします。45秒後に消去されます。",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "2段階認証コードを自動で入力",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "パスワードの後にコードを求めるログインでは、対応する2段階認証コードを入力します。ログインの確定はご自身で行います。",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "2段階認証コードを入力しました",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "キーボードショートカット",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+Lで、表示中のページにログイン情報またはコードを入力します。",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "保存しないサイト",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "まだサイトはありません。保存の確認で「このサイトでは保存しない」を選ぶと、ここに追加されます。",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "$SITE$のログイン情報を保存しますか？",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "パスワードを入力しました",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "パスワードを入力しました · 2段階認証コードをコピーしました",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "ログイン情報を読み込んでいます",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "ログイン情報を読み込めませんでした",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "もう一度試す",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "ロックを解除してこのページに入力",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "ウェブサイトのアイコンを表示",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "アイコンはそれぞれのウェブサイトから直接取得し、Pabbelを経由することはありません。オフにすると一覧には文字が表示されます。",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "新しいメールマスクを使用",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "メールは Pabbel の受信トレイに届きます",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "このサイト用のメールマスク",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "メールマスクを入力しました",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "メールマスクを作成できませんでした",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "最近作成したマスクが多すぎます。しばらくしてからお試しください。",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "メールマスク · メールは Pabbel の受信トレイに届きます",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "メールマスク · 一時停止中、メールは送信者に返送されます",
+    "description": "The same line when that mask is paused."
+  }
+}

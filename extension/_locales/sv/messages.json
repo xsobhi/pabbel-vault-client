@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Lösenordshanterare & 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Lösenordshanterare där bara du har nyckeln. Fyll i lösenord och tvåstegskoder, spara nya inloggningar och skapa starka lösenord.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Fyll i inloggningen eller tvåstegskoden för den här sidan",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Fyll i inloggning med Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Generera ett starkt lösenord",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Lås Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Öppna Pabbel Vault på webben",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Dina lösenord, förseglade.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Logga in med ditt Pabbel-konto. Allt i ditt valv krypteras på den här enheten innan det lagras.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Logga in med Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Väntar på Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Öppnar accounts.pabbel.com. Du skriver aldrig in något lösenord här.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Integritet",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Inloggningen blev inte klar. Försök igen.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Sätt upp Vault först",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ har inget valv än. Skapa ett på webben – det tar en minut – och kom sedan tillbaka hit.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Sätt upp på webben",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Byt konto",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Lås upp ditt valv",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Valvlösenord",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Lås upp",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Låser upp…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Ditt valvlösenord lämnar aldrig den här enheten.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Det är inte valvlösenordet.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Kunde inte låsa upp just nu. Kontrollera din anslutning och försök igen.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Förbli upplåst i den här webbläsaren",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Inget lösenord här på 30 dagar. Du kan när som helst ta bort den här webbläsaren i webbvalvet.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Den här webbläsarens 30 dagar har gått ut. Ange ditt lösenord en gång så förblir den upplåst.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Den här webbläsaren är inte längre betrodd: den har tagits bort eller så har ditt valvlösenord bytts. Ange ditt lösenord.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Upplåst, men den här webbläsaren kunde inte göras betrodd just nu. Försök igen i Inställningar.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Förbli upplåst i den här webbläsaren",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Öppnar valvet utan lösenord i 30 dagar. Pabbel behåller ena halvan av nyckeln och den här webbläsaren den andra, så ingen av dem kan öppna valvet ensam. Om datorn försvinner tar du bort den under ”Betrodda webbläsare” i webbvalvet.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "På till $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Lås upp valvet först för att slå på det här.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Valvlösenord",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Välj ett nytt valvlösenord. Dina andra enheter kommer att fråga efter det, och betrodda webbläsare måste göras betrodda igen.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Byt",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Nytt valvlösenord",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Bekräfta nytt lösenord",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Använd minst 12 tecken.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "De två lösenorden stämmer inte överens.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Krypterar om…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Valvlösenordet är bytt.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Kunde inte byta valvlösenordet. Försök igen.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Avbryt",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Byt valvlösenord",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Ditt valvlösenord har bytts på en annan enhet. Lås valvet och lås upp det med det nya lösenordet, och försök sedan igen.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Visa",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Dölj",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Sök i ditt valv",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Valv",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Alla",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Personligt",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "För den här webbplatsen",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Alla objekt",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Resultat",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Inget sparat för den här webbplatsen än.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Inga objekt matchar din sökning.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Ditt valv är tomt. Lägg till din första inloggning.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Namnlös",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Kan inte dekrypteras",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Nytt objekt",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Mer",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Lås",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Synka nu",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Öppna webbvalvet",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Inställningar",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Logga ut",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Fyll i",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Fyll i på den här sidan",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Kopiera användarnamn",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Kopiera lösenord",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Kopiera kod",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Kopiera anteckning",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Kopiera $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Öppna webbplatsen",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Redigera",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Fäst överst",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Lossa",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Tillbaka",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Spara",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Uppdatera",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Radera",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Radera för gott",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Generera ett lösenord",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Nytt lösenord",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Stäng",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Ta bort $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Ändra",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ har kopierats",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Användarnamnet kopierat",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Lösenordet kopierat – töms om 45 s",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Tvåstegskoden kopierad",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Anteckningen kopierad",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Sparat",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Raderat",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Ifyllt",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Starkt lösenord ifyllt",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Kunde inte kopiera till urklipp.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Det finns inget att fylla i på den här sidan.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Kunde inte ladda ditt valv. Försök igen.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Kunde inte spara. Försök igen.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Det där ser inte ut som en hemlig tvåstegsnyckel eller en otpauth://-länk.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Objekt",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Nytt objekt",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Redigera objekt",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Sparar…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Typ",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Inloggning",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Tvåstegskod",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Säker anteckning",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Namn",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "t.ex. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Användarnamn",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Lösenord",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Webbplats",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Anteckningar",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Anteckning",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Hemlig nyckel eller otpauth://-länk",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Utfärdare",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Konto",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Valv",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Valv (flytta till)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Att flytta krypterar om objektet för det andra valvet.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Fäst överst",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Lösenordsgenerator",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Längd",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Versaler",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Siffror",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Symboler",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Skapas på den här enheten med en säker slumpgenerator. Tecken som liknar varandra (l, 1, O, 0) utelämnas.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Hyfsat",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Starkt",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Utmärkt",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bitar",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Fyll i med Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Använd ett starkt lösenord",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Skapas här och sparas när du registrerar dig",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault är låst.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Logga in på Pabbel Vault för att fylla i formuläret.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Logga in",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Inga sparade inloggningar för $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Inga tvåstegskoder för $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Uppdatera det sparade lösenordet?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Uppdaterar ”$NAME$”.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Lås upp Pabbel Vault för att spara inloggningen",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Spara i",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Aldrig för den här webbplatsen",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Sparat i Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Lösenordet har uppdaterats",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Låst",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Upplåst",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Inställningar",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Konto",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Inte inloggad",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Logga in för att fylla i och spara lösenord.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Säkerhet",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Lås automatiskt",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Efter så här lång tid utan att valvet används. Valvet låses alltid när webbläsaren stängs.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Efter 1 minut",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Efter $MINUTES$ minuter",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Bara när webbläsaren stängs",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "På webbplatser",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Knapp i inloggningsfält",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Visa Pabbel Vault-knappen i fältet du skriver i.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Erbjud att spara inloggningar",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Fråga när du loggar in med ett lösenord som inte är sparat än, eller som har ändrats.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Kopiera tvåstegskoden efter ifyllning",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "När en inloggning har en matchande tvåstegskod läggs den i urklipp inför nästa steg. Töms efter 45 sekunder.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Fyll i tvåstegskoder automatiskt",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "När en inloggning ber om en kod efter lösenordet fylls den matchande tvåstegskoden i. Du bekräftar inloggningen själv.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Tvåstegskoden ifylld",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Kortkommando",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L fyller i inloggningen eller koden för sidan du är på.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Webbplatser som aldrig sparas",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Inga webbplatser än. Väljer du ”Aldrig för den här webbplatsen” när du får frågan om att spara hamnar webbplatsen här.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Spara din inloggning för $SITE$?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Lösenordet ifyllt",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Lösenordet ifyllt · tvåstegskoden kopierad",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Laddar dina inloggningar",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Kunde inte ladda dina inloggningar",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Försök igen",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Lås upp för att fylla i den här sidan",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Visa webbplatsikoner",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Varje ikon kommer direkt från webbplatsen, aldrig via Pabbel. När det är av visar listan bokstäver i stället.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Använd en ny e-postmask",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "E-post till den når din Pabbel-inkorg",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Din e-postmask för den här webbplatsen",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "E-postmask ifylld",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Det gick inte att skapa en e-postmask",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "För många nya masker på sistone. Försök igen senare.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "E-postmask · e-post når din Pabbel-inkorg",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "E-postmask · pausad, e-post till den studsar",
+    "description": "The same line when that mask is paused."
+  }
+}

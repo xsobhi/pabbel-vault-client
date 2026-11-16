@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: менеджер паролів і 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Менеджер паролів із нульовим розголошенням: заповнює паролі та двоетапні коди, зберігає нові логіни й створює надійні паролі.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Заповнити логін або двоетапний код на цій сторінці",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Заповнити логін із Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Згенерувати надійний пароль",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Заблокувати Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Відкрити вебверсію Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Ваші паролі — під замком.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Увійдіть з обліковим записом Pabbel. Усе у вашому сховищі шифрується на цьому пристрої ще до збереження.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Увійти через Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Очікуємо Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Відкриється accounts.pabbel.com. Тут пароль не вводиться.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Конфіденційність",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Вхід не завершено. Спробуйте ще раз.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Спершу налаштуйте сховище",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "Для $EMAIL$ ще немає сховища. Створіть його у вебверсії — це займе хвилину, — а потім поверніться сюди.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Налаштувати у вебверсії",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Змінити обліковий запис",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Розблокуйте своє сховище",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Пароль сховища",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Розблокувати",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Розблокування…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Пароль сховища ніколи не залишає цей пристрій.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Це не ваш пароль сховища.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Зараз не вдалося розблокувати. Перевірте з’єднання і спробуйте ще раз.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Залишатися розблокованим у цьому браузері",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "30 днів тут не знадобиться пароль. Вилучити цей браузер можна будь-коли у вебверсії.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "30 днів для цього браузера минули. Введіть пароль один раз, щоб він і далі залишався розблокованим.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Цей браузер більше не довірений: його вилучили або пароль сховища змінився. Введіть пароль.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Сховище розблоковано, але зараз не вдалося зробити цей браузер довіреним. Спробуйте ще раз у налаштуваннях.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Залишатися розблокованим у цьому браузері",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Сховище відкривається без пароля протягом 30 днів. Половина ключа зберігається в Pabbel, друга — в цьому браузері, тож жоден із них не може відкрити сховище сам. Якщо цей комп’ютер загублено, вилучіть його в розділі «Довірені браузери» у вебверсії.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Увімкнено до $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Щоб увімкнути це, спершу розблокуйте сховище.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Пароль сховища",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Встановіть новий пароль сховища. Інші ваші пристрої попросять його ввести, а довірені браузери доведеться налаштувати знову.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Змінити",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Новий пароль сховища",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Підтвердьте новий пароль",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Використайте щонайменше 12 символів.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Паролі не збігаються.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Перешифрування…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Пароль сховища змінено.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Не вдалося змінити пароль сховища. Спробуйте ще раз.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Скасувати",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Змінити пароль сховища",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Пароль сховища змінено на іншому пристрої. Заблокуйте сховище, розблокуйте його новим паролем і спробуйте ще раз.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Показати",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Приховати",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Пошук у сховищі",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Сховища",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Усі",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Особисте",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Для цього сайту",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Усі записи",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Результати",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Для цього сайту ще нічого не збережено.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "За вашим запитом записів немає.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Ваше сховище порожнє. Додайте перший логін.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Без назви",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Не вдається розшифрувати",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Новий запис",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Більше",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Заблокувати",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Синхронізувати",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Відкрити вебверсію",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Налаштування",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Вийти",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Заповнити",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Заповнити на цій сторінці",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Копіювати ім’я користувача",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Копіювати пароль",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Копіювати код",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Копіювати нотатку",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Копіювати поле «$FIELD$»",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Відкрити вебсайт",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Редагувати",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Закріпити вгорі",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Відкріпити",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Назад",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Зберегти",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Оновити",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Видалити",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Видалити назавжди",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Згенерувати пароль",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Інший пароль",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Закрити",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Вилучити $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Змінити",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "Скопійовано: $FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Ім’я користувача скопійовано",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Пароль скопійовано — зникне з буфера за 45 с",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Двоетапний код скопійовано",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Нотатку скопійовано",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Збережено",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Видалено",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Заповнено",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Надійний пароль вставлено",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Не вдалося скопіювати в буфер обміну.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "На цій сторінці нічого заповнювати.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Не вдалося завантажити сховище. Спробуйте ще раз.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Не вдалося зберегти. Спробуйте ще раз.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Це не схоже на секретний ключ двоетапного коду чи посилання otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Запис",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Новий запис",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Редагування запису",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Збереження…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Тип",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Логін",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Двоетапний код",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Захищена нотатка",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Назва",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "напр. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Ім’я користувача",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Пароль",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Вебсайт",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Нотатки",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Нотатка",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Секретний ключ або посилання otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Видавець",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Обліковий запис",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Сховище",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Перемістити до сховища",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Переміщення повторно шифрує запис для іншого сховища.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Закріпити вгорі",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Генератор паролів",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Довжина",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Великі літери",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Цифри",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Символи",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Створюється на цьому пристрої надійним генератором випадкових чисел. Схожі символи (l, 1, O, 0) не використовуються.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Середній",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Надійний",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Чудовий",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ біт",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Заповнити з Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Використати надійний пароль",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Створюється тут, зберігається під час реєстрації",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault заблоковано.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Увійдіть у Pabbel Vault, щоб заповнити цю форму.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Увійти",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Немає збережених логінів для $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Немає двоетапних кодів для $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Оновити збережений пароль?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Буде оновлено запис «$NAME$».",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Розблокуйте Pabbel Vault, щоб зберегти цей логін",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Зберегти в",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Ніколи для цього сайту",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Збережено в Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Пароль оновлено",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Заблоковано",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Розблоковано",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Налаштування",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Обліковий запис",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Вхід не виконано",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Увійдіть, щоб заповнювати й зберігати паролі.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Безпека",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Автоблокування",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Спрацьовує, якщо стільки часу не користуватися сховищем. Під час закриття браузера сховище блокується завжди.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Через 1 хвилину",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Через $MINUTES$ хвилин",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Лише під час закриття браузера",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "На вебсайтах",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Кнопка в полях входу",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Показувати кнопку Pabbel Vault у полі, де ви вводите текст.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Пропонувати зберегти логіни",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Питати після входу з паролем, який ще не збережено або який змінився.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Копіювати двоетапний код після заповнення",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Якщо для логіна є відповідний двоетапний код, він потрапить у буфер обміну для наступного кроку. Буфер очиститься через 45 секунд.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Автоматично вводити двоетапні коди",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Якщо після пароля вхід просить код, у поле буде введено відповідний двоетапний код. Вхід ви підтверджуєте самі.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Двоетапний код введено",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Комбінація клавіш",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L заповнює логін або код на відкритій сторінці.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Не зберігати на сайтах",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Сайтів ще немає. Виберіть «Ніколи для цього сайту» в пропозиції зберегти — і сайт з’явиться тут.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Зберегти логін для $SITE$?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Пароль введено",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Пароль введено · двоетапний код скопійовано",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Завантажуємо ваші логіни",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Не вдалося завантажити логіни",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Спробувати ще раз",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Розблокуйте, щоб заповнити цю сторінку",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Показувати значки сайтів",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Кожен значок надходить безпосередньо із самого сайту й ніколи не проходить через Pabbel. Якщо вимкнено, у списку показуються літери.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Використати нову поштову маску",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Листи на неї надходять до вашої скриньки Pabbel",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Ваша поштова маска для цього сайту",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "Поштову маску вставлено",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Не вдалося створити поштову маску",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Останнім часом забагато нових масок. Спробуйте пізніше.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "Поштова маска · листи надходять до вашої скриньки Pabbel",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "Поштова маска · призупинено, листи на неї повертаються",
+    "description": "The same line when that mask is paused."
+  }
+}

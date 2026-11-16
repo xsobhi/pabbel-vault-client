@@ -1,0 +1,30 @@
+{
+  "name": "pabbel-vault-extension",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Pabbel Vault for Chrome and Firefox: zero-knowledge passwords, codes and notes, with autofill.",
+  "license": "GPL-3.0-only",
+  "author": "Sobhi Ashraf Al-Firani",
+  "homepage": "https://pabbel.com/vault",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs --store",
+    "build:firefox": "node scripts/build.mjs --firefox",
+    "build:local": "node scripts/build.mjs --local",
+    "build:all": "node scripts/build.mjs --store && node scripts/build.mjs --firefox",
+    "check:store": "node scripts/check-store.mjs dist",
+    "check:locales": "node scripts/check-locales.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.test.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "preact": "10.29.8"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.1.43",
+    "@types/node": "22.20.5",
+    "esbuild": "0.28.2",
+    "typescript": "5.9.3",
+    "vitest": "4.1.12"
+  }
+}

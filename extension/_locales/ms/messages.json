@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Pengurus Kata Laluan & 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Pengurus kata laluan zero-knowledge. Isi kata laluan dan kod 2 langkah, simpan log masuk baharu dan jana kata laluan yang kukuh.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Isi log masuk atau kod 2 langkah untuk halaman ini",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Isi log masuk dengan Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Jana kata laluan yang kukuh",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Kunci Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Buka Pabbel Vault di web",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Kata laluan anda, dimeterai rapi.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Log masuk dengan akaun Pabbel anda. Segala-galanya dalam peti besi anda disulitkan pada peranti ini sebelum disimpan.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Log masuk dengan Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Menunggu Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Membuka accounts.pabbel.com. Tiada kata laluan ditaip di sini.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Privasi",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Log masuk tidak selesai. Sila cuba lagi.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Sediakan Vault dahulu",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ belum mempunyai peti besi. Cipta satu di web - hanya mengambil masa seminit - kemudian kembali ke sini.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Sediakan di web",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Tukar akaun",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Buka kunci peti besi anda",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Kata laluan peti besi",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Buka kunci",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Membuka kunci…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Kata laluan peti besi anda tidak sekali-kali meninggalkan peranti ini.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Itu bukan kata laluan peti besi anda.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Tidak dapat membuka kunci sekarang. Semak sambungan anda dan cuba lagi.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Kekal tidak berkunci pada pelayar ini",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Tiada kata laluan di sini selama 30 hari. Anda boleh mengalih keluar pelayar ini daripada Vault di web pada bila-bila masa.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Tempoh 30 hari pelayar ini telah tamat. Masukkan kata laluan anda sekali untuk memastikannya kekal tidak berkunci.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Pelayar ini tidak lagi dipercayai: pelayar ini telah dialih keluar, atau kata laluan peti besi anda telah ditukar. Masukkan kata laluan anda.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Kunci dibuka, tetapi pelayar ini tidak dapat dipercayai buat masa ini. Cuba lagi dalam Tetapan.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Kekal tidak berkunci pada pelayar ini",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Membuka peti besi tanpa kata laluan selama 30 hari. Pabbel menyimpan separuh kunci dan pelayar ini separuh lagi, jadi kedua-duanya tidak dapat membukanya bersendirian. Jika komputer ini hilang, alih keluarnya di bawah Pelayar dipercayai dalam Vault di web.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Aktif sehingga $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Buka kunci peti besi dahulu untuk menghidupkan tetapan ini.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Kata laluan peti besi",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Tetapkan kata laluan peti besi baharu. Peranti anda yang lain akan memintanya, dan pelayar dipercayai perlu dipercayai semula.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Tukar",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Kata laluan peti besi baharu",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Sahkan kata laluan baharu",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Gunakan sekurang-kurangnya 12 aksara.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Kedua-dua kata laluan tidak sepadan.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Menyulitkan semula…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Kata laluan peti besi ditukar.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Tidak dapat menukar kata laluan peti besi. Cuba lagi.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Batal",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Tukar kata laluan peti besi",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Kata laluan peti besi anda telah ditukar pada peranti lain. Kunci peti besi dan buka kuncinya dengan kata laluan baharu, kemudian cuba lagi.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Tunjukkan",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Sembunyikan",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Cari dalam peti besi anda",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Peti besi",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Semua",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Peribadi",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Untuk laman ini",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Semua item",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Hasil carian",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Belum ada apa-apa disimpan untuk laman ini.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Tiada item yang sepadan dengan carian anda.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Peti besi anda kosong. Tambah log masuk pertama anda.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Tanpa tajuk",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Tidak dapat dinyahsulit",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Item baharu",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Lagi",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Kunci",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Segerakkan sekarang",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Buka Vault di web",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Tetapan",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Log keluar",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Isi",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Isi pada halaman ini",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Salin nama pengguna",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Salin kata laluan",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Salin kod",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Salin nota",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Salin $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Buka laman web",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Edit",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Semat di atas",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Nyahsemat",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Kembali",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Simpan",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Kemas kini",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Padam",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Padam terus",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Jana kata laluan",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Kata laluan baharu",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Tutup",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Alih keluar $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Tukar",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ disalin",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Nama pengguna disalin",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Kata laluan disalin - dikosongkan dalam 45 saat",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Kod 2 langkah disalin",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Nota disalin",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Disimpan",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Dipadamkan",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Diisi",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Kata laluan yang kukuh telah diisi",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Tidak dapat menyalin ke papan keratan.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Tiada apa-apa untuk diisi pada halaman ini.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Tidak dapat memuatkan peti besi anda. Cuba lagi.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Tidak dapat menyimpan. Cuba lagi.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Itu tidak kelihatan seperti kunci persediaan 2 langkah atau pautan otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Item",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Item baharu",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Edit item",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Menyimpan…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Jenis",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Log masuk",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Kod 2 langkah",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Nota selamat",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Nama",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "cth. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Nama pengguna",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Kata laluan",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Laman web",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Nota",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Nota",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Kunci persediaan atau pautan otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Pengeluar",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Akaun",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Peti besi",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Peti besi (pindah ke)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Memindahkan item akan menyulitkannya semula untuk peti besi yang satu lagi.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Semat di atas",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Penjana kata laluan",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Panjang",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Huruf besar",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Nombor",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Simbol",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Dijana pada peranti ini dengan penjana rawak yang selamat. Aksara yang serupa (l, 1, O, 0) tidak digunakan.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Sederhana",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Kukuh",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Sangat kukuh",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bit",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Isi dengan Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Guna kata laluan yang kukuh",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Dijana di sini, disimpan apabila anda mendaftar",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault dikunci.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Log masuk ke Pabbel Vault untuk mengisi borang ini.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Log masuk",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Tiada log masuk disimpan untuk $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Tiada kod 2 langkah untuk $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Kemas kini kata laluan yang disimpan?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Mengemas kini “$NAME$”.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Buka kunci Pabbel Vault untuk menyimpan log masuk ini",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Simpan dalam",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Jangan sekali-kali untuk laman ini",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Disimpan ke Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Kata laluan dikemas kini",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Dikunci",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Tidak dikunci",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Tetapan",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Akaun",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Belum log masuk",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Log masuk untuk mengisi dan menyimpan kata laluan.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Keselamatan",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Kunci secara automatik",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Selepas tempoh ini tanpa menggunakan peti besi. Peti besi sentiasa dikunci apabila penyemak imbas ditutup.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Selepas 1 minit",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Selepas $MINUTES$ minit",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Hanya apabila penyemak imbas ditutup",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Di laman web",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Butang dalam medan log masuk",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Tunjukkan butang Pabbel Vault di dalam medan yang sedang anda taip.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Tawarkan untuk menyimpan log masuk",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Tanya selepas anda log masuk dengan kata laluan yang belum disimpan, atau yang telah berubah.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Salin kod 2 langkah selepas mengisi",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Apabila log masuk mempunyai kod 2 langkah yang sepadan, letakkan kod itu pada papan keratan untuk langkah seterusnya. Dikosongkan selepas 45 saat.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Taip kod 2 langkah secara automatik",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Apabila log masuk meminta kod selepas kata laluan, kod 2 langkah yang sepadan akan ditaip. Anda sendiri yang mengesahkan log masuk.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Kod 2 langkah diisi",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Pintasan papan kekunci",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L mengisi log masuk atau kod untuk halaman yang sedang anda buka.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Jangan sekali-kali simpan di",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Belum ada laman. Memilih “Jangan sekali-kali untuk laman ini” pada gesaan simpan akan menambahkannya di sini.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Simpan log masuk $SITE$ anda?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Kata laluan diisi",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Kata laluan diisi · kod 2 langkah disalin",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Memuatkan log masuk anda",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Tidak dapat memuatkan log masuk anda",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Cuba lagi",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Buka kunci untuk mengisi halaman ini",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Tunjukkan ikon laman web",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Setiap ikon datang terus dari laman web itu, tidak sekali-kali melalui Pabbel. Jika dimatikan, senarai menunjukkan huruf.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Gunakan topeng e-mel baharu",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Mel ke alamat ini masuk ke peti masuk Pabbel anda",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Topeng e-mel anda untuk laman ini",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "Topeng e-mel diisikan",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Tidak dapat mencipta topeng e-mel",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Terlalu banyak topeng baharu kebelakangan ini. Cuba lagi nanti.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "Topeng e-mel · mel masuk ke peti masuk Pabbel anda",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "Topeng e-mel · dijeda, mel ke alamat ini ditolak",
+    "description": "The same line when that mask is paused."
+  }
+}

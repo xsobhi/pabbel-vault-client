@@ -1,0 +1,69 @@
+/* Buttons, inputs, switches, chips, toasts - shared by the popup and the options page. */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 36px; padding: 0 14px; border-radius: 9px;
+  border: 1px solid transparent; background: transparent; font-weight: 600; font-size: 13.5px; cursor: pointer; text-decoration: none;
+  transition: background .15s ease, transform .1s ease, opacity .15s ease; white-space: nowrap; }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: .55; cursor: default; transform: none; }
+.btn-primary { background: var(--accent); color: var(--on-accent); box-shadow: 0 1px 0 rgba(255, 255, 255, .25) inset, 0 6px 16px -8px var(--accent); }
+.btn-primary:hover:not(:disabled) { filter: brightness(1.05); }
+.btn-quiet { color: var(--ink-2); border-color: var(--line); background: var(--card); }
+.btn-quiet:hover { background: var(--tint); border-color: transparent; color: var(--tint-ink); }
+.btn-danger { background: var(--danger); color: #fff; }
+.btn-wide { width: 100%; height: 42px; font-size: 14px; }
+.btn-small { height: 28px; padding: 0 10px; font-size: 12px; gap: 6px; }
+.btn-mark { border-radius: 5px; }
+
+.icon-btn { display: inline-grid; place-items: center; width: 32px; height: 32px; flex: none; border: 0; border-radius: 8px; background: transparent;
+  color: var(--muted); cursor: pointer; transition: background .12s ease, color .12s ease; }
+.icon-btn:hover { background: var(--tint); color: var(--tint-ink); }
+.icon-btn.is-on { color: var(--accent); }
+.icon-btn.is-done { color: var(--accent); background: var(--tint); }
+.icon-btn-accent { background: var(--accent); color: var(--on-accent); }
+.icon-btn-accent:hover { background: var(--accent); color: var(--on-accent); filter: brightness(1.06); }
+
+.input-label { display: grid; gap: 6px; font: 600 10.5px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+:lang(ar) .input-label, :lang(fa) .input-label, :lang(ur) .input-label { letter-spacing: 0; font: 600 12px/1.2 var(--font-text); }
+.input-wrap, .pw { display: flex; align-items: center; gap: 2px; border: 1px solid var(--input); border-radius: 9px; background: var(--card); padding-inline-end: 3px;
+  transition: border-color .15s ease, box-shadow .15s ease; }
+.input-wrap:focus-within, .pw:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent); }
+.input-wrap input, .pw input { flex: 1; min-width: 0; height: 36px; padding: 0 11px; border: 0; background: transparent; outline: none;
+  font: 400 14px var(--font-text); letter-spacing: 0; text-transform: none; color: var(--ink); }
+.input-wrap input.mono { font-family: var(--font-mono); font-size: 13.5px; }
+textarea, select { width: 100%; border: 1px solid var(--input); border-radius: 9px; background: var(--card); padding: 9px 11px;
+  font: 400 14px/1.45 var(--font-text); letter-spacing: 0; text-transform: none; color: var(--ink); resize: vertical; }
+select { height: 36px; padding: 0 10px; }
+textarea:focus, select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent); }
+.hint { font: 400 12px/1.4 var(--font-text); letter-spacing: 0; text-transform: none; color: var(--muted); }
+
+.switch, .toggle { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 13.5px; }
+input[type="checkbox"] { appearance: none; width: 34px; height: 20px; flex: none; margin: 0; border-radius: 999px; background: var(--input); position: relative;
+  cursor: pointer; transition: background .15s ease; }
+input[type="checkbox"]::after { content: ""; position: absolute; top: 2px; inset-inline-start: 2px; width: 16px; height: 16px; border-radius: 50%;
+  background: var(--card); box-shadow: 0 1px 2px rgba(0, 0, 0, .25); transition: transform .18s var(--ease-out); }
+input[type="checkbox"]:checked { background: var(--accent); }
+input[type="checkbox"]:checked::after { transform: translateX(14px); }
+[dir="rtl"] input[type="checkbox"]:checked::after { transform: translateX(-14px); }
+
+.chip { flex: none; height: 28px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink-2);
+  font-size: 12.5px; font-weight: 500; cursor: pointer; transition: background .12s ease, color .12s ease, border-color .12s ease; }
+.chip:hover { border-color: var(--input); }
+.chip.is-on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.section { display: flex; align-items: baseline; gap: 8px; margin: 0; padding: 14px 4px 6px; font: 600 10.5px/1 var(--font-mono); letter-spacing: .16em;
+  text-transform: uppercase; color: var(--muted); }
+.section::after { content: ""; flex: 1; height: 1px; transform: translateY(-3px);
+  background-image: radial-gradient(circle, var(--input) 1px, transparent 1.3px); background-size: 6px 2px; background-repeat: repeat-x; }
+.section em { order: 2; font-style: normal; letter-spacing: .04em; text-transform: none; color: var(--ink-2); }
+:lang(ar) .section, :lang(fa) .section, :lang(ur) .section { letter-spacing: 0; font: 600 12px/1 var(--font-text); }
+
+.error { margin: 0; padding: 8px 10px; border-radius: 8px; background: color-mix(in srgb, var(--danger) 10%, transparent); color: var(--danger); font-size: 13px; }
+.toast { position: fixed; inset-inline: 0; bottom: 14px; margin: 0 auto; width: max-content; max-width: calc(100% - 28px); padding: 8px 14px;
+  border-radius: 999px; background: var(--ink); color: var(--paper); font-size: 12.5px; font-weight: 600; box-shadow: var(--shadow);
+  animation: toast-in .22s var(--ease-out); z-index: 20; }
+@keyframes toast-in { from { opacity: 0; transform: translateY(8px) scale(.98); } }
+.avatar { display: inline-grid; place-items: center; width: 22px; height: 22px; flex: none; border-radius: 50%; background: var(--tint); color: var(--tint-ink);
+  font: 600 11px/1 var(--font-text); }
+.skeleton { display: grid; gap: 10px; padding: 14px 4px; }
+.skeleton span { height: 44px; border-radius: 10px; background: linear-gradient(90deg, var(--paper-2), var(--tint), var(--paper-2)); background-size: 200% 100%;
+  animation: shimmer 1.2s linear infinite; }
+@keyframes shimmer { to { background-position: -200% 0; } }

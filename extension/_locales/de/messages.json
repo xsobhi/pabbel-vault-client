@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Passwortmanager & 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Zero-Knowledge-Passwortmanager. Füllt Passwörter und Bestätigungscodes aus, speichert Zugangsdaten und erzeugt starke Passwörter.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Zugangsdaten oder Bestätigungscode auf dieser Seite ausfüllen",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Zugangsdaten mit Pabbel Vault ausfüllen",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Starkes Passwort erzeugen",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Pabbel Vault sperren",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Pabbel Vault im Web öffnen",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Ihre Passwörter, sicher versiegelt.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Melden Sie sich mit Ihrem Pabbel-Konto an. Alles in Ihrem Tresor wird auf diesem Gerät verschlüsselt, bevor es gespeichert wird.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Mit Pabbel anmelden",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Warten auf Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Öffnet accounts.pabbel.com. Hier wird kein Passwort eingegeben.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Datenschutz",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Die Anmeldung wurde nicht abgeschlossen. Bitte versuchen Sie es erneut.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Zuerst Vault einrichten",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ hat noch keinen Tresor. Erstellen Sie ihn im Web – das dauert nur eine Minute – und kommen Sie dann hierher zurück.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Im Web einrichten",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Konto wechseln",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Tresor entsperren",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Tresor-Passwort",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Entsperren",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Wird entsperrt…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Ihr Tresor-Passwort verlässt dieses Gerät nie.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Das ist nicht Ihr Tresor-Passwort.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Entsperren ist gerade nicht möglich. Prüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "In diesem Browser entsperrt bleiben",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "30 Tage lang hier kein Passwort nötig. Sie können diesen Browser jederzeit über Vault im Web entfernen.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Die 30 Tage für diesen Browser sind abgelaufen. Geben Sie Ihr Passwort einmal ein, damit er entsperrt bleibt.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Diesem Browser wird nicht mehr vertraut: Er wurde entfernt oder Ihr Tresor-Passwort wurde geändert. Geben Sie Ihr Passwort ein.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Entsperrt, aber dieser Browser konnte gerade nicht als vertrauenswürdig eingerichtet werden. Versuchen Sie es in den Einstellungen erneut.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "In diesem Browser entsperrt bleiben",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Öffnet den Tresor 30 Tage lang ohne Passwort. Pabbel bewahrt eine Hälfte des Schlüssels auf, dieser Browser die andere, sodass keiner von beiden ihn allein öffnen kann. Geht dieser Computer verloren, entfernen Sie ihn in Vault im Web unter „Vertrauenswürdige Browser“.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Aktiv bis $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Entsperren Sie zuerst den Tresor, um dies zu aktivieren.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Tresor-Passwort",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Legen Sie ein neues Tresor-Passwort fest. Ihre anderen Geräte fragen danach, und vertrauenswürdige Browser müssen erneut als vertrauenswürdig eingerichtet werden.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Ändern",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Neues Tresor-Passwort",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Neues Passwort bestätigen",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Verwenden Sie mindestens 12 Zeichen.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Die beiden Passwörter stimmen nicht überein.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Wird neu verschlüsselt…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Tresor-Passwort geändert.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Das Tresor-Passwort konnte nicht geändert werden. Versuchen Sie es erneut.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Abbrechen",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Tresor-Passwort ändern",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Ihr Tresor-Passwort wurde auf einem anderen Gerät geändert. Sperren Sie den Tresor, entsperren Sie ihn mit dem neuen Passwort und versuchen Sie es dann erneut.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Anzeigen",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Verbergen",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Tresor durchsuchen",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Tresore",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Alle",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Persönlich",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Für diese Website",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Alle Einträge",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Ergebnisse",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Für diese Website ist noch nichts gespeichert.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Kein Eintrag passt zu Ihrer Suche.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Ihr Tresor ist leer. Fügen Sie Ihre ersten Zugangsdaten hinzu.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Ohne Titel",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Nicht entschlüsselbar",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Neuer Eintrag",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Mehr",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Sperren",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Jetzt synchronisieren",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Vault im Web öffnen",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Einstellungen",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Abmelden",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Ausfüllen",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Auf dieser Seite ausfüllen",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Benutzername kopieren",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Passwort kopieren",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Code kopieren",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Notiz kopieren",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "$FIELD$ kopieren",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Website öffnen",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Bearbeiten",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Oben anheften",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Loslösen",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Zurück",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Speichern",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Aktualisieren",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Löschen",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Endgültig löschen",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Passwort erzeugen",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Neues Passwort",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Schließen",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "$SITE$ entfernen",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Ändern",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ kopiert",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Benutzername kopiert",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Passwort kopiert – wird in 45 s wieder gelöscht",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Bestätigungscode kopiert",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Notiz kopiert",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Gespeichert",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Gelöscht",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Ausgefüllt",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Starkes Passwort eingefügt",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Kopieren in die Zwischenablage nicht möglich.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Auf dieser Seite gibt es nichts auszufüllen.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Ihr Tresor konnte nicht geladen werden. Versuchen Sie es erneut.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Speichern nicht möglich. Versuchen Sie es erneut.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Das sieht nicht nach einem geheimen Schlüssel für Bestätigungscodes oder einem otpauth://-Link aus.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Eintrag",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Neuer Eintrag",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Eintrag bearbeiten",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Wird gespeichert…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Typ",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Zugangsdaten",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Bestätigungscode",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Sichere Notiz",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Name",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "z. B. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Benutzername",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Passwort",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Website",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Notizen",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Notiz",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Geheimer Schlüssel oder otpauth://-Link",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Aussteller",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Konto",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Tresor",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Tresor (verschieben nach)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Beim Verschieben wird der Eintrag für den anderen Tresor neu verschlüsselt.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Oben anheften",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Passwortgenerator",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Länge",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Großbuchstaben",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Ziffern",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Sonderzeichen",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Auf diesem Gerät mit einem sicheren Zufallsgenerator erzeugt. Leicht verwechselbare Zeichen (l, 1, O, 0) werden weggelassen.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Ausreichend",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Stark",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Hervorragend",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ Bit",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Mit Pabbel Vault ausfüllen",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Starkes Passwort verwenden",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Hier erzeugt, gespeichert, sobald Sie sich registrieren",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault ist gesperrt.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Melden Sie sich bei Pabbel Vault an, um dieses Formular auszufüllen.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Anmelden",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Keine gespeicherten Zugangsdaten für $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Keine Bestätigungscodes für $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Gespeichertes Passwort aktualisieren?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Aktualisiert „$NAME$“.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Entsperren Sie Pabbel Vault, um diese Zugangsdaten zu speichern",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Speichern in",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Nie für diese Website",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "In Pabbel Vault gespeichert",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Passwort aktualisiert",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Gesperrt",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Entsperrt",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Einstellungen",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Konto",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Nicht angemeldet",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Melden Sie sich an, um Passwörter auszufüllen und zu speichern.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Sicherheit",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Automatisch sperren",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Nach so langer Zeit ohne Nutzung des Tresors. Beim Schließen des Browsers wird der Tresor immer gesperrt.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Nach 1 Minute",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Nach $MINUTES$ Minuten",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Nur beim Schließen des Browsers",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Auf Websites",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Schaltfläche in Anmeldefeldern",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Die Schaltfläche von Pabbel Vault in dem Feld anzeigen, in das Sie gerade tippen.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Speichern von Zugangsdaten anbieten",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Nachfragen, wenn Sie sich mit einem Passwort anmelden, das noch nicht gespeichert ist oder sich geändert hat.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Bestätigungscode nach dem Ausfüllen kopieren",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Gibt es zu den Zugangsdaten einen passenden Bestätigungscode, wird er für den nächsten Schritt in die Zwischenablage gelegt und nach 45 Sekunden wieder gelöscht.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Bestätigungscodes automatisch eintragen",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Fragt eine Anmeldung nach dem Passwort nach einem Code, wird der passende Bestätigungscode eingetragen. Die Anmeldung bestätigen Sie selbst.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Bestätigungscode eingetragen",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Tastenkürzel",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L füllt die Zugangsdaten oder den Code für die aktuelle Seite aus.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Nie speichern auf",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Noch keine Websites. Wenn Sie bei einer Speicheranfrage „Nie für diese Website“ wählen, erscheint die Website hier.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Zugangsdaten für $SITE$ speichern?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Passwort eingetragen",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Passwort eingetragen · Bestätigungscode kopiert",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Zugangsdaten werden geladen",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Zugangsdaten konnten nicht geladen werden",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Erneut versuchen",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Entsperren, um diese Seite auszufüllen",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Website-Symbole anzeigen",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Jedes Symbol kommt direkt von der jeweiligen Website, niemals über Pabbel. Ist dies deaktiviert, zeigt die Liste stattdessen Buchstaben.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Neue E-Mail-Maske verwenden",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "E-Mails an sie landen in Ihrem Pabbel-Posteingang",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Ihre E-Mail-Maske für diese Website",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "E-Mail-Maske eingetragen",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "E-Mail-Maske konnte nicht erstellt werden",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Zu viele neue Masken in letzter Zeit. Versuchen Sie es später noch einmal.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "E-Mail-Maske · E-Mails landen in Ihrem Pabbel-Posteingang",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "E-Mail-Maske · pausiert, E-Mails an sie werden abgewiesen",
+    "description": "The same line when that mask is paused."
+  }
+}

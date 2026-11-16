@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Quản lý mật khẩu & 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Trình quản lý mật khẩu zero-knowledge. Điền mật khẩu và mã 2 bước, lưu thông tin đăng nhập mới và tạo mật khẩu mạnh.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Điền thông tin đăng nhập hoặc mã 2 bước cho trang này",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Điền thông tin đăng nhập bằng Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Tạo mật khẩu mạnh",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Khóa Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Mở Pabbel Vault trên web",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Mật khẩu của bạn, niêm phong an toàn.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Đăng nhập bằng tài khoản Pabbel. Mọi thứ trong kho đều được mã hóa ngay trên thiết bị này trước khi lưu.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Đăng nhập bằng Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Đang chờ Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Sẽ mở accounts.pabbel.com. Bạn không nhập mật khẩu ở đây.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Quyền riêng tư",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Chưa đăng nhập xong. Vui lòng thử lại.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Hãy thiết lập Vault trước",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ chưa có kho. Hãy tạo kho trên web (chỉ mất một phút), rồi quay lại đây.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Thiết lập trên web",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Đổi tài khoản",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Mở khóa kho của bạn",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Mật khẩu kho",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Mở khóa",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Đang mở khóa…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Mật khẩu kho không bao giờ rời khỏi thiết bị này.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Đó không phải mật khẩu kho.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Hiện chưa mở khóa được. Kiểm tra kết nối rồi thử lại.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Giữ mở khóa trên trình duyệt này",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Không cần mật khẩu ở đây trong 30 ngày. Bạn có thể gỡ trình duyệt này khỏi kho trên web bất cứ lúc nào.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Đã hết 30 ngày của trình duyệt này. Nhập mật khẩu một lần để tiếp tục giữ mở khóa.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Trình duyệt này không còn được tin cậy: trình duyệt đã bị gỡ, hoặc mật khẩu kho đã thay đổi. Hãy nhập mật khẩu.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Đã mở khóa, nhưng hiện chưa thể tin cậy trình duyệt này. Hãy thử lại trong Cài đặt.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Giữ mở khóa trên trình duyệt này",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Mở kho mà không cần mật khẩu trong 30 ngày. Pabbel giữ một nửa khóa và trình duyệt này giữ nửa còn lại, nên không bên nào tự mở được. Nếu mất máy tính này, hãy gỡ nó trong mục Trình duyệt tin cậy của kho trên web.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Bật đến $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Mở khóa kho trước để bật tùy chọn này.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Mật khẩu kho",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Đặt mật khẩu kho mới. Các thiết bị khác của bạn sẽ hỏi mật khẩu này, và các trình duyệt tin cậy phải được tin cậy lại.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Đổi",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Mật khẩu kho mới",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Xác nhận mật khẩu mới",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Dùng ít nhất 12 ký tự.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Hai mật khẩu không khớp nhau.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Đang mã hóa lại…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Đã đổi mật khẩu kho.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Không đổi được mật khẩu kho. Hãy thử lại.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Hủy",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Đổi mật khẩu kho",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Mật khẩu kho của bạn đã được đổi trên một thiết bị khác. Hãy khóa kho rồi mở khóa bằng mật khẩu mới, sau đó thử lại.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Hiện",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Ẩn",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Tìm trong kho",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Các kho",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Tất cả",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Cá nhân",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Cho trang này",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Tất cả mục",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Kết quả",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Chưa lưu gì cho trang này.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Không có mục nào khớp với tìm kiếm.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Kho của bạn đang trống. Hãy thêm mục đăng nhập đầu tiên.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Chưa đặt tên",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Không giải mã được",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Mục mới",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Tùy chọn khác",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Khóa",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Đồng bộ ngay",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Mở kho trên web",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Cài đặt",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Đăng xuất",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Điền",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Điền vào trang này",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Sao chép tên đăng nhập",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Sao chép mật khẩu",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Sao chép mã",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Sao chép ghi chú",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Sao chép $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Mở trang web",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Sửa",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Ghim lên đầu",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Bỏ ghim",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Quay lại",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Lưu",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Cập nhật",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Xóa",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Xóa vĩnh viễn",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Tạo mật khẩu",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Tạo mật khẩu khác",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Đóng",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Gỡ $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Thay đổi",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "Đã sao chép $FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Đã sao chép tên đăng nhập",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Đã sao chép mật khẩu — tự xóa sau 45 giây",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Đã sao chép mã 2 bước",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Đã sao chép ghi chú",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Đã lưu",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Đã xóa",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Đã điền",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Đã điền mật khẩu mạnh",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Không sao chép được vào bộ nhớ tạm.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Không có gì để điền trên trang này.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Không tải được kho của bạn. Hãy thử lại.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Không lưu được. Hãy thử lại.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Đây có vẻ không phải khóa thiết lập 2 bước hay liên kết otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Mục",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Mục mới",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Sửa mục",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Đang lưu…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Loại",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Đăng nhập",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Mã 2 bước",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Ghi chú bảo mật",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Tên",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "ví dụ: Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Tên đăng nhập",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Mật khẩu",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Trang web",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Ghi chú",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Nội dung ghi chú",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Khóa thiết lập hoặc liên kết otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Bên cấp",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Tài khoản",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Kho",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Kho (chuyển sang)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Di chuyển sẽ mã hóa lại mục này cho kho kia.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Ghim lên đầu",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Trình tạo mật khẩu",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Độ dài",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Chữ hoa",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Chữ số",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Ký hiệu",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Được tạo ngay trên thiết bị này bằng bộ sinh số ngẫu nhiên an toàn. Các ký tự dễ nhầm (l, 1, O, 0) đã được loại bỏ.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Khá",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Mạnh",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Rất mạnh",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bit",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Điền bằng Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Dùng mật khẩu mạnh",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Tạo tại đây, lưu khi bạn đăng ký",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault đang khóa.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Đăng nhập Pabbel Vault để điền biểu mẫu này.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Đăng nhập",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Chưa lưu thông tin đăng nhập nào cho $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Không có mã 2 bước nào cho $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Cập nhật mật khẩu đã lưu?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Cập nhật “$NAME$”.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Mở khóa Pabbel Vault để lưu thông tin đăng nhập này",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Lưu vào",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Không bao giờ lưu cho trang này",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Đã lưu vào Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Đã cập nhật mật khẩu",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Đã khóa",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Đã mở khóa",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Cài đặt",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Tài khoản",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Chưa đăng nhập",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Đăng nhập để điền và lưu mật khẩu.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Bảo mật",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Tự động khóa",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Sau khoảng thời gian này mà không dùng kho. Kho luôn khóa khi bạn đóng trình duyệt.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Sau 1 phút",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Sau $MINUTES$ phút",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Chỉ khi đóng trình duyệt",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Trên các trang web",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Nút trong ô đăng nhập",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Hiện nút Pabbel Vault bên trong ô bạn đang nhập.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Đề nghị lưu thông tin đăng nhập",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Hỏi sau khi bạn đăng nhập bằng một mật khẩu chưa được lưu hoặc vừa thay đổi.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Sao chép mã 2 bước sau khi điền",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Khi mục đăng nhập có mã 2 bước tương ứng, mã sẽ được chép vào bộ nhớ tạm cho bước tiếp theo. Tự xóa sau 45 giây.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Tự động nhập mã 2 bước",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Khi trang đăng nhập hỏi mã sau mật khẩu, mã 2 bước tương ứng sẽ được nhập vào. Bạn vẫn tự xác nhận việc đăng nhập.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Đã điền mã 2 bước",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Phím tắt",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L điền thông tin đăng nhập hoặc mã cho trang bạn đang mở.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Không bao giờ lưu trên",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Chưa có trang nào. Chọn “Không bao giờ lưu cho trang này” trên lời nhắc lưu để thêm trang vào đây.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Lưu thông tin đăng nhập $SITE$ của bạn?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Đã điền mật khẩu",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Đã điền mật khẩu · đã sao chép mã 2 bước",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Đang tải thông tin đăng nhập",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Không tải được thông tin đăng nhập",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Thử lại",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Mở khóa để điền trang này",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Hiện biểu tượng trang web",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Mỗi biểu tượng được lấy trực tiếp từ chính trang web đó, không bao giờ qua Pabbel. Khi tắt, danh sách sẽ hiện chữ cái.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Dùng mặt nạ email mới",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Thư gửi đến sẽ vào hộp thư Pabbel của bạn",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Mặt nạ email của bạn cho trang web này",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "Đã điền mặt nạ email",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Không thể tạo mặt nạ email",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Gần đây có quá nhiều mặt nạ mới. Hãy thử lại sau.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "Mặt nạ email · thư sẽ vào hộp thư Pabbel của bạn",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "Mặt nạ email · đã tạm dừng, thư gửi đến sẽ bị trả lại",
+    "description": "The same line when that mask is paused."
+  }
+}

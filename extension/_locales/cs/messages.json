@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Správce hesel a 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Správce hesel s nulovou znalostí. Vyplňuje hesla a kódy 2FA, ukládá nové přihlašovací údaje a generuje silná hesla.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Vyplnit přihlašovací údaje nebo kód 2FA na této stránce",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Vyplnit přihlašovací údaje pomocí Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Vygenerovat silné heslo",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Zamknout Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Otevřít Pabbel Vault na webu",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Vaše hesla pod zámkem.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Přihlaste se svým účtem Pabbel. Vše ve vašem trezoru se před uložením zašifruje přímo v tomto zařízení.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Přihlásit se přes Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Čekáme na Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Otevře se accounts.pabbel.com. Heslo se sem nezadává.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Ochrana soukromí",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Přihlášení se nedokončilo. Zkuste to prosím znovu.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Nejdřív si nastavte Vault",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ zatím nemá trezor. Vytvořte si ho na webu – zabere to minutku – a pak se sem vraťte.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Nastavit na webu",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Přepnout účet",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Odemkněte svůj trezor",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Heslo k trezoru",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Odemknout",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Odemykání…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Heslo k trezoru nikdy neopustí toto zařízení.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Toto není heslo k vašemu trezoru.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Teď se nepodařilo odemknout. Zkontrolujte připojení a zkuste to znovu.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Nechat odemčené v tomto prohlížeči",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "30 dní tu nebudete potřebovat heslo. Tento prohlížeč můžete kdykoli odebrat ve Vaultu na webu.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "30 dní pro tento prohlížeč uplynulo. Jednou zadejte heslo, aby zůstal odemčený.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Tento prohlížeč už není důvěryhodný: byl odebrán, nebo se změnilo heslo k trezoru. Zadejte heslo.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Odemčeno, ale tento prohlížeč teď nešlo nastavit jako důvěryhodný. Zkuste to znovu v Nastavení.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Nechat odemčené v tomto prohlížeči",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Otevírá trezor 30 dní bez hesla. Pabbel uchovává polovinu klíče a tento prohlížeč druhou polovinu, takže ani jeden ho sám otevřít nemůže. Pokud tento počítač ztratíte, odeberte ho ve Vaultu na webu v seznamu „Důvěryhodné prohlížeče“.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Zapnuto do $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Pro zapnutí nejdřív odemkněte trezor.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Heslo k trezoru",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Nastavte nové heslo k trezoru. Vaše ostatní zařízení si ho vyžádají a důvěryhodné prohlížeče bude potřeba znovu nastavit jako důvěryhodné.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Změnit",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Nové heslo k trezoru",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Potvrzení nového hesla",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Použijte alespoň 12 znaků.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Hesla se neshodují.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Opětovné šifrování…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Heslo k trezoru bylo změněno.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Heslo k trezoru se nepodařilo změnit. Zkuste to znovu.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Zrušit",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Změnit heslo k trezoru",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Heslo k trezoru bylo změněno na jiném zařízení. Zamkněte trezor, odemkněte ho novým heslem a zkuste to znovu.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Zobrazit",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Skrýt",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Hledat v trezoru",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Trezory",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Vše",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Osobní",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Pro tento web",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Všechny položky",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Výsledky",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Pro tento web zatím nemáte nic uloženo.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Hledání neodpovídá žádná položka.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Váš trezor je prázdný. Přidejte první přihlašovací údaje.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Bez názvu",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Nelze dešifrovat",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Nová položka",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Další",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Zamknout",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Synchronizovat",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Otevřít Vault na webu",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Nastavení",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Odhlásit se",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Vyplnit",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Vyplnit na této stránce",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Kopírovat uživatelské jméno",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Kopírovat heslo",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Kopírovat kód 2FA",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Kopírovat poznámku",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Kopírovat: $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Otevřít web",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Upravit",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Připnout nahoru",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Odepnout",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Zpět",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Uložit",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Aktualizovat",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Smazat",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Smazat natrvalo",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Vygenerovat heslo",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Jiné heslo",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Zavřít",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Odebrat $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Změnit",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "Zkopírováno: $FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Uživatelské jméno zkopírováno",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Heslo zkopírováno – za 45 s se vymaže",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Kód 2FA zkopírován",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Poznámka zkopírována",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Uloženo",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Smazáno",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Vyplněno",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Silné heslo vyplněno",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Do schránky se nepodařilo kopírovat.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Na této stránce není co vyplnit.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Trezor se nepodařilo načíst. Zkuste to znovu.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Uložení se nezdařilo. Zkuste to znovu.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Tohle nevypadá jako tajný klíč 2FA ani odkaz otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Položka",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Nová položka",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Úprava položky",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Ukládání…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Typ",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Přihlašovací údaje",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Kód 2FA",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Zabezpečená poznámka",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Název",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "např. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Uživatelské jméno",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Heslo",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Web",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Poznámky",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Poznámka",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Tajný klíč nebo odkaz otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Vydavatel",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Účet",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Trezor",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Trezor (přesunout do)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Přesunutím se položka znovu zašifruje pro druhý trezor.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Připnout nahoru",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Generátor hesel",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Délka",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Velká písmena",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Číslice",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Symboly",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Vytvořeno v tomto zařízení bezpečným generátorem náhodných čísel. Snadno zaměnitelné znaky (l, 1, O, 0) jsou vynechány.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Ucházející",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Silné",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Výborné",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bitů",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Vyplnit pomocí Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Použít silné heslo",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Vytvoří se tady, uloží se, až se zaregistrujete",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault je zamčený.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Pro vyplnění tohoto formuláře se přihlaste do Pabbel Vault.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Přihlásit se",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Pro $SITE$ nemáte uložené žádné přihlašovací údaje.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Pro $SITE$ nemáte žádné kódy 2FA.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Aktualizovat uložené heslo?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Aktualizuje se „$NAME$“.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Pro uložení přihlašovacích údajů odemkněte Pabbel Vault",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Uložit do",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Pro tento web nikdy",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Uloženo do Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Heslo aktualizováno",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Zamčeno",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Odemčeno",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Nastavení",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Účet",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Nepřihlášeno",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Přihlaste se, abyste mohli vyplňovat a ukládat hesla.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Zabezpečení",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Automaticky zamknout",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Po této době bez používání trezoru. Při zavření prohlížeče se trezor zamkne vždy.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Po 1 minutě",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Po $MINUTES$ minutách",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Jen při zavření prohlížeče",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Na webech",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Tlačítko v přihlašovacích polích",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Zobrazovat tlačítko Pabbel Vault v poli, do kterého právě píšete.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Nabízet uložení přihlašovacích údajů",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Zeptat se, když se přihlásíte heslem, které ještě není uložené nebo se změnilo.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Po vyplnění zkopírovat kód 2FA",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Pokud k přihlašovacím údajům patří kód 2FA, vloží se do schránky pro další krok. Po 45 sekundách se vymaže.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Automaticky zadávat kódy 2FA",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Když přihlášení po hesle požádá o kód, zadá se do něj odpovídající kód 2FA. Přihlášení potvrzujete sami.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Kód 2FA vyplněn",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Klávesová zkratka",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L vyplní přihlašovací údaje nebo kód 2FA na stránce, kde právě jste.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Nikdy neukládat na",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Zatím žádné weby. Přidáte je volbou „Pro tento web nikdy“ v nabídce uložení.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Uložit přihlášení pro $SITE$?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Heslo vyplněno",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Heslo vyplněno · kód 2FA zkopírován",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Načítání přihlašovacích údajů",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Přihlašovací údaje se nepodařilo načíst",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Zkusit znovu",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Odemkněte a vyplňte tuto stránku",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Zobrazovat ikony webů",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Každá ikona přichází přímo z daného webu, nikdy přes Pabbel. Když je volba vypnutá, seznam místo nich ukazuje písmena.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Použít novou e-mailovou masku",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Pošta na ni přijde do vaší schránky Pabbel",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Vaše e-mailová maska pro tento web",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "E-mailová maska vyplněna",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "E-mailovou masku se nepodařilo vytvořit",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Příliš mnoho nových masek v poslední době. Zkuste to později.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "E-mailová maska · pošta chodí do vaší schránky Pabbel",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "E-mailová maska · pozastavena, pošta na ni se vrací odesílateli",
+    "description": "The same line when that mask is paused."
+  }
+}

@@ -1,0 +1,41 @@
+Pabbel Vault client
+Copyright (C) 2026 Sobhi Ashraf Al-Firani
+
+The code in this repository (crypto/ and extension/, apart from the third-party
+material listed below) is licensed under the GNU General Public License,
+version 3 only. See LICENSE.
+
+The Pabbel name and logo (extension/static/icons) are not covered by that
+licence. A fork should use its own name and icons.
+
+Third-party material included in, or bundled into, this repository
+----------------------------------------------------------------
+
+1. Preact 10.29.8 (MIT)
+   https://preactjs.com - Copyright (c) 2015-present Jason Miller
+   Not copied into the repository: installed from npm by `npm ci` (version and
+   hash pinned in extension/package-lock.json) and bundled into the built
+   extension. Full licence text: extension/static/licenses/THIRD-PARTY-NOTICES.txt,
+   which is also shipped inside every built extension.
+
+2. Lucide icons (ISC)
+   https://lucide.dev - Copyright (c) 2026 Lucide Icons and Contributors
+   The path data of the 31 icons listed in extension/src/shared/lucide.ts is
+   copied from lucide-react. Licence text: extension/static/licenses/THIRD-PARTY-NOTICES.txt.
+
+3. Public Suffix List (MPL-2.0)
+   https://publicsuffix.org - extension/vendor/public_suffix_list.dat,
+   unmodified (list version 2026-10-28_13-15-55_UTC, upstream commit
+   9dfbe81931367b3f0af21035c36ae7eeb830dd88). Used as data, to match saved logins
+   by registrable domain, and bundled into the built extension. The MPL
+   permits this data file to be distributed together with GPL-3.0 code (MPL 2.0,
+   section 3.3). Licence: https://mozilla.org/MPL/2.0/
+
+4. Fonts (SIL Open Font License 1.1), extension/static/fonts, each file unmodified
+   - Fraunces - Copyright 2018 The Fraunces Project Authors (https://github.com/undercasetype/Fraunces)
+   - Geist and Geist Mono - Copyright (c) 2023 Vercel, in collaboration with basement.studio (https://github.com/vercel/geist-font)
+   - Tajawal - Copyright 2018 Boutros International (https://github.com/googlefonts/tajawal)
+   The fonts stay under the OFL; the licence text is in extension/static/licenses/fonts-OFL.txt.
+
+Development-only dependencies (TypeScript, esbuild, Vitest, @types/*) are
+installed by npm, are not part of the built extension, and keep their own licences.

@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: مدیر رمز عبور و کد دومرحله‌ای",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "مدیر رمز عبور با رمزنگاری دانش‌صفر. رمزها و کدهای دومرحله‌ای را پر می‌کند، اطلاعات ورود تازه را ذخیره می‌کند و رمزهای قوی می‌سازد.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "پر کردن اطلاعات ورود یا کد دومرحله‌ای این صفحه",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "پر کردن اطلاعات ورود با Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "ساخت یک رمز عبور قوی",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "قفل کردن Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "باز کردن Pabbel Vault در وب",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "رمزهای شما، دربسته و امن.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "با حساب Pabbel خود وارد شوید. هر چه در گاوصندوق شماست، پیش از ذخیره‌شدن روی همین دستگاه رمزنگاری می‌شود.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "ورود با Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "در انتظار Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "صفحه‌ی accounts.pabbel.com باز می‌شود. اینجا هیچ رمزی تایپ نمی‌شود.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "حریم خصوصی",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "ورود کامل نشد. لطفاً دوباره تلاش کنید.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "اول گاوصندوق خود را بسازید",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "برای $EMAIL$ هنوز گاوصندوقی ساخته نشده است. یکی در وب بسازید (فقط یک دقیقه طول می‌کشد) و سپس به اینجا برگردید.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "راه‌اندازی در وب",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "تغییر حساب",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "قفل گاوصندوق را باز کنید",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "رمز گاوصندوق",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "باز کردن قفل",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "در حال باز کردن قفل…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "رمز گاوصندوق شما هرگز از این دستگاه خارج نمی‌شود.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "این رمز گاوصندوق نیست.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "الان قفل باز نشد. اتصال خود را بررسی کنید و دوباره تلاش کنید.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "قفل گاوصندوق در این مرورگر باز بماند",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "تا 30 روز اینجا رمز لازم نیست. هر وقت بخواهید می‌توانید این مرورگر را از گاوصندوق در وب حذف کنید.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "30 روزِ این مرورگر تمام شده است. یک بار رمز را وارد کنید تا قفلش باز بماند.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "این مرورگر دیگر مورد اعتماد نیست: یا حذف شده یا رمز گاوصندوق شما تغییر کرده است. رمز خود را وارد کنید.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "قفل باز شد، اما الان نشد این مرورگر را مورد اعتماد قرار داد. در تنظیمات دوباره تلاش کنید.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "قفل گاوصندوق در این مرورگر باز بماند",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "گاوصندوق را تا 30 روز بدون رمز باز می‌کند. نیمی از کلید نزد Pabbel می‌ماند و نیم دیگر در این مرورگر، پس هیچ‌کدام به‌تنهایی نمی‌تواند آن را باز کند. اگر این رایانه گم شد، آن را از «مرورگرهای مورد اعتماد» در گاوصندوق در وب حذف کنید.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "فعال تا $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "برای روشن کردن این گزینه، اول قفل گاوصندوق را باز کنید.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "رمز گاوصندوق",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "یک رمز جدید برای گاوصندوق تعیین کنید. دستگاه‌های دیگرتان آن را می‌خواهند و مرورگرهای مورد اعتماد باید دوباره مورد اعتماد قرار گیرند.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "تغییر",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "رمز جدید گاوصندوق",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "تکرار رمز جدید",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "دست‌کم 12 نویسه وارد کنید.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "دو رمز یکسان نیستند.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "در حال رمزنگاری دوباره…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "رمز گاوصندوق تغییر کرد.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "رمز گاوصندوق تغییر نکرد. دوباره تلاش کنید.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "لغو",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "تغییر رمز گاوصندوق",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "رمز گاوصندوق شما روی دستگاه دیگری تغییر کرده است. گاوصندوق را قفل کنید و با رمز جدید قفلش را باز کنید، سپس دوباره تلاش کنید.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "نمایش",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "پنهان کردن",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "جست‌وجو در گاوصندوق",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "گاوصندوق‌ها",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "همه",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "شخصی",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "برای این سایت",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "همه‌ی موارد",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "نتایج",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "هنوز چیزی برای این سایت ذخیره نشده است.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "هیچ موردی با جست‌وجوی شما مطابقت ندارد.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "گاوصندوق شما خالی است. اولین اطلاعات ورود خود را اضافه کنید.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "بی‌نام",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "رمزگشایی نمی‌شود",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "مورد جدید",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "بیشتر",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "قفل کردن",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "همگام‌سازی",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "باز کردن گاوصندوق در وب",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "تنظیمات",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "خروج",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "پر کردن",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "پر کردن در این صفحه",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "کپی نام کاربری",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "کپی رمز عبور",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "کپی کد",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "کپی یادداشت",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "کپی $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "باز کردن وب‌سایت",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "ویرایش",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "سنجاق کردن در بالا",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "برداشتن سنجاق",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "بازگشت",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "ذخیره",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "به‌روزرسانی",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "حذف",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "حذف برای همیشه",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "ساخت رمز عبور",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "رمز عبور جدید",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "بستن",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "حذف $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "تغییر",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ کپی شد",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "نام کاربری کپی شد",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "رمز عبور کپی شد — پس از 45 ثانیه پاک می‌شود",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "کد دومرحله‌ای کپی شد",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "یادداشت کپی شد",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "ذخیره شد",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "حذف شد",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "پر شد",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "رمز عبور قوی وارد شد",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "کپی در کلیپ‌بورد ممکن نشد.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "در این صفحه چیزی برای پر کردن نیست.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "گاوصندوق شما بارگذاری نشد. دوباره تلاش کنید.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "ذخیره نشد. دوباره تلاش کنید.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "این شبیه کلید راه‌اندازی دومرحله‌ای یا پیوند otpauth:// نیست.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "مورد",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "مورد جدید",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "ویرایش مورد",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "در حال ذخیره…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "نوع",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "اطلاعات ورود",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "کد دومرحله‌ای",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "یادداشت امن",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "نام",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "مثلاً شرکت آفتاب",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "نام کاربری",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "رمز عبور",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "وب‌سایت",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "یادداشت‌ها",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "یادداشت",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "کلید راه‌اندازی یا پیوند otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "صادرکننده",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "حساب",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "گاوصندوق",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "گاوصندوق (انتقال به)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "انتقال، مورد را برای گاوصندوق دیگر دوباره رمزنگاری می‌کند.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "سنجاق در بالا",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "تولید رمز عبور",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "طول",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "حروف بزرگ",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "اعداد",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "نمادها",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "روی همین دستگاه با یک مولد تصادفی امن ساخته می‌شود. نویسه‌های شبیه به هم (l، 1، O، 0) کنار گذاشته می‌شوند.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "متوسط",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "قوی",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "عالی",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ بیت",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "پر کردن با Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "استفاده از یک رمز عبور قوی",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "همین‌جا ساخته می‌شود و هنگام ثبت‌نام ذخیره می‌شود",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault قفل است.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "برای پر کردن این فرم وارد Pabbel Vault شوید.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "ورود",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "هیچ اطلاعات ورودی برای $SITE$ ذخیره نشده است.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "هیچ کد دومرحله‌ای برای $SITE$ وجود ندارد.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "رمز عبور ذخیره‌شده به‌روز شود؟",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "«$NAME$» به‌روز می‌شود.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "برای ذخیره‌ی این اطلاعات ورود، قفل Pabbel Vault را باز کنید",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "ذخیره در",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "هرگز برای این سایت",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "در Pabbel Vault ذخیره شد",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "رمز عبور به‌روز شد",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "قفل‌شده",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "باز",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "تنظیمات",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "حساب",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "وارد نشده‌اید",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "برای پر کردن و ذخیره‌ی رمزها وارد شوید.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "امنیت",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "قفل خودکار",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "پس از این مدت استفاده‌نکردن از گاوصندوق. گاوصندوق همیشه با بسته‌شدن مرورگر قفل می‌شود.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "پس از 1 دقیقه",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "پس از $MINUTES$ دقیقه",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "فقط وقتی مرورگر بسته می‌شود",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "در وب‌سایت‌ها",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "دکمه در فیلدهای ورود",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "دکمه‌ی Pabbel Vault را داخل فیلدی که در آن تایپ می‌کنید نشان می‌دهد.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "پیشنهاد ذخیره‌ی اطلاعات ورود",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "پس از ورود با رمزی که هنوز ذخیره نشده یا تغییر کرده است، می‌پرسد.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "کپی کد دومرحله‌ای پس از پر کردن",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "وقتی اطلاعات ورود یک کد دومرحله‌ای مرتبط دارد، آن را برای مرحله‌ی بعد در کلیپ‌بورد می‌گذارد. پس از 45 ثانیه پاک می‌شود.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "وارد کردن خودکار کدهای دومرحله‌ای",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "وقتی ورود پس از گذرواژه کدی می‌خواهد، کد دومرحله‌ای مرتبط در آن وارد می‌شود. تأیید ورود همچنان با خود شماست.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "کد دومرحله‌ای وارد شد",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "میان‌بر صفحه‌کلید",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "با Ctrl+Shift+L اطلاعات ورود یا کد صفحه‌ای که در آن هستید پر می‌شود.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "سایت‌های مستثنا از ذخیره",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "هنوز سایتی نیست. انتخاب «هرگز برای این سایت» در پیام ذخیره، آن سایت را به اینجا اضافه می‌کند.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "ورود $SITE$ ذخیره شود؟",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "گذرواژه وارد شد",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "گذرواژه وارد شد · کد دومرحله‌ای کپی شد",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "در حال بارگذاری اطلاعات ورود",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "اطلاعات ورود بارگذاری نشد",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "دوباره تلاش کنید",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "برای پر کردن این صفحه قفل را باز کنید",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "نمایش آیکون وب‌سایت‌ها",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "هر آیکون مستقیماً از همان وب‌سایت می‌آید و هرگز از Pabbel نمی‌گذرد. اگر خاموش باشد، فهرست به‌جای آن حروف را نشان می‌دهد.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "استفاده از ماسک ایمیل جدید",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "ایمیل‌هایی که به آن فرستاده شود به صندوق ورودی Pabbel شما می‌رسد",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "ماسک ایمیل شما برای این سایت",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "ماسک ایمیل وارد شد",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "ماسک ایمیل ساخته نشد",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "اخیراً ماسک‌های جدید زیادی ساخته‌اید. بعداً دوباره امتحان کنید.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "ماسک ایمیل · ایمیل‌ها به صندوق ورودی Pabbel شما می‌رسد",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "ماسک ایمیل · متوقف‌شده، ایمیل‌هایی که به آن فرستاده شود برگشت می‌خورد",
+    "description": "The same line when that mask is paused."
+  }
+}

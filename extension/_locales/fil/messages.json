@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Password Manager at 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Zero-knowledge na password manager. Punan ang password at 2-step code, i-save ang bagong login at bumuo ng malalakas na password.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Punan ang login o 2-step code para sa page na ito",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Punan ang login gamit ang Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Bumuo ng malakas na password",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "I-lock ang Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Buksan ang Pabbel Vault sa web",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Ang mga password mo, selyado.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Mag-sign in gamit ang Pabbel account mo. Ine-encrypt sa device na ito ang lahat ng nasa vault mo bago ito maitago.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Mag-sign in gamit ang Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Hinihintay ang Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Bubuksan ang accounts.pabbel.com. Walang password na tina-type dito.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Privacy",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Hindi natapos ang pag-sign in. Pakisubukan ulit.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "I-set up muna ang Vault",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "Wala pang vault ang $EMAIL$. Gumawa ng isa sa web - isang minuto lang - tapos bumalik dito.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "I-set up sa web",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Magpalit ng account",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "I-unlock ang vault mo",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Password ng vault",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "I-unlock",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Ina-unlock…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Hindi kailanman umaalis sa device na ito ang password ng vault mo.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Hindi iyan ang password ng vault mo.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Hindi ma-unlock sa ngayon. Suriin ang koneksyon mo at subukan ulit.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Manatiling naka-unlock sa browser na ito",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Walang password dito sa loob ng 30 araw. Puwede mong alisin ang browser na ito sa web vault anumang oras.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Tapos na ang 30 araw ng browser na ito. Ilagay ang password mo nang isang beses para manatili itong naka-unlock.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Hindi na pinagkakatiwalaan ang browser na ito: inalis ito, o nagbago ang password ng vault mo. Ilagay ang password mo.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Na-unlock, pero hindi mapagkatiwalaan ang browser na ito sa ngayon. Subukan ulit sa Mga setting.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Manatiling naka-unlock sa browser na ito",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Binubuksan ang vault nang walang password sa loob ng 30 araw. Hawak ng Pabbel ang kalahati ng key at ng browser na ito ang kabila, kaya walang makakapagbukas nito nang mag-isa. Kapag nawala ang computer na ito, alisin ito sa Mga pinagkakatiwalaang browser sa web vault.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Naka-on hanggang $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "I-unlock muna ang vault para i-on ito.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Password ng vault",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Magtakda ng bagong password ng vault. Hihingin ito ng iba mong device, at kailangang pagkatiwalaan ulit ang mga pinagkakatiwalaang browser.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Palitan",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Bagong password ng vault",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Kumpirmahin ang bagong password",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Gumamit ng hindi bababa sa 12 character.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Hindi magkatugma ang dalawang password.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Ine-encrypt muli…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Napalitan ang password ng vault.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Hindi mapalitan ang password ng vault. Subukan ulit.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Kanselahin",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Palitan ang password ng vault",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Pinalitan ang password ng vault mo sa ibang device. I-lock ang vault at i-unlock ito gamit ang bagong password, saka subukan ulit.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Ipakita",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Itago",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Maghanap sa vault mo",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Mga vault",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Lahat",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Personal",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Para sa site na ito",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Lahat ng item",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Mga resulta",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Wala pang naka-save para sa site na ito.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Walang item na tumutugma sa hinanap mo.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Walang laman ang vault mo. Idagdag ang una mong login.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Walang pamagat",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Hindi ma-decrypt",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Bagong item",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Higit pa",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "I-lock",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "I-sync ngayon",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Buksan ang web vault",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Mga setting",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Mag-sign out",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Punan",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Punan sa page na ito",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Kopyahin ang username",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Kopyahin ang password",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Kopyahin ang code",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Kopyahin ang note",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Kopyahin ang $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Buksan ang website",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "I-edit",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "I-pin sa itaas",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "I-unpin",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Bumalik",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "I-save",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "I-update",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "I-delete",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "I-delete nang tuluyan",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Bumuo ng password",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Bagong password",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Isara",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Alisin ang $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Palitan",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "Nakopya ang $FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Nakopya ang username",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Nakopya ang password - mabubura sa loob ng 45 segundo",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Nakopya ang 2-step code",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Nakopya ang note",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Na-save",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Na-delete",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Napunan",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Napunan ng malakas na password",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Hindi makopya sa clipboard.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Walang mapupunan sa page na ito.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Hindi ma-load ang vault mo. Subukan ulit.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Hindi ma-save. Subukan ulit.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Mukhang hindi iyan 2-step setup key o otpauth:// link.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Item",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Bagong item",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "I-edit ang item",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Sine-save…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Uri",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Login",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "2-step code",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Ligtas na note",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Pangalan",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "hal. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Username",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Password",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Website",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Mga note",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Note",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Setup key o otpauth:// link",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Issuer",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Account",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Vault",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Vault (ilipat sa)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Ang paglipat ay muling nag-e-encrypt ng item para sa kabilang vault.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "I-pin sa itaas",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Tagabuo ng password",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Haba",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Malalaking titik",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Mga numero",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Mga simbolo",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Ginawa sa device na ito gamit ang secure na random generator. Hindi isinasama ang magkakamukhang character (l, 1, O, 0).",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Katamtaman",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Malakas",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Napakalakas",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bit",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Punan gamit ang Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Gumamit ng malakas na password",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Ginawa rito, mase-save kapag nag-sign up ka",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Naka-lock ang Pabbel Vault.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Mag-sign in sa Pabbel Vault para punan ang form na ito.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Mag-sign in",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Walang naka-save na login para sa $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Walang 2-step code para sa $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "I-update ang naka-save na password?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Ina-update ang “$NAME$”.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "I-unlock ang Pabbel Vault para i-save ang login na ito",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "I-save sa",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Huwag kailanman sa site na ito",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Na-save sa Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Na-update ang password",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Naka-lock",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Naka-unlock",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Mga setting",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Account",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Hindi naka-sign in",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Mag-sign in para punan at i-save ang mga password.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Seguridad",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Awtomatikong mag-lock",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Pagkalipas ng ganitong tagal na hindi ginagamit ang vault. Laging nala-lock ang vault kapag isinara ang browser.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Pagkalipas ng 1 minuto",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Pagkalipas ng $MINUTES$ minuto",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Kapag isinara lang ang browser",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Sa mga website",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Button sa mga login field",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Ipakita ang button ng Pabbel Vault sa loob ng field kung saan ka nagta-type.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Mag-alok na i-save ang mga login",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Magtanong pagkatapos mong mag-sign in gamit ang password na hindi pa naka-save, o nagbago na.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Kopyahin ang 2-step code pagkatapos punan",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Kapag may katugmang 2-step code ang isang login, ilalagay ito sa clipboard para sa susunod na hakbang. Mabubura pagkalipas ng 45 segundo.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Kusang i-type ang mga 2-step code",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Kapag humingi ng code ang sign-in pagkatapos ng password, ita-type doon ang katugmang 2-step code. Ikaw pa rin ang magkukumpirma ng sign-in.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Napunan ang 2-step code",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Shortcut sa keyboard",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Pinupunan ng Ctrl+Shift+L ang login o code para sa page na kinaroroonan mo.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Huwag kailanman mag-save sa",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Wala pang site. Kapag pinili mo ang “Huwag kailanman sa site na ito” sa isang save prompt, madaragdag ito rito.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "I-save ang login mo sa $SITE$?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Napunan ang password",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Napunan ang password · nakopya ang 2-step code",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Nilo-load ang mga login mo",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Hindi ma-load ang mga login mo",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Subukan ulit",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "I-unlock para mapunan ang page na ito",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Ipakita ang mga icon ng website",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Direktang galing sa website ang bawat icon, hindi kailanman dumadaan sa Pabbel. Kapag naka-off, mga letra ang ipapakita ng listahan.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Gumamit ng bagong email mask",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Mapupunta sa iyong Pabbel inbox ang mail na ipapadala rito",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Ang email mask mo para sa site na ito",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "Nailagay na ang email mask",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Hindi makagawa ng email mask",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Masyadong maraming bagong mask kamakailan. Subukan ulit mamaya.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "Email mask · dumarating ang mail sa iyong Pabbel inbox",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "Email mask · naka-pause, nagba-bounce ang mail na ipapadala rito",
+    "description": "The same line when that mask is paused."
+  }
+}

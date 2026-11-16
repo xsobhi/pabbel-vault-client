@@ -1,0 +1,27 @@
+/* The options page: a single column of cards on warm paper. */
+body.options-page { min-height: 100vh;
+  background: radial-gradient(80% 40% at 50% -5%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 60%), var(--paper); }
+.options { max-width: 640px; margin: 0 auto; padding: 48px 24px 64px; display: grid; gap: 18px; }
+.opt-head { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+.opt-head svg { border-radius: 11px; box-shadow: 0 12px 26px -14px var(--accent); }
+.opt-head .display { font-size: 34px; margin-top: 4px; }
+.opt-card { border: 1px solid var(--line); border-radius: 16px; background: var(--card); padding: 6px 18px 12px; }
+.opt-card .section { padding-top: 14px; }
+.opt-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px dashed var(--line); cursor: default; }
+.opt-card .section + .opt-row { border-top: 0; }
+.opt-row > span:first-child { display: grid; gap: 2px; min-width: 0; }
+.opt-row b { font-weight: 600; font-size: 14px; overflow-wrap: anywhere; }
+.opt-row small { color: var(--muted); font-size: 12.5px; }
+.opt-row select { width: auto; min-width: 200px; }
+.opt-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+label.opt-row { cursor: pointer; }
+.opt-form { display: grid; gap: 10px; padding: 4px 0 12px; }
+.opt-form label { display: grid; gap: 4px; }
+.opt-form input { height: 38px; border: 1px solid var(--input); border-radius: 9px; background: var(--card); padding: 0 11px; font: 400 14px var(--font-text); color: var(--ink); }
+.opt-form input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent); }
+.opt-link { display: inline-flex; align-items: center; gap: 8px; margin: 4px 0 6px; font-weight: 600; text-decoration: none; }
+.never { list-style: none; margin: 0; padding: 0; }
+.never li { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; border-top: 1px dashed var(--line); font-family: var(--font-mono); font-size: 13px; }
+.pad { padding: 4px 0 8px; margin: 0; }
+.opt-foot { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; padding: 0 4px; }
+.opt-foot a { color: var(--muted); }

@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Manager de parole și 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Manager de parole zero-knowledge: completează parole și coduri în doi pași, salvează autentificări noi, generează parole puternice.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Completează autentificarea sau codul în doi pași pe această pagină",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Completează autentificarea cu Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Generează o parolă puternică",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Blochează Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Deschide Pabbel Vault pe web",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Parolele tale, sub cheie.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Conectează-te cu contul tău Pabbel. Tot ce e în seiful tău e criptat pe acest dispozitiv înainte de a fi stocat.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Conectează-te cu Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Se așteaptă Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Se deschide accounts.pabbel.com. Aici nu introduci nicio parolă.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Confidențialitate",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Conectarea nu s-a finalizat. Încearcă din nou.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Configurează mai întâi Vault",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ nu are încă un seif. Creează unul pe web – durează un minut – apoi revino aici.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Configurează pe web",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Schimbă contul",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Deblochează-ți seiful",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Parola seifului",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Deblochează",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Se deblochează…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Parola seifului nu părăsește niciodată acest dispozitiv.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Aceasta nu este parola seifului.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Nu s-a putut debloca acum. Verifică-ți conexiunea și încearcă din nou.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Păstrează seiful deblocat în acest browser",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Fără parolă aici timp de 30 de zile. Poți elimina oricând acest browser din seiful de pe web.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Cele 30 de zile ale acestui browser au expirat. Introdu parola o dată ca să rămână deblocat.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Acest browser nu mai este de încredere: a fost eliminat sau parola seifului s-a schimbat. Introdu parola.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Deblocat, dar acest browser nu a putut fi marcat acum ca de încredere. Încearcă din nou din Setări.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Păstrează seiful deblocat în acest browser",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Deschide seiful fără parolă timp de 30 de zile. Pabbel păstrează o jumătate din cheie, iar acest browser cealaltă jumătate, așa că niciunul nu îl poate deschide singur. Dacă pierzi acest computer, elimină-l din „Browsere de încredere” în seiful de pe web.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Activ până pe $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Deblochează mai întâi seiful ca să activezi această opțiune.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Parola seifului",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Setează o parolă nouă pentru seif. Celelalte dispozitive ți-o vor cere, iar browserele de încredere vor trebui marcate din nou ca de încredere.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Schimbă",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Parola nouă a seifului",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Confirmă parola nouă",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Folosește cel puțin 12 caractere.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Cele două parole nu se potrivesc.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Se recriptează…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Parola seifului a fost schimbată.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Parola seifului nu a putut fi schimbată. Încearcă din nou.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Anulează",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Schimbă parola seifului",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Parola seifului a fost schimbată pe alt dispozitiv. Blochează seiful și deblochează-l cu parola nouă, apoi încearcă din nou.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Arată",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Ascunde",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Caută în seif",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Seifuri",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Toate",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Personal",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Pentru acest site",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Toate elementele",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Rezultate",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Nimic salvat încă pentru acest site.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Niciun element nu se potrivește căutării.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Seiful tău e gol. Adaugă prima autentificare.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Fără nume",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Nu poate fi decriptat",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Element nou",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Mai multe",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Blochează",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Sincronizează acum",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Deschide seiful pe web",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Setări",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Deconectează-te",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Completează",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Completează pe această pagină",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Copiază numele de utilizator",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Copiază parola",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Copiază codul în doi pași",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Copiază notița",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Copiază: $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Deschide site-ul",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Editează",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Fixează sus",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Anulează fixarea",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Înapoi",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Salvează",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Actualizează",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Șterge",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Șterge definitiv",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Generează o parolă",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Altă parolă",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Închide",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Elimină $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Schimbă",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "Copiat: $FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Nume de utilizator copiat",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Parolă copiată – se șterge în 45 s",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Cod în doi pași copiat",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Notiță copiată",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Salvat",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Șters",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Completat",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Parolă puternică completată",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Nu s-a putut copia în clipboard.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Nu e nimic de completat pe această pagină.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Seiful nu a putut fi încărcat. Încearcă din nou.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Nu s-a putut salva. Încearcă din nou.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Asta nu pare o cheie secretă pentru coduri în doi pași sau un link otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Element",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Element nou",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Editează elementul",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Se salvează…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Tip",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Autentificare",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Cod în doi pași",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Notă securizată",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Nume",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "ex.: Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Nume de utilizator",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Parolă",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Site web",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Notițe",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Notiță",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Cheie secretă sau link otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Emitent",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Cont",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Seif",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Seif (mută în)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Mutarea recriptează elementul pentru celălalt seif.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Fixează sus",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Generator de parole",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Lungime",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Majuscule",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Cifre",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Simboluri",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Generată pe acest dispozitiv cu un generator aleatoriu securizat. Caracterele ușor de confundat (l, 1, O, 0) sunt omise.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Acceptabilă",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Puternică",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Excelentă",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ biți",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Completează cu Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Folosește o parolă puternică",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Generată aici, salvată când te înregistrezi",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault este blocat.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Conectează-te la Pabbel Vault ca să completezi acest formular.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Conectează-te",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Nicio autentificare salvată pentru $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Niciun cod în doi pași pentru $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Actualizezi parola salvată?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Se actualizează „$NAME$”.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Deblochează Pabbel Vault ca să salvezi această autentificare",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Salvează în",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Niciodată pentru acest site",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Salvat în Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Parolă actualizată",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Blocat",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Deblocat",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Setări",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Cont",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Neconectat",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Conectează-te ca să completezi și să salvezi parole.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Securitate",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Blocare automată",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "După atâta timp fără să folosești seiful. Seiful se blochează mereu când închizi browserul.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "După 1 minut",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "După $MINUTES$ min",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Doar când se închide browserul",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Pe site-uri",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Buton în câmpurile de autentificare",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Arată butonul Pabbel Vault în câmpul în care scrii.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Oferă salvarea autentificărilor",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Întreabă după ce te conectezi cu o parolă care nu e încă salvată sau care s-a schimbat.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Copiază codul în doi pași după completare",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Când o autentificare are un cod în doi pași asociat, îl pune în clipboard pentru pasul următor. Se șterge după 45 de secunde.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Introdu automat codurile în doi pași",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Când o autentificare cere un cod după parolă, se introduce codul în doi pași asociat. Confirmarea autentificării rămâne la tine.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Cod în doi pași completat",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Comandă rapidă de la tastatură",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L completează autentificarea sau codul în doi pași pe pagina pe care ești.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Nu salva niciodată pe",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Niciun site încă. Când alegi „Niciodată pentru acest site” la o solicitare de salvare, site-ul apare aici.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Salvezi autentificarea pentru $SITE$?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Parolă completată",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Parolă completată · cod în doi pași copiat",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Se încarcă autentificările",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Autentificările nu au putut fi încărcate",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Încearcă din nou",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Deblochează pentru a completa această pagină",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Afișează pictogramele site-urilor",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Fiecare pictogramă vine direct de la site-ul respectiv, niciodată prin Pabbel. Dezactivat, lista afișează litere.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Folosește o mască de e-mail nouă",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "E-mailurile ajung în căsuța ta Pabbel",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Masca ta de e-mail pentru acest site",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "Masca de e-mail a fost completată",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Nu s-a putut crea masca de e-mail",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Prea multe măști noi în ultima vreme. Încearcă din nou mai târziu.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "Mască de e-mail · e-mailurile ajung în căsuța ta Pabbel",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "Mască de e-mail · în pauză, e-mailurile trimise la ea sunt respinse",
+    "description": "The same line when that mask is paused."
+  }
+}

@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Pengelola Sandi & 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Pengelola sandi zero-knowledge. Isi sandi dan kode 2 langkah, simpan login baru, dan buat sandi yang kuat.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Isi login atau kode 2 langkah untuk halaman ini",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Isi login dengan Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Buat sandi yang kuat",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Kunci Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Buka Pabbel Vault di web",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Sandi Anda, tersegel rapat.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Masuk dengan akun Pabbel Anda. Semua isi brankas Anda dienkripsi di perangkat ini sebelum disimpan.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Masuk dengan Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Menunggu Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Membuka accounts.pabbel.com. Tidak ada sandi yang diketik di sini.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Privasi",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Proses masuk belum selesai. Silakan coba lagi.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Siapkan Vault terlebih dahulu",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ belum memiliki brankas. Buat brankas di web - hanya perlu satu menit - lalu kembali ke sini.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Siapkan di web",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Beralih akun",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Buka kunci brankas Anda",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Sandi brankas",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Buka kunci",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Membuka kunci…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Sandi brankas Anda tidak pernah meninggalkan perangkat ini.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Itu bukan sandi brankas Anda.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Tidak dapat membuka kunci saat ini. Periksa koneksi Anda dan coba lagi.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Tetap tidak terkunci di browser ini",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Tanpa sandi di sini selama 30 hari. Anda dapat menghapus browser ini dari Vault di web kapan saja.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Masa 30 hari browser ini sudah habis. Masukkan sandi Anda sekali agar tetap tidak terkunci.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Browser ini tidak lagi tepercaya: browser ini telah dihapus, atau sandi brankas Anda berubah. Masukkan sandi Anda.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Kunci terbuka, tetapi browser ini belum dapat dijadikan tepercaya saat ini. Coba lagi di Setelan.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Tetap tidak terkunci di browser ini",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Membuka brankas tanpa sandi selama 30 hari. Pabbel menyimpan separuh kunci dan browser ini separuh lainnya, sehingga tidak ada yang bisa membukanya sendirian. Jika komputer ini hilang, hapus browser ini melalui Browser tepercaya pada Vault di web.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Aktif hingga $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Buka kunci brankas terlebih dahulu untuk mengaktifkan ini.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Sandi brankas",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Tetapkan sandi brankas baru. Perangkat Anda yang lain akan meminta sandi itu, dan browser tepercaya harus dijadikan tepercaya lagi.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Ubah",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Sandi brankas baru",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Konfirmasi sandi baru",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Gunakan minimal 12 karakter.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Kedua sandi tidak cocok.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Mengenkripsi ulang…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Sandi brankas telah diubah.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Tidak dapat mengubah sandi brankas. Coba lagi.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Batal",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Ubah sandi brankas",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Sandi brankas Anda diubah di perangkat lain. Kunci brankas, lalu buka kuncinya dengan sandi baru, kemudian coba lagi.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Tampilkan",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Sembunyikan",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Telusuri brankas Anda",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Brankas",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Semua",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Pribadi",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Untuk situs ini",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Semua item",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Hasil",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Belum ada yang disimpan untuk situs ini.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Tidak ada item yang cocok dengan penelusuran Anda.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Brankas Anda masih kosong. Tambahkan login pertama Anda.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Tanpa judul",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Tidak dapat didekripsi",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Item baru",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Lainnya",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Kunci",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Sinkronkan sekarang",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Buka Vault di web",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Setelan",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Keluar",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Isi",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Isi di halaman ini",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Salin nama pengguna",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Salin sandi",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Salin kode",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Salin catatan",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Salin $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Buka situs web",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Edit",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Sematkan di atas",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Lepas sematan",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Kembali",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Simpan",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Perbarui",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Hapus",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Hapus permanen",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Buat sandi",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Sandi baru",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Tutup",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Hapus $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Ubah",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ disalin",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Nama pengguna disalin",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Sandi disalin - dihapus dalam 45 detik",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Kode 2 langkah disalin",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Catatan disalin",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Tersimpan",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Dihapus",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Terisi",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Sandi yang kuat sudah diisi",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Tidak dapat menyalin ke papan klip.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Tidak ada yang bisa diisi di halaman ini.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Tidak dapat memuat brankas Anda. Coba lagi.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Tidak dapat menyimpan. Coba lagi.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Sepertinya itu bukan kunci penyiapan 2 langkah atau link otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Item",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Item baru",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Edit item",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Menyimpan…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Jenis",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Login",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Kode 2 langkah",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Catatan aman",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Nama",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "mis. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Nama pengguna",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Sandi",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Situs web",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Catatan",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Catatan",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Kunci penyiapan atau link otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Penerbit",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Akun",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Brankas",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Brankas (pindahkan ke)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Memindahkan item akan mengenkripsinya ulang untuk brankas lain.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Sematkan di atas",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Pembuat sandi",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Panjang",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Huruf kapital",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Angka",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Simbol",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Dibuat di perangkat ini dengan generator acak yang aman. Karakter yang mirip (l, 1, O, 0) tidak dipakai.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Cukup",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Kuat",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Sangat kuat",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bit",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Isi dengan Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Gunakan sandi yang kuat",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Dibuat di sini, disimpan saat Anda mendaftar",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault terkunci.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Masuk ke Pabbel Vault untuk mengisi formulir ini.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Masuk",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Tidak ada login tersimpan untuk $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Tidak ada kode 2 langkah untuk $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Perbarui sandi yang tersimpan?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Memperbarui “$NAME$”.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Buka kunci Pabbel Vault untuk menyimpan login ini",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Simpan di",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Jangan pernah untuk situs ini",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Tersimpan di Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Sandi diperbarui",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Terkunci",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Tidak terkunci",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Setelan",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Akun",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Belum masuk",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Masuk untuk mengisi dan menyimpan sandi.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Keamanan",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Kunci otomatis",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Setelah brankas tidak dipakai selama waktu ini. Brankas selalu terkunci saat browser ditutup.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Setelah 1 menit",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Setelah $MINUTES$ menit",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Hanya saat browser ditutup",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Di situs web",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Tombol di kolom login",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Tampilkan tombol Pabbel Vault di dalam kolom yang sedang Anda isi.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Tawarkan untuk menyimpan login",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Tanyakan setelah Anda masuk dengan sandi yang belum tersimpan atau yang sudah berubah.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Salin kode 2 langkah setelah mengisi",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Jika login memiliki kode 2 langkah yang cocok, kode itu disalin ke papan klip untuk langkah berikutnya. Dihapus setelah 45 detik.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Ketik kode 2 langkah secara otomatis",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Saat proses masuk meminta kode setelah kata sandi, kode 2 langkah yang cocok akan diketikkan. Anda tetap mengonfirmasi sendiri proses masuknya.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Kode 2 langkah terisi",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Pintasan keyboard",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L mengisi login atau kode untuk halaman yang sedang Anda buka.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Jangan pernah simpan di",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Belum ada situs. Memilih “Jangan pernah untuk situs ini” pada tawaran simpan akan menambahkannya di sini.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Simpan login $SITE$ Anda?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Kata sandi terisi",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Kata sandi terisi · kode 2 langkah disalin",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Memuat login Anda",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Tidak dapat memuat login Anda",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Coba lagi",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Buka kunci untuk mengisi halaman ini",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Tampilkan ikon situs web",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Setiap ikon datang langsung dari situs webnya, tidak pernah melalui Pabbel. Jika dinonaktifkan, daftar menampilkan huruf.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Gunakan masker email baru",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Email ke alamat ini masuk ke kotak masuk Pabbel Anda",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Masker email Anda untuk situs ini",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "Masker email diisikan",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Tidak dapat membuat masker email",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Terlalu banyak masker baru belakangan ini. Coba lagi nanti.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "Masker email · email masuk ke kotak masuk Pabbel Anda",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "Masker email · dijeda, email ke alamat ini ditolak",
+    "description": "The same line when that mask is paused."
+  }
+}

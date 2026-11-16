@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: கடவுச்சொல் நிர்வாகி & 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "கடவுச்சொற்கள், 2-படிக் குறியீடுகளை நிரப்பி, புதிய உள்நுழைவுகளைச் சேமித்து, வலுவான கடவுச்சொற்களை உருவாக்கும் ஜீரோ-நாலெட்ஜ் நிர்வாகி.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "இந்தப் பக்கத்துக்கான உள்நுழைவை அல்லது 2-படிக் குறியீட்டை நிரப்பு",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Pabbel Vault மூலம் உள்நுழைவை நிரப்பு",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "வலுவான கடவுச்சொல்லை உருவாக்கு",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Pabbel Vault-ஐப் பூட்டு",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "இணையத்தில் Pabbel Vault-ஐத் திற",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "உங்கள் கடவுச்சொற்கள், பத்திரமாக.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "உங்கள் Pabbel கணக்கில் உள்நுழையுங்கள். உங்கள் பெட்டகத்தில் உள்ள அனைத்தும் சேமிக்கப்படுவதற்கு முன்பே இந்தச் சாதனத்தில் என்க்ரிப்ட் செய்யப்படுகின்றன.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Pabbel மூலம் உள்நுழை",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Pabbel-க்காகக் காத்திருக்கிறது…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "accounts.pabbel.com திறக்கும். இங்கே எந்தக் கடவுச்சொல்லும் தட்டச்சு செய்யப்படுவதில்லை.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "தனியுரிமை",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "உள்நுழைவு முடிவடையவில்லை. மீண்டும் முயலவும்.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "முதலில் Vault-ஐ அமையுங்கள்",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$-க்கு இன்னும் பெட்டகம் இல்லை. இணையத்தில் ஒன்றை உருவாக்குங்கள் - ஒரு நிமிடம்தான் ஆகும் - பிறகு இங்கே திரும்பி வாருங்கள்.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "இணையத்தில் அமை",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "கணக்கை மாற்று",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "உங்கள் பெட்டகத்தைத் திறக்கவும்",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "பெட்டகக் கடவுச்சொல்",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "பூட்டைத் திற",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "பூட்டைத் திறக்கிறது…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "உங்கள் பெட்டகக் கடவுச்சொல் இந்தச் சாதனத்தை விட்டு ஒருபோதும் வெளியேறாது.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "அது பெட்டகக் கடவுச்சொல் அல்ல.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "இப்போது திறக்க முடியவில்லை. உங்கள் இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "இந்த உலாவியில் திறந்தே வைத்திரு",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "30 நாட்களுக்கு இங்கே கடவுச்சொல் தேவையில்லை. இந்த உலாவியை எப்போது வேண்டுமானாலும் இணையப் பெட்டகத்திலிருந்து நீக்கலாம்.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "இந்த உலாவியின் 30 நாட்கள் முடிந்துவிட்டன. திறந்தே வைத்திருக்க, உங்கள் கடவுச்சொல்லை ஒருமுறை உள்ளிடுங்கள்.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "இந்த உலாவி இனி நம்பகமானதல்ல: அது நீக்கப்பட்டது, அல்லது உங்கள் பெட்டகக் கடவுச்சொல் மாறியது. உங்கள் கடவுச்சொல்லை உள்ளிடுங்கள்.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "திறக்கப்பட்டது, ஆனால் இப்போது இந்த உலாவியை நம்பகமானதாக்க முடியவில்லை. அமைப்புகளில் மீண்டும் முயலவும்.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "இந்த உலாவியில் திறந்தே வைத்திரு",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "30 நாட்களுக்குக் கடவுச்சொல் இல்லாமல் பெட்டகத்தைத் திறக்கும். விசையின் பாதி Pabbel-இடமும் மறுபாதி இந்த உலாவியிடமும் இருக்கும்; அதனால் எதுவும் தனியாக அதைத் திறக்க முடியாது. இந்தக் கணினி தொலைந்தால், இணையப் பெட்டகத்தில் “நம்பகமான உலாவிகள்” பகுதியில் அதை நீக்குங்கள்.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "$DATE$ வரை இயக்கத்தில்.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "இதை இயக்க, முதலில் பெட்டகத்தைத் திறக்கவும்.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "பெட்டகக் கடவுச்சொல்",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "புதிய பெட்டகக் கடவுச்சொல்லை அமையுங்கள். உங்கள் மற்ற சாதனங்கள் அதைக் கேட்கும்; நம்பகமான உலாவிகளை மீண்டும் நம்பகமானதாக்க வேண்டும்.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "மாற்று",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "புதிய பெட்டகக் கடவுச்சொல்",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "புதிய கடவுச்சொல்லை உறுதிசெய்யுங்கள்",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "குறைந்தது 12 எழுத்துகளைப் பயன்படுத்தவும்.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "இரண்டு கடவுச்சொற்களும் பொருந்தவில்லை.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "மீண்டும் என்க்ரிப்ட் செய்கிறது…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "பெட்டகக் கடவுச்சொல் மாற்றப்பட்டது.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "பெட்டகக் கடவுச்சொல்லை மாற்ற முடியவில்லை. மீண்டும் முயலவும்.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "ரத்துசெய்",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "பெட்டகக் கடவுச்சொல்லை மாற்று",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "உங்கள் பெட்டகக் கடவுச்சொல் வேறொரு சாதனத்தில் மாற்றப்பட்டுள்ளது. பெட்டகத்தைப் பூட்டி, புதிய கடவுச்சொல்லால் அதைத் திறந்துவிட்டு, மீண்டும் முயலவும்.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "காட்டு",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "மறை",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "உங்கள் பெட்டகத்தில் தேடுங்கள்",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "பெட்டகங்கள்",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "அனைத்தும்",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "தனிப்பட்டவை",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "இந்தத் தளத்துக்கு",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "அனைத்து உருப்படிகளும்",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "முடிவுகள்",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "இந்தத் தளத்துக்கு இன்னும் எதுவும் சேமிக்கப்படவில்லை.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "உங்கள் தேடலுடன் பொருந்தும் உருப்படி எதுவும் இல்லை.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "உங்கள் பெட்டகம் காலியாக உள்ளது. உங்கள் முதல் உள்நுழைவைச் சேருங்கள்.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "பெயரிடப்படாதது",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "டிக்ரிப்ட் செய்ய முடியாது",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "புதிய உருப்படி",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "மேலும்",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "பூட்டு",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "இப்போது ஒத்திசை",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "இணையப் பெட்டகத்தைத் திற",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "அமைப்புகள்",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "வெளியேறு",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "நிரப்பு",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "இந்தப் பக்கத்தில் நிரப்பு",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "பயனர்பெயரை நகலெடு",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "கடவுச்சொல்லை நகலெடு",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "குறியீட்டை நகலெடு",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "குறிப்பை நகலெடு",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "$FIELD$-ஐ நகலெடு",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "இணையதளத்தைத் திற",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "திருத்து",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "மேலே பின் செய்",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "பின்னை அகற்று",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "பின்செல்",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "சேமி",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "புதுப்பி",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "நீக்கு",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "நிரந்தரமாக நீக்கு",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "கடவுச்சொல்லை உருவாக்கு",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "புதிய கடவுச்சொல்",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "மூடு",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "$SITE$-ஐ அகற்று",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "மாற்று",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ நகலெடுக்கப்பட்டது",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "பயனர்பெயர் நகலெடுக்கப்பட்டது",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "கடவுச்சொல் நகலெடுக்கப்பட்டது - 45 வினாடிகளில் அழிக்கப்படும்",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "2-படிக் குறியீடு நகலெடுக்கப்பட்டது",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "குறிப்பு நகலெடுக்கப்பட்டது",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "சேமிக்கப்பட்டது",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "நீக்கப்பட்டது",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "நிரப்பப்பட்டது",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "வலுவான கடவுச்சொல் நிரப்பப்பட்டது",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "கிளிப்போர்டுக்கு நகலெடுக்க முடியவில்லை.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "இந்தப் பக்கத்தில் நிரப்ப எதுவும் இல்லை.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "உங்கள் பெட்டகத்தை ஏற்ற முடியவில்லை. மீண்டும் முயலவும்.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "சேமிக்க முடியவில்லை. மீண்டும் முயலவும்.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "இது 2-படி அமைவு விசையாகவோ otpauth:// லிங்க்காகவோ தெரியவில்லை.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "உருப்படி",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "புதிய உருப்படி",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "உருப்படியைத் திருத்து",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "சேமிக்கிறது…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "வகை",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "உள்நுழைவு",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "2-படிக் குறியீடு",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "பாதுகாப்பான குறிப்பு",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "பெயர்",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "எ.கா. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "பயனர்பெயர்",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "கடவுச்சொல்",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "இணையதளம்",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "குறிப்புகள்",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "குறிப்பு",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "அமைவு விசை அல்லது otpauth:// லிங்க்",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "வழங்குநர்",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "கணக்கு",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "பெட்டகம்",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "பெட்டகம் (இதற்கு நகர்த்து)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "நகர்த்தினால், அந்த உருப்படி மற்றப் பெட்டகத்துக்காக மீண்டும் என்க்ரிப்ட் செய்யப்படும்.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "மேலே பின் செய்",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "கடவுச்சொல் உருவாக்கி",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "நீளம்",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "பெரிய எழுத்துகள்",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "எண்கள்",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "சின்னங்கள்",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "பாதுகாப்பான ரேண்டம் ஜெனரேட்டர் மூலம் இந்தச் சாதனத்திலேயே உருவாக்கப்பட்டது. ஒன்றுபோலத் தோன்றும் எழுத்துகள் (l, 1, O, 0) சேர்க்கப்படுவதில்லை.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "பரவாயில்லை",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "வலுவானது",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "மிகச் சிறப்பு",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ பிட்கள்",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Pabbel Vault மூலம் நிரப்பு",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "வலுவான கடவுச்சொல்லைப் பயன்படுத்து",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "இங்கேயே உருவாக்கப்படும், பதிவுசெய்யும்போது சேமிக்கப்படும்",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault பூட்டப்பட்டுள்ளது.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "இந்தப் படிவத்தை நிரப்ப Pabbel Vault-இல் உள்நுழையுங்கள்.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "உள்நுழை",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "$SITE$-க்குச் சேமித்த உள்நுழைவுகள் இல்லை.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "$SITE$-க்கு 2-படிக் குறியீடுகள் இல்லை.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "சேமித்த கடவுச்சொல்லைப் புதுப்பிக்கவா?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "\"$NAME$\" புதுப்பிக்கப்படும்.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "இந்த உள்நுழைவைச் சேமிக்க Pabbel Vault-ஐத் திறக்கவும்",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "சேமிக்கும் இடம்",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "இந்தத் தளத்துக்கு ஒருபோதும் வேண்டாம்",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Pabbel Vault-இல் சேமிக்கப்பட்டது",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "கடவுச்சொல் புதுப்பிக்கப்பட்டது",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "பூட்டப்பட்டது",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "திறக்கப்பட்டது",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "அமைப்புகள்",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "கணக்கு",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "உள்நுழையவில்லை",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "கடவுச்சொற்களை நிரப்பவும் சேமிக்கவும் உள்நுழையுங்கள்.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "பாதுகாப்பு",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "தானியங்குப் பூட்டு",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "பெட்டகத்தை இவ்வளவு நேரம் பயன்படுத்தாவிட்டால். உலாவியை மூடும்போது பெட்டகம் எப்போதும் பூட்டப்படும்.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "1 நிமிடத்துக்குப் பிறகு",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "$MINUTES$ நிமிடங்களுக்குப் பிறகு",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "உலாவியை மூடும்போது மட்டும்",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "இணையதளங்களில்",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "உள்நுழைவுப் புலங்களில் பொத்தான்",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "நீங்கள் தட்டச்சு செய்யும் புலத்துக்குள் Pabbel Vault பொத்தானைக் காட்டும்.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "உள்நுழைவுகளைச் சேமிக்கப் பரிந்துரை",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "இன்னும் சேமிக்கப்படாத அல்லது மாறிய கடவுச்சொல்லுடன் நீங்கள் உள்நுழைந்த பிறகு கேட்கும்.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "நிரப்பிய பிறகு 2-படிக் குறியீட்டை நகலெடு",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "ஓர் உள்நுழைவுக்குப் பொருந்தும் 2-படிக் குறியீடு இருந்தால், அடுத்த படிக்காக அதைக் கிளிப்போர்டில் வைக்கும். 45 வினாடிகளுக்குப் பிறகு அழிக்கப்படும்.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "2-படிக் குறியீடுகளைத் தானாக உள்ளிடு",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "கடவுச்சொல்லுக்குப் பிறகு உள்நுழைவு ஒரு குறியீட்டைக் கேட்டால், பொருந்தும் 2-படிக் குறியீடு அதில் உள்ளிடப்படும். உள்நுழைவை நீங்களே உறுதிசெய்வீர்கள்.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "2-படிக் குறியீடு நிரப்பப்பட்டது",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "விசைப்பலகைக் குறுக்குவழி",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "நீங்கள் இருக்கும் பக்கத்துக்கான உள்நுழைவை அல்லது குறியீட்டை Ctrl+Shift+L நிரப்பும்.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "ஒருபோதும் சேமிக்காத தளங்கள்",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "இன்னும் தளங்கள் இல்லை. சேமிக்கக் கேட்கும்போது \"இந்தத் தளத்துக்கு ஒருபோதும் வேண்டாம்\" என்பதைத் தேர்ந்தெடுத்தால், அந்தத் தளம் இங்கே சேர்க்கப்படும்.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "உங்கள் $SITE$ உள்நுழைவைச் சேமிக்கவா?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "கடவுச்சொல் நிரப்பப்பட்டது",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "கடவுச்சொல் நிரப்பப்பட்டது · 2-படிக் குறியீடு நகலெடுக்கப்பட்டது",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "உங்கள் உள்நுழைவுகள் ஏற்றப்படுகின்றன",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "உங்கள் உள்நுழைவுகளை ஏற்ற முடியவில்லை",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "மீண்டும் முயலவும்",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "இந்தப் பக்கத்தை நிரப்பத் திறக்கவும்",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "இணையதள ஐகான்களைக் காட்டு",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "ஒவ்வொரு ஐகானும் அந்த இணையதளத்திலிருந்து நேரடியாக வருகிறது, ஒருபோதும் Pabbel வழியாக அல்ல. அணைத்தால், பட்டியலில் எழுத்துகள் தெரியும்.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "புதிய மின்னஞ்சல் மாஸ்க்கைப் பயன்படுத்து",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "இதற்கு வரும் அஞ்சல் உங்கள் Pabbel இன்பாக்ஸுக்கு வந்து சேரும்",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "இந்தத் தளத்திற்கான உங்கள் மின்னஞ்சல் மாஸ்க்",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "மின்னஞ்சல் மாஸ்க் நிரப்பப்பட்டது",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "மின்னஞ்சல் மாஸ்க்கை உருவாக்க முடியவில்லை",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "சமீபத்தில் அதிகமான புதிய மாஸ்க்குகள். பிறகு மீண்டும் முயலவும்.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "மின்னஞ்சல் மாஸ்க் · அஞ்சல் உங்கள் Pabbel இன்பாக்ஸுக்கு வந்து சேரும்",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "மின்னஞ்சல் மாஸ்க் · இடைநிறுத்தப்பட்டது, இதற்கு வரும் அஞ்சல் திருப்பி அனுப்பப்படும்",
+    "description": "The same line when that mask is paused."
+  }
+}

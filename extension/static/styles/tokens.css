@@ -1,0 +1,72 @@
+/*
+  Pabbel Vault - the web vault's "editorial paper" tokens, verbatim
+  (vault/src/app/globals.css): warm paper, ink, burnt orange; deep ink-paper
+  and a lifted orange in the dark. Fonts are bundled (no network): Fraunces
+  for display, Geist for text, Geist Mono for codes and labels, Tajawal for
+  Arabic. Persian and Urdu get system Naskh/Nastaliq stacks - Tajawal lacks
+  their letters.
+*/
+@font-face { font-family: "Fraunces"; src: url("../fonts/fraunces.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Geist"; src: url("../fonts/geist.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url("../fonts/geist-mono.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Tajawal"; src: url("../fonts/Tajawal-400-arabic.woff2") format("woff2"); font-weight: 400; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF; }
+@font-face { font-family: "Tajawal"; src: url("../fonts/Tajawal-700-arabic.woff2") format("woff2"); font-weight: 600 700; font-display: swap; unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF; }
+
+:root {
+  color-scheme: light dark;
+  --paper: #faf7f0;
+  --paper-2: #f5f1e8;
+  --card: #fffdf8;
+  --ink: #1c1917;
+  --ink-2: #2a2620;
+  --muted: #78716c;
+  --line: #e7e2d6;
+  --input: #e2dccd;
+  --accent: #e0612a;
+  --on-accent: #fffaf5;
+  --tint: #f6e9dc;
+  --tint-ink: #7c3a16;
+  --danger: #b91c1c;
+  --shadow: 0 1px 0 rgba(28, 25, 23, .04), 0 18px 40px -14px rgba(28, 25, 23, .28);
+  --radius: 10px;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-text: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --ease-out: cubic-bezier(.2, .8, .2, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #17150f;
+    --paper-2: #1b1810;
+    --card: #201d15;
+    --ink: #f5f1e6;
+    --ink-2: #e7e1d2;
+    --muted: #a8a29e;
+    --line: #2a271e;
+    --input: #34301f;
+    --accent: #f2884b;
+    --on-accent: #1c1917;
+    --tint: #33271c;
+    --tint-ink: #f7c9a6;
+    --danger: #ef4444;
+    --shadow: 0 18px 40px -14px rgba(0, 0, 0, .7);
+  }
+}
+:lang(ar) { --font-text: "Tajawal", "Geist", system-ui, sans-serif; --font-display: "Tajawal", "Fraunces", serif; }
+:lang(fa) { --font-text: "Vazirmatn", "Noto Naskh Arabic", Tahoma, system-ui, sans-serif; --font-display: var(--font-text); }
+:lang(ur) { --font-text: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Noto Naskh Arabic", Tahoma, system-ui, sans-serif; --font-display: var(--font-text); }
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; background: var(--paper); color: var(--ink); }
+body { font: 14px/1.45 var(--font-text); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: var(--accent); }
+.mono { font-family: var(--font-mono); font-feature-settings: "zero" 1; }
+.muted { color: var(--muted); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.display { font-family: var(--font-display); font-weight: 560; font-variation-settings: "opsz" 72, "SOFT" 50; letter-spacing: -.012em; line-height: 1.12; margin: 0; }
+.eyebrow { margin: 0; font: 600 10.5px/1 var(--font-mono); letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+:lang(ar) .eyebrow, :lang(fa) .eyebrow, :lang(ur) .eyebrow { letter-spacing: 0; font-family: var(--font-text); font-size: 12px; }
+[dir="rtl"] .flip-rtl { transform: scaleX(-1); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }

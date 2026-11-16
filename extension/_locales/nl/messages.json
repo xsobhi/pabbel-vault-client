@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: wachtwoordbeheerder & 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Zero-knowledge-wachtwoordbeheerder. Vul wachtwoorden en tweestapscodes in, sla nieuwe logins op en maak sterke wachtwoorden.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "De login of tweestapscode voor deze pagina invullen",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Login invullen met Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Sterk wachtwoord genereren",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Pabbel Vault vergrendelen",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Pabbel Vault openen op het web",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Je wachtwoorden, verzegeld.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Log in met je Pabbel-account. Alles in je kluis wordt op dit apparaat versleuteld voordat het wordt opgeslagen.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Inloggen met Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Wachten op Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Opent accounts.pabbel.com. Je typt hier geen wachtwoord.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Privacy",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Het inloggen is niet afgerond. Probeer het opnieuw.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Stel eerst Vault in",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ heeft nog geen kluis. Maak er een aan op het web – dat is zo gedaan – en kom dan hier terug.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Instellen op het web",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Account wisselen",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Ontgrendel je kluis",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Kluiswachtwoord",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Ontgrendelen",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Ontgrendelen…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Je kluiswachtwoord verlaat dit apparaat nooit.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Dat is niet je kluiswachtwoord.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Ontgrendelen lukt nu niet. Controleer je verbinding en probeer het opnieuw.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Ontgrendeld blijven in deze browser",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Hier 30 dagen geen wachtwoord nodig. Je kunt deze browser op elk moment verwijderen via de kluis op het web.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "De 30 dagen van deze browser zijn voorbij. Voer je wachtwoord één keer in om hem ontgrendeld te houden.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Deze browser wordt niet meer vertrouwd: hij is verwijderd of je kluiswachtwoord is gewijzigd. Voer je wachtwoord in.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Ontgrendeld, maar deze browser kon nu niet als vertrouwd worden ingesteld. Probeer het opnieuw in Instellingen.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Ontgrendeld blijven in deze browser",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Opent de kluis 30 dagen lang zonder wachtwoord. Pabbel bewaart de ene helft van de sleutel en deze browser de andere, dus geen van beide kan hem alleen openen. Raak je deze computer kwijt, verwijder hem dan onder “Vertrouwde browsers” in de kluis op het web.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Aan tot $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Ontgrendel eerst de kluis om dit aan te zetten.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Kluiswachtwoord",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Stel een nieuw kluiswachtwoord in. Je andere apparaten vragen erom, en vertrouwde browsers moet je opnieuw als vertrouwd instellen.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Wijzigen",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Nieuw kluiswachtwoord",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Bevestig het nieuwe wachtwoord",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Gebruik minstens 12 tekens.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "De twee wachtwoorden komen niet overeen.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Opnieuw versleutelen…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Kluiswachtwoord gewijzigd.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Het kluiswachtwoord kon niet worden gewijzigd. Probeer het opnieuw.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Annuleren",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Kluiswachtwoord wijzigen",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Je kluiswachtwoord is op een ander apparaat gewijzigd. Vergrendel de kluis, ontgrendel hem met het nieuwe wachtwoord en probeer het daarna opnieuw.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Tonen",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Verbergen",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Zoeken in je kluis",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Kluizen",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Alle",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Persoonlijk",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Voor deze site",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Alle items",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Resultaten",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Nog niets opgeslagen voor deze site.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Geen items gevonden voor je zoekopdracht.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Je kluis is leeg. Voeg je eerste login toe.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Naamloos",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Kan niet worden ontsleuteld",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Nieuw item",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Meer",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Vergrendelen",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Nu synchroniseren",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Kluis openen op het web",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Instellingen",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Uitloggen",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Invullen",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Invullen op deze pagina",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Gebruikersnaam kopiëren",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Wachtwoord kopiëren",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Code kopiëren",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Notitie kopiëren",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "$FIELD$ kopiëren",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Website openen",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Bewerken",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Bovenaan vastpinnen",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Losmaken",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Terug",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Opslaan",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Bijwerken",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Verwijderen",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Definitief verwijderen",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Wachtwoord genereren",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Nieuw wachtwoord",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Sluiten",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "$SITE$ verwijderen",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Wijzigen",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ gekopieerd",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Gebruikersnaam gekopieerd",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Wachtwoord gekopieerd — klembord wordt over 45 s gewist",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Tweestapscode gekopieerd",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Notitie gekopieerd",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Opgeslagen",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Verwijderd",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Ingevuld",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Sterk wachtwoord ingevuld",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Kopiëren naar het klembord is mislukt.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Niets om in te vullen op deze pagina.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Je kluis kon niet worden geladen. Probeer het opnieuw.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Opslaan is mislukt. Probeer het opnieuw.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Dat lijkt geen instelsleutel voor een tweestapscode of otpauth://-link.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Item",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Nieuw item",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Item bewerken",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Opslaan…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Type",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Login",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Tweestapscode",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Beveiligde notitie",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Naam",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "bijv. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Gebruikersnaam",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Wachtwoord",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Website",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Notities",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Notitie",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Instelsleutel of otpauth://-link",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Uitgever",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Account",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Kluis",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Kluis (verplaatsen naar)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Verplaatsen versleutelt het item opnieuw voor de andere kluis.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Bovenaan vastpinnen",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Wachtwoordgenerator",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Lengte",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Hoofdletters",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Cijfers",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Symbolen",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Gemaakt op dit apparaat met een veilige toevalsgenerator. Tekens die op elkaar lijken (l, 1, O, 0) worden weggelaten.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Redelijk",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Sterk",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Uitstekend",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bits",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Invullen met Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Gebruik een sterk wachtwoord",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Hier gemaakt, opgeslagen zodra je je registreert",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault is vergrendeld.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Log in bij Pabbel Vault om dit formulier in te vullen.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Inloggen",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Geen opgeslagen logins voor $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Geen tweestapscodes voor $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Opgeslagen wachtwoord bijwerken?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Werkt “$NAME$” bij.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Ontgrendel Pabbel Vault om deze login op te slaan",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Opslaan in",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Nooit voor deze site",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Opgeslagen in Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Wachtwoord bijgewerkt",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Vergrendeld",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Ontgrendeld",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Instellingen",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Account",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Niet ingelogd",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Log in om wachtwoorden in te vullen en op te slaan.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Beveiliging",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Automatisch vergrendelen",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Na zo lang zonder de kluis te gebruiken. De kluis wordt altijd vergrendeld als je de browser sluit.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Na 1 minuut",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Na $MINUTES$ minuten",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Alleen als de browser sluit",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Op websites",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Knop in inlogvelden",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Toon de Pabbel Vault-knop in het veld waarin je typt.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Aanbieden om logins op te slaan",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Vraagt het nadat je bent ingelogd met een wachtwoord dat nog niet is opgeslagen of dat is gewijzigd.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Tweestapscode kopiëren na het invullen",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Als een login een bijbehorende tweestapscode heeft, komt die op het klembord voor de volgende stap. Wordt na 45 seconden gewist.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Tweestapscodes automatisch invullen",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Vraagt een inlog na het wachtwoord om een code, dan wordt de bijbehorende tweestapscode ingevuld. Het inloggen bevestig je zelf.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Tweestapscode ingevuld",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Sneltoets",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L vult de login of code in voor de pagina waarop je bent.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Nooit opslaan op",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Nog geen sites. Kies je bij een opslagvraag “Nooit voor deze site”, dan komt die site hier te staan.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Je login voor $SITE$ opslaan?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Wachtwoord ingevuld",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Wachtwoord ingevuld · tweestapscode gekopieerd",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Je logins laden",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Je logins konden niet worden geladen",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Opnieuw proberen",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Ontgrendel om deze pagina in te vullen",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Website-pictogrammen tonen",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Elk pictogram komt rechtstreeks van de website zelf, nooit via Pabbel. Staat dit uit, dan toont de lijst letters.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Nieuw e-mailmasker gebruiken",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Mail naar dit adres komt in je Pabbel-inbox",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Je e-mailmasker voor deze site",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "E-mailmasker ingevuld",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Kan geen e-mailmasker maken",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Te veel nieuwe maskers de laatste tijd. Probeer het later opnieuw.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "E-mailmasker · mail komt in je Pabbel-inbox",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "E-mailmasker · gepauzeerd, mail naar dit adres wordt teruggestuurd",
+    "description": "The same line when that mask is paused."
+  }
+}

@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Parola Yöneticisi ve 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Sıfır bilgi ilkeli parola yöneticisi. Parolaları ve 2 adımlı kodları doldurun, yeni girişleri kaydedin, güçlü parolalar oluşturun.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Bu sayfa için giriş bilgisini veya 2 adımlı kodu doldur",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Pabbel Vault ile giriş bilgisini doldur",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Güçlü bir parola oluştur",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Pabbel Vault'u kilitle",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Pabbel Vault'u web'de aç",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Parolalarınız mühür altında.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Pabbel hesabınızla giriş yapın. Kasanızdaki her şey, saklanmadan önce bu cihazda şifrelenir.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Pabbel ile giriş yap",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Pabbel bekleniyor…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "accounts.pabbel.com açılır. Burada hiçbir parola yazılmaz.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Gizlilik",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Giriş tamamlanamadı. Lütfen tekrar deneyin.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Önce Vault'u kurun",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ hesabının henüz bir kasası yok. Web'de bir kasa oluşturun (yalnızca bir dakika sürer), sonra buraya dönün.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Web'de kur",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Hesap değiştir",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Kasanızın kilidini açın",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Kasa parolası",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Kilidi aç",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Kilit açılıyor…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Kasa parolanız bu cihazdan asla çıkmaz.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Bu, kasa parolası değil.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Kilit şu anda açılamadı. Bağlantınızı kontrol edip tekrar deneyin.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Bu tarayıcıda kilidi açık kalsın",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "30 gün boyunca burada parola sorulmaz. Bu tarayıcıyı istediğiniz zaman web kasasından kaldırabilirsiniz.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Bu tarayıcının 30 günü doldu. Kilidin açık kalması için parolanızı bir kez girin.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Bu tarayıcı artık güvenilen bir tarayıcı değil: kaldırıldı veya kasa parolanız değişti. Parolanızı girin.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Kilit açıldı, ancak bu tarayıcı şu anda güvenilen tarayıcılara eklenemedi. Ayarlar'dan tekrar deneyin.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Bu tarayıcıda kilidi açık kalsın",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Kasayı 30 gün boyunca parolasız açar. Anahtarın yarısını Pabbel, diğer yarısını bu tarayıcı saklar; bu yüzden ikisi de kasayı tek başına açamaz. Bu bilgisayar kaybolursa onu web kasasındaki Güvenilen tarayıcılar bölümünden kaldırın.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "$DATE$ tarihine kadar açık.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Bunu açmak için önce kasanın kilidini açın.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Kasa parolası",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Yeni bir kasa parolası belirleyin. Diğer cihazlarınız bu parolayı soracak ve güvenilen tarayıcıların yeniden eklenmesi gerekecek.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Değiştir",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Yeni kasa parolası",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Yeni parolayı doğrulayın",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "En az 12 karakter kullanın.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "İki parola eşleşmiyor.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Yeniden şifreleniyor…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Kasa parolası değiştirildi.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Kasa parolası değiştirilemedi. Tekrar deneyin.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "İptal",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Kasa parolasını değiştir",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Kasa parolanız başka bir cihazda değiştirildi. Kasayı kilitleyin, yeni parolayla kilidini açın ve tekrar deneyin.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Göster",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Gizle",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Kasanızda arayın",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Kasalar",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Tümü",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Kişisel",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Bu site için",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Tüm öğeler",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Sonuçlar",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Bu site için henüz kayıtlı bir şey yok.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Aramanızla eşleşen öğe yok.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Kasanız boş. İlk giriş bilginizi ekleyin.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Adsız",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Şifresi çözülemiyor",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Yeni öğe",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Diğer",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Kilitle",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Şimdi eşitle",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Web kasasını aç",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Ayarlar",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Çıkış yap",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Doldur",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Bu sayfada doldur",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Kullanıcı adını kopyala",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Parolayı kopyala",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Kodu kopyala",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Notu kopyala",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Kopyala: $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Web sitesini aç",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Düzenle",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Başa sabitle",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Sabitlemeyi kaldır",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Geri",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Kaydet",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Güncelle",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Sil",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Kalıcı olarak sil",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Parola oluştur",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Yeni parola",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Kapat",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "$SITE$ sitesini kaldır",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Değiştir",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ kopyalandı",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Kullanıcı adı kopyalandı",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Parola kopyalandı — 45 sn sonra silinir",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "2 adımlı kod kopyalandı",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Not kopyalandı",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Kaydedildi",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Silindi",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Dolduruldu",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Güçlü parola dolduruldu",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Panoya kopyalanamadı.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Bu sayfada doldurulacak bir şey yok.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Kasanız yüklenemedi. Tekrar deneyin.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Kaydedilemedi. Tekrar deneyin.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Bu, bir 2 adımlı gizli anahtara veya otpauth:// bağlantısına benzemiyor.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Öğe",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Yeni öğe",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Öğeyi düzenle",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Kaydediliyor…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Tür",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Giriş bilgisi",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "2 adımlı kod",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Güvenli not",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Ad",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "örn. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Kullanıcı adı",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Parola",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Web sitesi",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Notlar",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Not",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Gizli anahtar veya otpauth:// bağlantısı",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Sağlayıcı",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Hesap",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Kasa",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Kasa (taşı)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Taşıma, öğeyi diğer kasa için yeniden şifreler.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Başa sabitle",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Parola oluşturucu",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Uzunluk",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Büyük harfler",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Rakamlar",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Semboller",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Bu cihazda güvenli bir rastgele sayı üreteciyle oluşturulur. Birbirine benzeyen karakterler (l, 1, O, 0) kullanılmaz.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Orta",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Güçlü",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Mükemmel",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bit",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Pabbel Vault ile doldur",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Güçlü bir parola kullan",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Burada oluşturulur, kaydolduğunuzda saklanır",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault kilitli.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Bu formu doldurmak için Pabbel Vault'a giriş yapın.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Giriş yap",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "$SITE$ için kayıtlı giriş bilgisi yok.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "$SITE$ için 2 adımlı kod yok.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Kayıtlı parola güncellensin mi?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "“$NAME$” güncellenecek.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Bu giriş bilgisini kaydetmek için Pabbel Vault'un kilidini açın",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Kaydedilecek kasa",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Bu sitede asla",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Pabbel Vault'a kaydedildi",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Parola güncellendi",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Kilitli",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Kilit açık",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Ayarlar",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Hesap",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Giriş yapılmadı",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Parolaları doldurmak ve kaydetmek için giriş yapın.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Güvenlik",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Otomatik kilitle",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Kasa bu süre boyunca kullanılmazsa. Tarayıcı kapandığında kasa her zaman kilitlenir.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "1 dakika sonra",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "$MINUTES$ dakika sonra",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Yalnızca tarayıcı kapandığında",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Web sitelerinde",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Giriş alanlarında düğme",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Pabbel Vault düğmesini, yazı yazdığınız alanın içinde göster.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Giriş bilgilerini kaydetmeyi öner",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Henüz kaydedilmemiş ya da değişmiş bir parolayla giriş yaptığınızda sor.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Doldurduktan sonra 2 adımlı kodu kopyala",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Bir giriş bilgisinin eşleşen 2 adımlı kodu varsa, sonraki adım için kodu panoya koy. 45 saniye sonra silinir.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "2 adımlı kodları otomatik yaz",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Bir giriş paroladan sonra kod istediğinde eşleşen 2 adımlı kod alana yazılır. Girişi yine siz onaylarsınız.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "2 adımlı kod dolduruldu",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Klavye kısayolu",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L, bulunduğunuz sayfanın giriş bilgisini veya kodunu doldurur.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Hiç kaydedilmeyecek siteler",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Henüz site yok. Kaydetme sorusunda “Bu sitede asla” seçeneğini seçtiğinizde site buraya eklenir.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "$SITE$ giriş bilgileriniz kaydedilsin mi?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Parola dolduruldu",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Parola dolduruldu · 2 adımlı kod kopyalandı",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Giriş bilgileriniz yükleniyor",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Giriş bilgileriniz yüklenemedi",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Tekrar deneyin",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Bu sayfayı doldurmak için kilidi açın",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Web sitesi simgelerini göster",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Her simge doğrudan ilgili web sitesinden gelir, asla Pabbel üzerinden geçmez. Kapalıyken listede harfler görünür.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Yeni bir e-posta maskesi kullan",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Bu adrese gelen e-postalar Pabbel gelen kutunuza ulaşır",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Bu site için e-posta maskeniz",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "E-posta maskesi dolduruldu",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "E-posta maskesi oluşturulamadı",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Son zamanlarda çok fazla yeni maske oluşturuldu. Daha sonra tekrar deneyin.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "E-posta maskesi · e-postalar Pabbel gelen kutunuza ulaşır",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "E-posta maskesi · duraklatıldı, gelen e-postalar geri döner",
+    "description": "The same line when that mask is paused."
+  }
+}

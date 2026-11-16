@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: Κωδικοί πρόσβασης & 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Κωδικοί πρόσβασης και 2FA με μηδενική γνώση: συμπλήρωση, αποθήκευση νέων συνδέσεων και δημιουργία ισχυρών κωδικών πρόσβασης.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Συμπλήρωση στοιχείων σύνδεσης ή κωδικού δύο βημάτων σε αυτήν τη σελίδα",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Συμπλήρωση στοιχείων σύνδεσης με το Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Δημιουργία ισχυρού κωδικού πρόσβασης",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Κλείδωμα του Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Άνοιγμα του Pabbel Vault στον ιστό",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Οι κωδικοί πρόσβασής σας, σφραγισμένοι.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Συνδεθείτε με τον λογαριασμό σας Pabbel. Ό,τι υπάρχει στο θησαυροφυλάκιό σας κρυπτογραφείται σε αυτήν τη συσκευή προτού αποθηκευτεί.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Σύνδεση με Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Αναμονή για την Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Ανοίγει το accounts.pabbel.com. Εδώ δεν πληκτρολογείτε κανέναν κωδικό πρόσβασης.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Απόρρητο",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Η σύνδεση δεν ολοκληρώθηκε. Δοκιμάστε ξανά.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Ρυθμίστε πρώτα το Vault",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "Το $EMAIL$ δεν έχει ακόμη θησαυροφυλάκιο. Δημιουργήστε ένα στον ιστό — παίρνει ένα λεπτό — και μετά επιστρέψτε εδώ.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Ρύθμιση στον ιστό",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Αλλαγή λογαριασμού",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Ξεκλειδώστε το θησαυροφυλάκιό σας",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Κωδικός πρόσβασης θησαυροφυλακίου",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Ξεκλείδωμα",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Ξεκλείδωμα…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Ο κωδικός πρόσβασης του θησαυροφυλακίου δεν φεύγει ποτέ από αυτήν τη συσκευή.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Αυτός δεν είναι ο κωδικός πρόσβασης του θησαυροφυλακίου.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Δεν ήταν δυνατό το ξεκλείδωμα αυτή τη στιγμή. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Να μένει ξεκλείδωτο σε αυτό το πρόγραμμα περιήγησης",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Χωρίς κωδικό πρόσβασης εδώ για 30 ημέρες. Μπορείτε να αφαιρέσετε αυτό το πρόγραμμα περιήγησης από το θησαυροφυλάκιο στον ιστό οποιαδήποτε στιγμή.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Οι 30 ημέρες αυτού του προγράμματος περιήγησης έληξαν. Εισαγάγετε τον κωδικό πρόσβασης μία φορά για να παραμείνει ξεκλείδωτο.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Αυτό το πρόγραμμα περιήγησης δεν είναι πλέον αξιόπιστο: αφαιρέθηκε ή άλλαξε ο κωδικός πρόσβασης του θησαυροφυλακίου σας. Εισαγάγετε τον κωδικό πρόσβασης.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Ξεκλειδώθηκε, αλλά δεν ήταν δυνατό να οριστεί αυτό το πρόγραμμα περιήγησης ως αξιόπιστο αυτή τη στιγμή. Δοκιμάστε ξανά στις Ρυθμίσεις.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Να μένει ξεκλείδωτο σε αυτό το πρόγραμμα περιήγησης",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Ανοίγει το θησαυροφυλάκιο χωρίς κωδικό πρόσβασης για 30 ημέρες. Το Pabbel κρατά το μισό κλειδί και αυτό το πρόγραμμα περιήγησης το άλλο μισό, ώστε κανένα από τα δύο να μην μπορεί να το ανοίξει μόνο του. Αν χαθεί αυτός ο υπολογιστής, αφαιρέστε τον από τα «Αξιόπιστα προγράμματα περιήγησης» στο θησαυροφυλάκιο στον ιστό.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Ενεργό έως $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Ξεκλειδώστε πρώτα το θησαυροφυλάκιο για να το ενεργοποιήσετε.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Κωδικός πρόσβασης θησαυροφυλακίου",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Ορίστε νέο κωδικό πρόσβασης θησαυροφυλακίου. Οι άλλες συσκευές σας θα τον ζητήσουν και τα αξιόπιστα προγράμματα περιήγησης θα πρέπει να οριστούν ξανά ως αξιόπιστα.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Αλλαγή",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Νέος κωδικός πρόσβασης θησαυροφυλακίου",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Επιβεβαίωση νέου κωδικού πρόσβασης",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Χρησιμοποιήστε τουλάχιστον 12 χαρακτήρες.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Οι δύο κωδικοί πρόσβασης δεν ταιριάζουν.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Επανακρυπτογράφηση…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Ο κωδικός πρόσβασης θησαυροφυλακίου άλλαξε.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Δεν ήταν δυνατή η αλλαγή του κωδικού πρόσβασης θησαυροφυλακίου. Δοκιμάστε ξανά.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Ακύρωση",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Αλλαγή κωδικού πρόσβασης θησαυροφυλακίου",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Ο κωδικός πρόσβασης του θησαυροφυλακίου άλλαξε σε άλλη συσκευή. Κλειδώστε το θησαυροφυλάκιο, ξεκλειδώστε το με τον νέο κωδικό πρόσβασης και δοκιμάστε ξανά.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Εμφάνιση",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Απόκρυψη",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Αναζήτηση στο θησαυροφυλάκιο",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Θησαυροφυλάκια",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Όλα",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Προσωπικά",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Για αυτόν τον ιστότοπο",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Όλα τα στοιχεία",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Αποτελέσματα",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Δεν έχει αποθηκευτεί τίποτα ακόμη για αυτόν τον ιστότοπο.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Κανένα στοιχείο δεν ταιριάζει με την αναζήτησή σας.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Το θησαυροφυλάκιό σας είναι άδειο. Προσθέστε τα πρώτα σας στοιχεία σύνδεσης.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Χωρίς όνομα",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Δεν είναι δυνατή η αποκρυπτογράφηση",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Νέο στοιχείο",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Περισσότερα",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Κλείδωμα",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Συγχρονισμός τώρα",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Άνοιγμα θησαυροφυλακίου στον ιστό",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Ρυθμίσεις",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Αποσύνδεση",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Συμπλήρωση",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Συμπλήρωση σε αυτήν τη σελίδα",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Αντιγραφή ονόματος χρήστη",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Αντιγραφή κωδικού πρόσβασης",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Αντιγραφή κωδικού δύο βημάτων",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Αντιγραφή σημείωσης",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Αντιγραφή: $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Άνοιγμα ιστότοπου",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Επεξεργασία",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Καρφίτσωμα στην κορυφή",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Ξεκαρφίτσωμα",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Πίσω",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Αποθήκευση",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Ενημέρωση",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Διαγραφή",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Οριστική διαγραφή",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Δημιουργία κωδικού πρόσβασης",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Νέος κωδικός πρόσβασης",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Κλείσιμο",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Αφαίρεση του $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Αλλαγή",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "Αντιγράφηκε: $FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Το όνομα χρήστη αντιγράφηκε",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Ο κωδικός πρόσβασης αντιγράφηκε — σβήνεται σε 45 δλ.",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Ο κωδικός δύο βημάτων αντιγράφηκε",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Η σημείωση αντιγράφηκε",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Αποθηκεύτηκε",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Διαγράφηκε",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Συμπληρώθηκε",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Συμπληρώθηκε ισχυρός κωδικός πρόσβασης",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Δεν ήταν δυνατή η αντιγραφή στο πρόχειρο.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Δεν υπάρχει τίποτα για συμπλήρωση σε αυτήν τη σελίδα.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Δεν ήταν δυνατή η φόρτωση του θησαυροφυλακίου σας. Δοκιμάστε ξανά.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Δεν ήταν δυνατή η αποθήκευση. Δοκιμάστε ξανά.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Αυτό δεν μοιάζει με μυστικό κλειδί δύο βημάτων ή σύνδεσμο otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Στοιχείο",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Νέο στοιχείο",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Επεξεργασία στοιχείου",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Αποθήκευση…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Τύπος",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Στοιχεία σύνδεσης",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Κωδικός δύο βημάτων",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Ασφαλής σημείωση",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Όνομα",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "π.χ. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Όνομα χρήστη",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Κωδικός πρόσβασης",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Ιστότοπος",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Σημειώσεις",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Σημείωση",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Μυστικό κλειδί ή σύνδεσμος otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Εκδότης",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Λογαριασμός",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Θησαυροφυλάκιο",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Θησαυροφυλάκιο (μετακίνηση σε)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Η μετακίνηση κρυπτογραφεί ξανά το στοιχείο για το άλλο θησαυροφυλάκιο.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Καρφίτσωμα στην κορυφή",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Δημιουργία κωδικού πρόσβασης",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Μήκος",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Κεφαλαία γράμματα",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Αριθμοί",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Σύμβολα",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Δημιουργείται σε αυτήν τη συσκευή με ασφαλή γεννήτρια τυχαίων αριθμών. Οι χαρακτήρες που μοιάζουν μεταξύ τους (l, 1, O, 0) παραλείπονται.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Μέτριος",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Ισχυρός",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Εξαιρετικός",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bit",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Συμπλήρωση με το Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Χρήση ισχυρού κωδικού πρόσβασης",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Δημιουργείται εδώ και αποθηκεύεται όταν εγγραφείτε",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Το Pabbel Vault είναι κλειδωμένο.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Συνδεθείτε στο Pabbel Vault για να συμπληρώσετε αυτήν τη φόρμα.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Σύνδεση",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Δεν υπάρχουν αποθηκευμένα στοιχεία σύνδεσης για το $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Δεν υπάρχουν κωδικοί δύο βημάτων για το $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Ενημέρωση του αποθηκευμένου κωδικού πρόσβασης;",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Θα ενημερωθεί το «$NAME$».",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Ξεκλειδώστε το Pabbel Vault για να αποθηκεύσετε αυτά τα στοιχεία σύνδεσης",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Αποθήκευση σε",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Ποτέ για αυτόν τον ιστότοπο",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Αποθηκεύτηκε στο Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Ο κωδικός πρόσβασης ενημερώθηκε",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Κλειδωμένο",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Ξεκλείδωτο",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Ρυθμίσεις",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Λογαριασμός",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Δεν έχετε συνδεθεί",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Συνδεθείτε για να συμπληρώνετε και να αποθηκεύετε κωδικούς πρόσβασης.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Ασφάλεια",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Αυτόματο κλείδωμα",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Μετά από τόσο χρόνο χωρίς χρήση του θησαυροφυλακίου. Το θησαυροφυλάκιο κλειδώνει πάντα όταν κλείνει το πρόγραμμα περιήγησης.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Μετά από 1 λεπτό",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Μετά από $MINUTES$ λεπτά",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Μόνο όταν κλείνει το πρόγραμμα περιήγησης",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Σε ιστότοπους",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Κουμπί στα πεδία σύνδεσης",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Εμφάνιση του κουμπιού Pabbel Vault μέσα στο πεδίο όπου πληκτρολογείτε.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Πρόταση αποθήκευσης στοιχείων σύνδεσης",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Ερώτηση αφού συνδεθείτε με κωδικό πρόσβασης που δεν έχει αποθηκευτεί ακόμη ή που άλλαξε.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Αντιγραφή του κωδικού δύο βημάτων μετά τη συμπλήρωση",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Όταν τα στοιχεία σύνδεσης έχουν αντίστοιχο κωδικό δύο βημάτων, τον αντιγράφει στο πρόχειρο για το επόμενο βήμα. Διαγράφεται μετά από 45 δευτερόλεπτα.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Αυτόματη πληκτρολόγηση κωδικών δύο βημάτων",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Όταν μια σύνδεση ζητά κωδικό μετά τον κωδικό πρόσβασης, πληκτρολογείται ο αντίστοιχος κωδικός δύο βημάτων. Τη σύνδεση την επιβεβαιώνετε εσείς.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Ο κωδικός δύο βημάτων συμπληρώθηκε",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Συντόμευση πληκτρολογίου",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Το Ctrl+Shift+L συμπληρώνει τα στοιχεία σύνδεσης ή τον κωδικό δύο βημάτων στη σελίδα όπου βρίσκεστε.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Να μην αποθηκεύεται ποτέ σε",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Δεν υπάρχουν ακόμη ιστότοποι. Αν επιλέξετε «Ποτέ για αυτόν τον ιστότοπο» σε μια πρόταση αποθήκευσης, ο ιστότοπος προστίθεται εδώ.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Αποθήκευση στοιχείων σύνδεσης για το $SITE$;",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Ο κωδικός πρόσβασης συμπληρώθηκε",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Ο κωδικός πρόσβασης συμπληρώθηκε · ο κωδικός δύο βημάτων αντιγράφηκε",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Φόρτωση στοιχείων σύνδεσης",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Δεν ήταν δυνατή η φόρτωση των στοιχείων σύνδεσης",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Δοκιμάστε ξανά",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Ξεκλειδώστε για συμπλήρωση αυτής της σελίδας",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Εμφάνιση εικονιδίων ιστότοπων",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Κάθε εικονίδιο έρχεται απευθείας από τον ιστότοπό του, ποτέ μέσω του Pabbel. Όταν είναι ανενεργό, η λίστα δείχνει γράμματα.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Χρήση νέας μάσκας email",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Τα μηνύματα προς αυτήν φτάνουν στα εισερχόμενά σας στο Pabbel",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Η μάσκα email σας για αυτόν τον ιστότοπο",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "Η μάσκα email συμπληρώθηκε",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Δεν ήταν δυνατή η δημιουργία μάσκας email",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Πάρα πολλές νέες μάσκες τελευταία. Δοκιμάστε ξανά αργότερα.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "Μάσκα email · τα μηνύματα φτάνουν στα εισερχόμενά σας στο Pabbel",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "Μάσκα email · σε παύση, τα μηνύματα προς αυτήν επιστρέφονται",
+    "description": "The same line when that mask is paused."
+  }
+}

@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault : mots de passe et 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Gestionnaire de mots de passe zero-knowledge. Remplit et enregistre vos identifiants et codes 2FA, crée des mots de passe solides.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Remplir l’identifiant ou le code de validation de cette page",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Remplir l’identifiant avec Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Générer un mot de passe solide",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Verrouiller Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Ouvrir Pabbel Vault sur le web",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Vos mots de passe, bien scellés.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Connectez-vous avec votre compte Pabbel. Tout ce que contient votre coffre-fort est chiffré sur cet appareil avant d’être enregistré.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Se connecter avec Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "En attente de Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Ouvre accounts.pabbel.com. Aucun mot de passe n’est saisi ici.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Confidentialité",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "La connexion n’a pas abouti. Veuillez réessayer.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Configurez d’abord Vault",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ n’a pas encore de coffre-fort. Créez-en un sur le web (cela ne prend qu’une minute), puis revenez ici.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Configurer sur le web",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Changer de compte",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Déverrouillez votre coffre-fort",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Mot de passe du coffre-fort",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Déverrouiller",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Déverrouillage…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Le mot de passe de votre coffre-fort ne quitte jamais cet appareil.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "Ce n’est pas le mot de passe de votre coffre-fort.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Déverrouillage impossible pour le moment. Vérifiez votre connexion et réessayez.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Rester déverrouillé sur ce navigateur",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Plus besoin du mot de passe ici pendant 30 jours. Vous pouvez retirer ce navigateur à tout moment depuis Vault sur le web.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Les 30 jours de ce navigateur sont écoulés. Saisissez votre mot de passe une fois pour qu’il reste déverrouillé.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Ce navigateur n’est plus de confiance : il a été retiré, ou le mot de passe de votre coffre-fort a changé. Saisissez votre mot de passe.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Déverrouillé, mais ce navigateur n’a pas pu être ajouté aux navigateurs de confiance pour l’instant. Réessayez dans les Paramètres.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Rester déverrouillé sur ce navigateur",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Ouvre le coffre-fort sans mot de passe pendant 30 jours. Pabbel conserve une moitié de la clé et ce navigateur l’autre, si bien qu’aucun des deux ne peut l’ouvrir seul. En cas de perte de cet ordinateur, retirez-le de la liste « Navigateurs de confiance » dans Vault sur le web.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Activé jusqu’au $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Déverrouillez d’abord le coffre-fort pour activer cette option.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Mot de passe du coffre-fort",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Définissez un nouveau mot de passe de coffre-fort. Vos autres appareils vous le demanderont, et les navigateurs de confiance devront être ajoutés de nouveau.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Modifier",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Nouveau mot de passe du coffre-fort",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Confirmez le nouveau mot de passe",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Utilisez au moins 12 caractères.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Les deux mots de passe ne correspondent pas.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Rechiffrement…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Mot de passe du coffre-fort modifié.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Impossible de modifier le mot de passe du coffre-fort. Réessayez.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Annuler",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Changer le mot de passe du coffre-fort",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Le mot de passe de votre coffre-fort a été changé sur un autre appareil. Verrouillez le coffre-fort, déverrouillez-le avec le nouveau mot de passe, puis réessayez.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Afficher",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Masquer",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Rechercher dans votre coffre-fort",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Coffres-forts",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Tous",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Personnel",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Pour ce site",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Tous les éléments",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Résultats",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Rien n’est encore enregistré pour ce site.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Aucun élément ne correspond à votre recherche.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Votre coffre-fort est vide. Ajoutez votre premier identifiant.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Sans titre",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Impossible à déchiffrer",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Nouvel élément",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Plus",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Verrouiller",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Synchroniser",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Ouvrir Vault sur le web",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Paramètres",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Se déconnecter",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Remplir",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Remplir sur cette page",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Copier le nom d’utilisateur",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Copier le mot de passe",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Copier le code",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Copier la note",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Copier « $FIELD$ »",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Ouvrir le site",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Modifier",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Épingler en haut",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Désépingler",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Retour",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Enregistrer",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Mettre à jour",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Supprimer",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Supprimer définitivement",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Générer un mot de passe",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Nouveau mot de passe",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Fermer",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Retirer $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Modifier",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "Copié : $FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Nom d’utilisateur copié",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Mot de passe copié – effacé dans 45 s",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Code de validation copié",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Note copiée",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Enregistré",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Supprimé",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Rempli",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Mot de passe solide inséré",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Impossible de copier dans le presse-papiers.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Rien à remplir sur cette page.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Impossible de charger votre coffre-fort. Réessayez.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Impossible d’enregistrer. Réessayez.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "Cela ne ressemble ni à une clé secrète de validation, ni à un lien otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Élément",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Nouvel élément",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Modifier l’élément",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Enregistrement…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Type",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Identifiant",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Code de validation",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Note sécurisée",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Nom",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "ex. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Nom d’utilisateur",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Mot de passe",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Site web",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Notes",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Note",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Clé secrète ou lien otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Émetteur",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Compte",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Coffre-fort",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Coffre-fort (déplacer vers)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Le déplacement rechiffre l’élément pour l’autre coffre-fort.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Épingler en haut",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Générateur de mot de passe",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Longueur",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Majuscules",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Chiffres",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Symboles",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Créé sur cet appareil par un générateur aléatoire sécurisé. Les caractères qui se ressemblent (l, 1, O, 0) sont exclus.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Correct",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Solide",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Excellent",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bits",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Remplir avec Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Utiliser un mot de passe solide",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Généré ici, enregistré à votre inscription",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault est verrouillé.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Connectez-vous à Pabbel Vault pour remplir ce formulaire.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Se connecter",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Aucun identifiant enregistré pour $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Aucun code de validation pour $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Mettre à jour le mot de passe enregistré ?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Met à jour « $NAME$ ».",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Déverrouillez Pabbel Vault pour enregistrer cet identifiant",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Enregistrer dans",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Jamais pour ce site",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Enregistré dans Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Mot de passe mis à jour",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Verrouillé",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Déverrouillé",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Paramètres",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Compte",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Non connecté",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Connectez-vous pour remplir et enregistrer vos mots de passe.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Sécurité",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Verrouillage automatique",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Après cette durée sans utiliser le coffre-fort. Le coffre-fort se verrouille toujours à la fermeture du navigateur.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Après 1 minute",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Après $MINUTES$ minutes",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Seulement à la fermeture du navigateur",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Sur les sites web",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Bouton dans les champs de connexion",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Afficher le bouton Pabbel Vault dans le champ où vous êtes en train de saisir.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Proposer d’enregistrer les identifiants",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Demander après une connexion avec un mot de passe qui n’est pas encore enregistré, ou qui a changé.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Copier le code de validation après le remplissage",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Si un identifiant a un code de validation associé, celui-ci est placé dans le presse-papiers pour l’étape suivante, puis effacé après 45 secondes.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Saisir automatiquement les codes de validation",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Quand une connexion demande un code après le mot de passe, le code de validation associé y est saisi. C’est vous qui confirmez la connexion.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Code de validation rempli",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Raccourci clavier",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L remplit l’identifiant ou le code de la page sur laquelle vous êtes.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Ne jamais enregistrer sur",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Aucun site pour l’instant. Choisir « Jamais pour ce site » lors d’une proposition d’enregistrement l’ajoute ici.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Enregistrer votre identifiant $SITE$ ?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Mot de passe rempli",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Mot de passe rempli · code de validation copié",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Chargement de vos identifiants",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Impossible de charger vos identifiants",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Réessayer",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Déverrouillez pour remplir cette page",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Afficher les icônes des sites web",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Chaque icône vient directement du site concerné, jamais par Pabbel. Désactivé, la liste affiche des lettres à la place.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Utiliser un nouveau masque d'e-mail",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Les e-mails reçus arrivent dans votre boîte de réception Pabbel",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Votre masque d'e-mail pour ce site",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "Masque d'e-mail saisi",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Impossible de créer un masque d'e-mail",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Trop de nouveaux masques récemment. Réessayez plus tard.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "Masque d'e-mail · les e-mails arrivent dans votre boîte de réception Pabbel",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "Masque d'e-mail · en pause, les e-mails sont renvoyés à l'expéditeur",
+    "description": "The same line when that mask is paused."
+  }
+}

@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: مدير كلمات المرور ورموز التحقق",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "مدير كلمات مرور بمبدأ المعرفة الصفرية. يملأ كلمات المرور ورموز التحقق بخطوتين، ويحفظ بيانات الدخول الجديدة، ويولّد كلمات مرور قوية.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "ملء بيانات الدخول أو رمز التحقق بخطوتين في هذه الصفحة",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "ملء بيانات الدخول باستخدام Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "توليد كلمة مرور قوية",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "قفل Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "فتح Pabbel Vault على الويب",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "كلمات مرورك، مختومة بإحكام.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "سجّل الدخول بحساب Pabbel. يُشفَّر كل ما في خزنتك على هذا الجهاز قبل تخزينه.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "تسجيل الدخول باستخدام Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "في انتظار Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "سيُفتح accounts.pabbel.com. لا تُكتب أي كلمة مرور هنا.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "الخصوصية",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "لم يكتمل تسجيل الدخول. يُرجى المحاولة مرة أخرى.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "أعِدّ خزنتك أولًا",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "ليست لدى $EMAIL$ خزنة بعد. أنشئ خزنة على الويب، فالأمر لا يستغرق سوى دقيقة، ثم عُد إلى هنا.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "الإعداد على الويب",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "تبديل الحساب",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "افتح خزنتك",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "كلمة مرور الخزنة",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "فتح",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "جارٍ الفتح…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "كلمة مرور خزنتك لا تغادر هذا الجهاز أبدًا.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "هذه ليست كلمة مرور الخزنة.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "تعذّر فتح الخزنة الآن. تحقّق من اتصالك وحاول مرة أخرى.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "إبقاء الخزنة مفتوحة على هذا المتصفح",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "لن تحتاج إلى كلمة المرور هنا لمدة 30 يومًا. يمكنك إزالة هذا المتصفح من الخزنة على الويب في أي وقت.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "انتهت مدة الـ30 يومًا لهذا المتصفح. أدخل كلمة المرور مرة واحدة لإبقائه مفتوحًا.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "لم يعد هذا المتصفح موثوقًا: فقد أُزيل، أو تغيّرت كلمة مرور خزنتك. أدخل كلمة المرور.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "تم الفتح، لكن تعذّر توثيق هذا المتصفح الآن. حاول مرة أخرى من الإعدادات.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "إبقاء الخزنة مفتوحة على هذا المتصفح",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "يفتح الخزنة دون كلمة المرور لمدة 30 يومًا. تحتفظ Pabbel بنصف المفتاح ويحتفظ هذا المتصفح بالنصف الآخر، فلا يستطيع أيٌّ منهما فتحها وحده. إذا فُقد هذا الحاسوب، فأزِله من «المتصفحات الموثوقة» في الخزنة على الويب.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "مفعَّل حتى $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "افتح الخزنة أولًا لتفعيل هذا الخيار.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "كلمة مرور الخزنة",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "عيّن كلمة مرور جديدة للخزنة. ستطلبها أجهزتك الأخرى، ويجب توثيق المتصفحات الموثوقة من جديد.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "تغيير",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "كلمة مرور الخزنة الجديدة",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "تأكيد كلمة المرور الجديدة",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "استخدم 12 حرفًا على الأقل.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "كلمتا المرور غير متطابقتين.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "جارٍ إعادة التشفير…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "تم تغيير كلمة مرور الخزنة.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "تعذّر تغيير كلمة مرور الخزنة. حاول مرة أخرى.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "إلغاء",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "تغيير كلمة مرور الخزنة",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "تغيّرت كلمة مرور خزنتك على جهاز آخر. أقفل الخزنة وافتحها بكلمة المرور الجديدة، ثم حاول مرة أخرى.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "إظهار",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "إخفاء",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "ابحث في خزنتك",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "الخزائن",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "الكل",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "شخصي",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "لهذا الموقع",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "كل العناصر",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "النتائج",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "لا شيء محفوظ لهذا الموقع بعد.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "لا توجد عناصر تطابق بحثك.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "خزنتك فارغة. أضف أول بيانات دخول لك.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "بلا عنوان",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "تعذّر فك التشفير",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "عنصر جديد",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "المزيد",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "قفل",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "مزامنة الآن",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "فتح الخزنة على الويب",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "الإعدادات",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "تسجيل الخروج",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "ملء",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "الملء في هذه الصفحة",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "نسخ اسم المستخدم",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "نسخ كلمة المرور",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "نسخ الرمز",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "نسخ الملاحظة",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "نسخ $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "فتح الموقع",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "تعديل",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "تثبيت في الأعلى",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "إلغاء التثبيت",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "رجوع",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "حفظ",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "تحديث",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "حذف",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "حذف نهائيًا",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "توليد كلمة مرور",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "كلمة مرور جديدة",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "إغلاق",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "إزالة $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "تغيير",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "تم نسخ $FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "تم نسخ اسم المستخدم",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "تم نسخ كلمة المرور، وستُمسح بعد 45 ثانية",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "تم نسخ رمز التحقق بخطوتين",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "تم نسخ الملاحظة",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "تم الحفظ",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "تم الحذف",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "تم الملء",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "تم ملء كلمة مرور قوية",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "تعذّر النسخ إلى الحافظة.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "لا يوجد ما يمكن ملؤه في هذه الصفحة.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "تعذّر تحميل خزنتك. حاول مرة أخرى.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "تعذّر الحفظ. حاول مرة أخرى.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "لا يبدو هذا مفتاح إعداد للتحقق بخطوتين أو رابط otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "العنصر",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "عنصر جديد",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "تعديل العنصر",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "جارٍ الحفظ…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "النوع",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "بيانات دخول",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "رمز تحقق بخطوتين",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "ملاحظة آمنة",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "الاسم",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "مثال: شركة الأفق",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "اسم المستخدم",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "كلمة المرور",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "الموقع الإلكتروني",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "الملاحظات",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "الملاحظة",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "مفتاح الإعداد أو رابط otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "الجهة المُصدِرة",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "الحساب",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "الخزنة",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "الخزنة (نقل إلى)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "النقل يعيد تشفير العنصر للخزنة الأخرى.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "تثبيت في الأعلى",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "مولّد كلمات المرور",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "الطول",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "أحرف كبيرة",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "أرقام",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "رموز",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "تُنشأ على هذا الجهاز بمولّد عشوائي آمن، مع استبعاد الأحرف المتشابهة (l، 1، O، 0).",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "مقبولة",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "قوية",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "ممتازة",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ بت",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "الملء باستخدام Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "استخدام كلمة مرور قوية",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "تُولَّد هنا وتُحفظ عند إنشاء حسابك",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault مقفل.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "سجّل الدخول إلى Pabbel Vault لملء هذا النموذج.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "تسجيل الدخول",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "لا توجد بيانات دخول محفوظة لـ $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "لا توجد رموز تحقق بخطوتين لـ $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "تحديث كلمة المرور المحفوظة؟",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "سيُحدَّث «$NAME$».",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "افتح Pabbel Vault لحفظ بيانات الدخول هذه",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "الحفظ في",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "أبدًا لهذا الموقع",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "تم الحفظ في Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "تم تحديث كلمة المرور",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "مقفلة",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "مفتوحة",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "الإعدادات",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "الحساب",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "لم تسجّل الدخول",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "سجّل الدخول لملء كلمات المرور وحفظها.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "الأمان",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "القفل التلقائي",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "بعد هذه المدة دون استخدام الخزنة. تُقفل الخزنة دائمًا عند إغلاق المتصفح.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "بعد دقيقة واحدة",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "بعد $MINUTES$ دقيقة",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "عند إغلاق المتصفح فقط",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "على المواقع الإلكترونية",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "زر داخل حقول تسجيل الدخول",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "إظهار زر Pabbel Vault داخل الحقل الذي تكتب فيه.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "اقتراح حفظ بيانات الدخول",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "نسألك بعد تسجيل الدخول بكلمة مرور لم تُحفظ بعد أو تغيّرت.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "نسخ رمز التحقق بخطوتين بعد الملء",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "عندما يكون لبيانات الدخول رمز تحقق بخطوتين مطابق، يُنسخ إلى الحافظة للخطوة التالية، ثم يُمسح بعد 45 ثانية.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "كتابة رموز التحقق بخطوتين تلقائيًا",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "عندما يطلب تسجيل الدخول رمزًا بعد كلمة المرور، يُكتب فيه رمز التحقق بخطوتين المطابق. ويبقى تأكيد تسجيل الدخول بيدك.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "تم إدخال رمز التحقق بخطوتين",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "اختصار لوحة المفاتيح",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "يملأ Ctrl+Shift+L بيانات الدخول أو الرمز في الصفحة التي أنت عليها.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "مواقع مستثناة من الحفظ",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "لا توجد مواقع بعد. عند اختيار «أبدًا لهذا الموقع» في نافذة الحفظ، يُضاف الموقع هنا.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "حفظ بيانات دخول $SITE$؟",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "تم إدخال كلمة المرور",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "تم إدخال كلمة المرور · تم نسخ رمز التحقق بخطوتين",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "جارٍ تحميل بيانات الدخول",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "تعذّر تحميل بيانات الدخول",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "حاول مرة أخرى",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "افتح القفل لملء هذه الصفحة",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "إظهار أيقونات المواقع",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "تأتي كل أيقونة مباشرة من موقعها، ولا تمر عبر Pabbel أبدًا. عند الإيقاف تظهر أحرف بدلًا منها.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "استخدام قناع بريد جديد",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "تصل الرسائل المرسلة إليه إلى بريدك الوارد في Pabbel",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "قناع البريد الخاص بك لهذا الموقع",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "تم إدخال قناع البريد",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "تعذّر إنشاء قناع بريد",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "أقنعة جديدة كثيرة مؤخرًا. حاول لاحقًا.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "قناع بريد · تصل الرسائل إلى بريدك الوارد في Pabbel",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "قناع بريد · متوقف مؤقتًا، والرسائل إليه تُعاد إلى مُرسلها",
+    "description": "The same line when that mask is paused."
+  }
+}

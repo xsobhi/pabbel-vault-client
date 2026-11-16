@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: پاس ورڈ مینیجر اور 2 مرحلہ کوڈ",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "زیرو نالج پاس ورڈ مینیجر۔ پاس ورڈز اور 2 مرحلہ کوڈز بھریں، نئے لاگ انز محفوظ کریں اور مضبوط پاس ورڈز بنائیں۔",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "اس صفحے کا لاگ ان یا 2 مرحلہ کوڈ بھریں",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Pabbel Vault سے لاگ ان بھریں",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "مضبوط پاس ورڈ بنائیں",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Pabbel Vault لاک کریں",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Pabbel Vault ویب پر کھولیں",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "آپ کے پاس ورڈز، سربمہر اور محفوظ۔",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "اپنے Pabbel اکاؤنٹ سے سائن ان کریں۔ آپ کے والٹ کی ہر چیز محفوظ ہونے سے پہلے اسی آلے پر اینکرپٹ ہو جاتی ہے۔",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Pabbel کے ساتھ سائن ان کریں",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Pabbel کا انتظار ہے…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "accounts.pabbel.com کھلے گا۔ یہاں کوئی پاس ورڈ ٹائپ نہیں ہوتا۔",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "رازداری",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "سائن ان مکمل نہیں ہوا۔ براہ کرم دوبارہ کوشش کریں۔",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "پہلے اپنا والٹ ترتیب دیں",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ کا ابھی کوئی والٹ نہیں ہے۔ ویب پر ایک بنا لیں، بس ایک منٹ لگتا ہے، پھر یہاں واپس آئیں۔",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "ویب پر ترتیب دیں",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "اکاؤنٹ بدلیں",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "اپنا والٹ انلاک کریں",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "والٹ پاس ورڈ",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "انلاک کریں",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "انلاک ہو رہا ہے…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "آپ کا والٹ پاس ورڈ کبھی اس آلے سے باہر نہیں جاتا۔",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "یہ والٹ پاس ورڈ نہیں ہے۔",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "ابھی انلاک نہیں ہو سکا۔ اپنا کنکشن دیکھ کر دوبارہ کوشش کریں۔",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "اس براؤزر پر والٹ انلاک رکھیں",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "یہاں 30 دن تک پاس ورڈ کی ضرورت نہیں۔ آپ یہ براؤزر کسی بھی وقت ویب والٹ سے ہٹا سکتے ہیں۔",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "اس براؤزر کے 30 دن پورے ہو گئے۔ اسے انلاک رکھنے کے لیے ایک بار اپنا پاس ورڈ درج کریں۔",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "یہ براؤزر اب قابلِ اعتماد نہیں رہا: اسے ہٹا دیا گیا، یا آپ کا والٹ پاس ورڈ بدل گیا۔ اپنا پاس ورڈ درج کریں۔",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "انلاک ہو گیا، لیکن ابھی اس براؤزر کو قابلِ اعتماد نہیں بنایا جا سکا۔ ترتیبات میں دوبارہ کوشش کریں۔",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "اس براؤزر پر والٹ انلاک رکھیں",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "30 دن تک پاس ورڈ کے بغیر والٹ کھولتا ہے۔ کلید کا آدھا حصہ Pabbel کے پاس رہتا ہے اور باقی آدھا اس براؤزر کے پاس، اس لیے کوئی بھی اکیلا اسے نہیں کھول سکتا۔ اگر یہ کمپیوٹر کھو جائے تو اسے ویب والٹ میں “قابلِ اعتماد براؤزرز” سے ہٹا دیں۔",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "$DATE$ تک آن ہے۔",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "اسے آن کرنے کے لیے پہلے والٹ انلاک کریں۔",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "والٹ پاس ورڈ",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "نیا والٹ پاس ورڈ سیٹ کریں۔ آپ کے دوسرے آلات اسے مانگیں گے، اور قابلِ اعتماد براؤزرز کو دوبارہ قابلِ اعتماد بنانا ہوگا۔",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "تبدیل کریں",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "نیا والٹ پاس ورڈ",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "نئے پاس ورڈ کی تصدیق کریں",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "کم از کم 12 حروف استعمال کریں۔",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "دونوں پاس ورڈ ایک جیسے نہیں ہیں۔",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "دوبارہ اینکرپٹ ہو رہا ہے…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "والٹ پاس ورڈ تبدیل ہو گیا۔",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "والٹ پاس ورڈ تبدیل نہیں ہو سکا۔ دوبارہ کوشش کریں۔",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "منسوخ کریں",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "والٹ پاس ورڈ تبدیل کریں",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "آپ کا والٹ پاس ورڈ کسی دوسرے آلے پر تبدیل کر دیا گیا ہے۔ والٹ لاک کریں اور نئے پاس ورڈ سے انلاک کریں، پھر دوبارہ کوشش کریں۔",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "دکھائیں",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "چھپائیں",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "اپنے والٹ میں تلاش کریں",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "والٹس",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "سب",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "ذاتی",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "اس سائٹ کے لیے",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "تمام آئٹمز",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "نتائج",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "اس سائٹ کے لیے ابھی کچھ محفوظ نہیں ہے۔",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "آپ کی تلاش سے کوئی آئٹم میل نہیں کھاتا۔",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "آپ کا والٹ خالی ہے۔ اپنا پہلا لاگ ان شامل کریں۔",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "بے نام",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "ڈکرپٹ نہیں ہو سکتا",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "نیا آئٹم",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "مزید",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "لاک کریں",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "ابھی سنک کریں",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "ویب والٹ کھولیں",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "ترتیبات",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "سائن آؤٹ",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "بھریں",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "اس صفحے پر بھریں",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "صارف نام کاپی کریں",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "پاس ورڈ کاپی کریں",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "کوڈ کاپی کریں",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "نوٹ کاپی کریں",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "$FIELD$ کاپی کریں",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "ویب سائٹ کھولیں",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "ترمیم کریں",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "اوپر پن کریں",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "پن ہٹائیں",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "واپس",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "محفوظ کریں",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "اپ ڈیٹ کریں",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "حذف کریں",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "ہمیشہ کے لیے حذف کریں",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "پاس ورڈ بنائیں",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "نیا پاس ورڈ",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "بند کریں",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "$SITE$ ہٹائیں",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "تبدیل کریں",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ کاپی ہو گیا",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "صارف نام کاپی ہو گیا",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "پاس ورڈ کاپی ہو گیا — 45 سیکنڈ میں صاف ہو جائے گا",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "2 مرحلہ کوڈ کاپی ہو گیا",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "نوٹ کاپی ہو گیا",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "محفوظ ہو گیا",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "حذف ہو گیا",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "بھر دیا گیا",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "مضبوط پاس ورڈ بھر دیا گیا",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "کلپ بورڈ پر کاپی نہیں ہو سکا۔",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "اس صفحے پر بھرنے کے لیے کچھ نہیں ہے۔",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "آپ کا والٹ لوڈ نہیں ہو سکا۔ دوبارہ کوشش کریں۔",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "محفوظ نہیں ہو سکا۔ دوبارہ کوشش کریں۔",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "یہ 2 مرحلہ سیٹ اپ کلید یا otpauth:// لنک نہیں لگتا۔",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "آئٹم",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "نیا آئٹم",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "آئٹم میں ترمیم کریں",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "محفوظ ہو رہا ہے…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "قسم",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "لاگ ان",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "2 مرحلہ کوڈ",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "محفوظ نوٹ",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "نام",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "مثلاً ستارہ ٹریڈرز",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "صارف نام",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "پاس ورڈ",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "ویب سائٹ",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "نوٹس",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "نوٹ",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "سیٹ اپ کلید یا otpauth:// لنک",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "جاری کنندہ",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "اکاؤنٹ",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "والٹ",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "والٹ (منتقل کریں)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "منتقلی آئٹم کو دوسرے والٹ کے لیے دوبارہ اینکرپٹ کرتی ہے۔",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "اوپر پن کریں",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "پاس ورڈ جنریٹر",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "لمبائی",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "بڑے حروف",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "نمبر",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "علامات",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "اسی آلے پر ایک محفوظ رینڈم جنریٹر سے بنایا جاتا ہے۔ ملتے جلتے حروف (l، 1، O، 0) شامل نہیں کیے جاتے۔",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "مناسب",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "مضبوط",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "بہترین",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ بٹس",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Pabbel Vault سے بھریں",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "مضبوط پاس ورڈ استعمال کریں",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "یہیں بنے گا، سائن اپ کرنے پر محفوظ ہو گا",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault لاک ہے۔",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "یہ فارم بھرنے کے لیے Pabbel Vault میں سائن ان کریں۔",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "سائن ان کریں",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "$SITE$ کے لیے کوئی محفوظ لاگ ان نہیں۔",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "$SITE$ کے لیے کوئی 2 مرحلہ کوڈ نہیں۔",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "محفوظ شدہ پاس ورڈ اپ ڈیٹ کریں؟",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "”$NAME$“ اپ ڈیٹ ہو گا۔",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "یہ لاگ ان محفوظ کرنے کے لیے Pabbel Vault انلاک کریں",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "کس والٹ میں",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "اس سائٹ کے لیے کبھی نہیں",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Pabbel Vault میں محفوظ ہو گیا",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "پاس ورڈ اپ ڈیٹ ہو گیا",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "لاک ہے",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "انلاک ہے",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "ترتیبات",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "اکاؤنٹ",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "سائن ان نہیں ہیں",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "پاس ورڈز بھرنے اور محفوظ کرنے کے لیے سائن ان کریں۔",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "سیکیورٹی",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "خودکار لاک",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "والٹ استعمال کیے بغیر اتنا وقت گزرنے کے بعد۔ براؤزر بند ہونے پر والٹ ہمیشہ لاک ہو جاتا ہے۔",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "1 منٹ بعد",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "$MINUTES$ منٹ بعد",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "صرف براؤزر بند ہونے پر",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "ویب سائٹس پر",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "لاگ ان فیلڈز میں بٹن",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "جس فیلڈ میں آپ ٹائپ کر رہے ہوں، اس کے اندر Pabbel Vault بٹن دکھائیں۔",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "لاگ انز محفوظ کرنے کی پیشکش",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "جب آپ ایسے پاس ورڈ سے سائن ان کریں جو ابھی محفوظ نہ ہو یا بدل گیا ہو، تو پوچھیں۔",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "بھرنے کے بعد 2 مرحلہ کوڈ کاپی کریں",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "جب کسی لاگ ان کا مماثل 2 مرحلہ کوڈ ہو تو اگلے مرحلے کے لیے اسے کلپ بورڈ پر رکھیں۔ 45 سیکنڈ بعد صاف ہو جاتا ہے۔",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "2 مرحلہ کوڈ خود بخود ٹائپ کریں",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "جب سائن اِن پاس ورڈ کے بعد کوڈ مانگے تو مماثل 2 مرحلہ کوڈ اس میں ٹائپ ہو جاتا ہے۔ سائن اِن کی تصدیق آپ خود کرتے ہیں۔",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "2 مرحلہ کوڈ بھر دیا گیا",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "کی بورڈ شارٹ کٹ",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L آپ کے موجودہ صفحے کا لاگ ان یا کوڈ بھرتا ہے۔",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "ان سائٹس پر کبھی محفوظ نہ کریں",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "ابھی کوئی سائٹ نہیں۔ محفوظ کرنے کے پیغام پر ”اس سائٹ کے لیے کبھی نہیں“ منتخب کرنے سے سائٹ یہاں شامل ہو جاتی ہے۔",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "اپنا $SITE$ لاگ ان محفوظ کریں؟",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "پاس ورڈ بھر دیا گیا",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "پاس ورڈ بھر دیا گیا · 2 مرحلہ کوڈ کاپی ہو گیا",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "آپ کے لاگ ان لوڈ ہو رہے ہیں",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "آپ کے لاگ ان لوڈ نہیں ہو سکے",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "دوبارہ کوشش کریں",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "یہ صفحہ بھرنے کے لیے ان لاک کریں",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "ویب سائٹ کے آئیکن دکھائیں",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "ہر آئیکن براہ راست اسی ویب سائٹ سے آتا ہے، کبھی Pabbel کے ذریعے نہیں۔ بند ہونے پر فہرست میں حروف دکھائی دیتے ہیں۔",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "نیا ای میل ماسک استعمال کریں",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "اس پر آنے والی میل آپ کے Pabbel ان باکس میں پہنچتی ہے",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "اس سائٹ کے لیے آپ کا ای میل ماسک",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "ای میل ماسک بھر دیا گیا",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "ای میل ماسک نہیں بن سکا",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "حال ہی میں بہت زیادہ نئے ماسک بنائے گئے۔ بعد میں دوبارہ کوشش کریں۔",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "ای میل ماسک · میل آپ کے Pabbel ان باکس میں پہنچتی ہے",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "ای میل ماسک · موقوف، اس پر آنے والی میل واپس لوٹ جاتی ہے",
+    "description": "The same line when that mask is paused."
+  }
+}

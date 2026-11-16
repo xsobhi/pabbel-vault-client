@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: ตัวจัดการรหัสผ่านและ 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "ตัวจัดการรหัสผ่านแบบ Zero-knowledge กรอกรหัสผ่านและรหัสยืนยัน 2 ขั้นตอน บันทึกข้อมูลเข้าสู่ระบบใหม่ และสร้างรหัสผ่านที่รัดกุม",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "กรอกข้อมูลเข้าสู่ระบบหรือรหัสยืนยัน 2 ขั้นตอนสำหรับหน้านี้",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "กรอกข้อมูลเข้าสู่ระบบด้วย Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "สร้างรหัสผ่านที่รัดกุม",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "ล็อก Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "เปิด Pabbel Vault บนเว็บ",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "รหัสผ่านของคุณ ปิดผนึกไว้อย่างปลอดภัย",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "ลงชื่อเข้าใช้ด้วยบัญชี Pabbel ของคุณ ทุกอย่างในตู้นิรภัยจะถูกเข้ารหัสบนอุปกรณ์นี้ก่อนจัดเก็บ",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "ลงชื่อเข้าใช้ด้วย Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "กำลังรอ Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "ระบบจะเปิด accounts.pabbel.com คุณไม่ต้องพิมพ์รหัสผ่านที่นี่",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "ความเป็นส่วนตัว",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "ลงชื่อเข้าใช้ไม่สำเร็จ โปรดลองอีกครั้ง",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "ตั้งค่า Vault ก่อน",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$ ยังไม่มีตู้นิรภัย สร้างตู้นิรภัยบนเว็บก่อน ใช้เวลาแค่นาทีเดียว แล้วกลับมาที่นี่",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "ตั้งค่าบนเว็บ",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "สลับบัญชี",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "ปลดล็อกตู้นิรภัยของคุณ",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "รหัสผ่านตู้นิรภัย",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "ปลดล็อก",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "กำลังปลดล็อก…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "รหัสผ่านตู้นิรภัยของคุณจะไม่ออกไปจากอุปกรณ์นี้",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "รหัสผ่านตู้นิรภัยไม่ถูกต้อง",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "ยังปลดล็อกไม่ได้ในขณะนี้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "คงสถานะปลดล็อกบนเบราว์เซอร์นี้",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "ไม่ต้องใช้รหัสผ่านที่นี่เป็นเวลา 30 วัน คุณนำเบราว์เซอร์นี้ออกจากตู้นิรภัยบนเว็บได้ทุกเมื่อ",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "ครบ 30 วันของเบราว์เซอร์นี้แล้ว ป้อนรหัสผ่านหนึ่งครั้งเพื่อคงสถานะปลดล็อกไว้",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "เบราว์เซอร์นี้ไม่ได้รับความเชื่อถือแล้ว เพราะถูกนำออก หรือรหัสผ่านตู้นิรภัยของคุณเปลี่ยนไป ป้อนรหัสผ่านของคุณ",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "ปลดล็อกแล้ว แต่ยังตั้งให้เบราว์เซอร์นี้เป็นที่เชื่อถือไม่ได้ในขณะนี้ ลองอีกครั้งในการตั้งค่า",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "คงสถานะปลดล็อกบนเบราว์เซอร์นี้",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "เปิดตู้นิรภัยได้โดยไม่ต้องใช้รหัสผ่านเป็นเวลา 30 วัน Pabbel เก็บคีย์ไว้ครึ่งหนึ่งและเบราว์เซอร์นี้เก็บอีกครึ่ง จึงไม่มีฝ่ายใดเปิดได้เพียงลำพัง หากคอมพิวเตอร์เครื่องนี้หาย ให้นำออกที่ “เบราว์เซอร์ที่เชื่อถือได้” ในตู้นิรภัยบนเว็บ",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "เปิดอยู่จนถึง $DATE$",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "ปลดล็อกตู้นิรภัยก่อนเพื่อเปิดใช้ตัวเลือกนี้",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "รหัสผ่านตู้นิรภัย",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "ตั้งรหัสผ่านตู้นิรภัยใหม่ อุปกรณ์อื่นของคุณจะขอรหัสผ่านนี้ และต้องตั้งให้เบราว์เซอร์ที่เชื่อถือได้เป็นที่เชื่อถืออีกครั้ง",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "เปลี่ยน",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "รหัสผ่านตู้นิรภัยใหม่",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "ยืนยันรหัสผ่านใหม่",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "ใช้อย่างน้อย 12 ตัวอักษร",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "รหัสผ่านทั้งสองไม่ตรงกัน",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "กำลังเข้ารหัสใหม่…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "เปลี่ยนรหัสผ่านตู้นิรภัยแล้ว",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "เปลี่ยนรหัสผ่านตู้นิรภัยไม่ได้ โปรดลองอีกครั้ง",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "ยกเลิก",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "เปลี่ยนรหัสผ่านตู้นิรภัย",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "มีการเปลี่ยนรหัสผ่านตู้นิรภัยของคุณบนอุปกรณ์อื่น ล็อกตู้นิรภัยแล้วปลดล็อกด้วยรหัสผ่านใหม่ จากนั้นลองอีกครั้ง",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "แสดง",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "ซ่อน",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "ค้นหาในตู้นิรภัย",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "ตู้นิรภัย",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "ทั้งหมด",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "ส่วนตัว",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "สำหรับเว็บไซต์นี้",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "รายการทั้งหมด",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "ผลการค้นหา",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "ยังไม่มีรายการที่บันทึกไว้สำหรับเว็บไซต์นี้",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "ไม่มีรายการที่ตรงกับการค้นหา",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "ตู้นิรภัยของคุณยังว่างอยู่ เพิ่มข้อมูลเข้าสู่ระบบรายการแรกได้เลย",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "ไม่มีชื่อ",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "ถอดรหัสไม่ได้",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "รายการใหม่",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "เพิ่มเติม",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "ล็อก",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "ซิงค์เลย",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "เปิดตู้นิรภัยบนเว็บ",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "การตั้งค่า",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "ออกจากระบบ",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "กรอก",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "กรอกในหน้านี้",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "คัดลอกชื่อผู้ใช้",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "คัดลอกรหัสผ่าน",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "คัดลอกรหัส",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "คัดลอกโน้ต",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "คัดลอก $FIELD$",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "เปิดเว็บไซต์",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "แก้ไข",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "ปักหมุดไว้ด้านบน",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "เลิกปักหมุด",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "กลับ",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "บันทึก",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "อัปเดต",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "ลบ",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "ลบถาวร",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "สร้างรหัสผ่าน",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "สร้างใหม่",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "ปิด",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "นำ $SITE$ ออก",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "เปลี่ยน",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "คัดลอก $FIELD$ แล้ว",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "คัดลอกชื่อผู้ใช้แล้ว",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "คัดลอกรหัสผ่านแล้ว จะล้างออกใน 45 วินาที",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "คัดลอกรหัสยืนยัน 2 ขั้นตอนแล้ว",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "คัดลอกโน้ตแล้ว",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "บันทึกแล้ว",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "ลบแล้ว",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "กรอกแล้ว",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "กรอกรหัสผ่านที่รัดกุมให้แล้ว",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "คัดลอกไปยังคลิปบอร์ดไม่ได้",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "ไม่มีช่องให้กรอกในหน้านี้",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "โหลดตู้นิรภัยไม่ได้ โปรดลองอีกครั้ง",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "บันทึกไม่ได้ โปรดลองอีกครั้ง",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "ดูเหมือนจะไม่ใช่คีย์ตั้งค่าการยืนยัน 2 ขั้นตอนหรือลิงก์ otpauth://",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "รายการ",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "รายการใหม่",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "แก้ไขรายการ",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "กำลังบันทึก…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "ประเภท",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "ข้อมูลเข้าสู่ระบบ",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "รหัสยืนยัน 2 ขั้นตอน",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "โน้ตลับ",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "ชื่อ",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "เช่น Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "ชื่อผู้ใช้",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "รหัสผ่าน",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "เว็บไซต์",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "โน้ต",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "เนื้อหาโน้ต",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "คีย์ตั้งค่าหรือลิงก์ otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "ผู้ออก",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "บัญชี",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "ตู้นิรภัย",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "ย้ายไปยังตู้นิรภัย",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "การย้ายจะเข้ารหัสรายการใหม่สำหรับตู้นิรภัยอีกตู้",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "ปักหมุดไว้ด้านบน",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "ตัวสร้างรหัสผ่าน",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "ความยาว",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "ตัวพิมพ์ใหญ่",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "ตัวเลข",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "สัญลักษณ์",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "สร้างบนอุปกรณ์นี้ด้วยตัวสุ่มที่ปลอดภัย และไม่ใช้อักขระที่หน้าตาคล้ายกัน (l, 1, O, 0)",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "พอใช้",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "รัดกุม",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "ยอดเยี่ยม",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ บิต",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "กรอกด้วย Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "ใช้รหัสผ่านที่รัดกุม",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "สร้างที่นี่ และบันทึกเมื่อคุณสมัคร",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault ล็อกอยู่",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "ลงชื่อเข้าใช้ Pabbel Vault เพื่อกรอกแบบฟอร์มนี้",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "ลงชื่อเข้าใช้",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "ไม่มีข้อมูลเข้าสู่ระบบที่บันทึกไว้สำหรับ $SITE$",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "ไม่มีรหัสยืนยัน 2 ขั้นตอนสำหรับ $SITE$",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "อัปเดตรหัสผ่านที่บันทึกไว้ไหม",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "อัปเดต “$NAME$”",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "ปลดล็อก Pabbel Vault เพื่อบันทึกข้อมูลเข้าสู่ระบบนี้",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "บันทึกใน",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "ไม่ต้องบันทึกสำหรับเว็บไซต์นี้",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "บันทึกลง Pabbel Vault แล้ว",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "อัปเดตรหัสผ่านแล้ว",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "ล็อกอยู่",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "ปลดล็อกแล้ว",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "การตั้งค่า",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "บัญชี",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "ยังไม่ได้ลงชื่อเข้าใช้",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "ลงชื่อเข้าใช้เพื่อกรอกและบันทึกรหัสผ่าน",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "ความปลอดภัย",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "ล็อกอัตโนมัติ",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "เมื่อไม่ได้ใช้ตู้นิรภัยนานเท่านี้ ตู้นิรภัยจะล็อกทุกครั้งที่ปิดเบราว์เซอร์ด้วย",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "หลังจาก 1 นาที",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "หลังจาก $MINUTES$ นาที",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "เฉพาะเมื่อปิดเบราว์เซอร์",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "บนเว็บไซต์",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "ปุ่มในช่องเข้าสู่ระบบ",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "แสดงปุ่ม Pabbel Vault ในช่องที่คุณกำลังพิมพ์",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "เสนอให้บันทึกข้อมูลเข้าสู่ระบบ",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "ถามหลังจากคุณลงชื่อเข้าใช้ด้วยรหัสผ่านที่ยังไม่ได้บันทึก หรือที่มีการเปลี่ยนแปลง",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "คัดลอกรหัสยืนยัน 2 ขั้นตอนหลังกรอก",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "เมื่อข้อมูลเข้าสู่ระบบมีรหัสยืนยัน 2 ขั้นตอนที่ตรงกัน ระบบจะคัดลอกรหัสไว้ในคลิปบอร์ดสำหรับขั้นตอนถัดไป และล้างออกหลังจาก 45 วินาที",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "พิมพ์รหัสยืนยัน 2 ขั้นตอนให้อัตโนมัติ",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "เมื่อการเข้าสู่ระบบขอรหัสหลังรหัสผ่าน ระบบจะพิมพ์รหัสยืนยัน 2 ขั้นตอนที่ตรงกันลงไปให้ โดยคุณเป็นผู้ยืนยันการเข้าสู่ระบบเอง",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "กรอกรหัสยืนยัน 2 ขั้นตอนแล้ว",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "แป้นพิมพ์ลัด",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L จะกรอกข้อมูลเข้าสู่ระบบหรือรหัสสำหรับหน้าที่คุณเปิดอยู่",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "ไม่บันทึกบนเว็บไซต์เหล่านี้",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "ยังไม่มีเว็บไซต์ เมื่อคุณเลือก “ไม่ต้องบันทึกสำหรับเว็บไซต์นี้” ในหน้าต่างถามการบันทึก เว็บไซต์นั้นจะมาอยู่ที่นี่",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "บันทึกข้อมูลเข้าสู่ระบบ $SITE$ ไหม",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "กรอกรหัสผ่านแล้ว",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "กรอกรหัสผ่านแล้ว · คัดลอกรหัสยืนยัน 2 ขั้นตอนแล้ว",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "กำลังโหลดข้อมูลเข้าสู่ระบบ",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "โหลดข้อมูลเข้าสู่ระบบไม่ได้",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "ลองอีกครั้ง",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "ปลดล็อกเพื่อกรอกหน้านี้",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "แสดงไอคอนเว็บไซต์",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "แต่ละไอคอนมาจากเว็บไซต์นั้นโดยตรง ไม่ผ่าน Pabbel เลย หากปิดไว้ รายการจะแสดงตัวอักษรแทน",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "ใช้อีเมลแฝงใหม่",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "อีเมลที่ส่งมาจะเข้ากล่องจดหมาย Pabbel ของคุณ",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "อีเมลแฝงของคุณสำหรับเว็บไซต์นี้",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "กรอกอีเมลแฝงแล้ว",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "สร้างอีเมลแฝงไม่ได้",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "ช่วงนี้สร้างอีเมลแฝงใหม่มากเกินไป โปรดลองอีกครั้งในภายหลัง",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "อีเมลแฝง · อีเมลจะเข้ากล่องจดหมาย Pabbel ของคุณ",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "อีเมลแฝง · หยุดชั่วคราว อีเมลที่ส่งมาจะถูกตีกลับ",
+    "description": "The same line when that mask is paused."
+  }
+}

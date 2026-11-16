@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: পাসওয়ার্ড ম্যানেজার ও 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "জিরো-নলেজ পাসওয়ার্ড ম্যানেজার। পাসওয়ার্ড ও 2-ধাপের কোড পূরণ করুন, নতুন লগইন সেভ করুন, শক্তিশালী পাসওয়ার্ড তৈরি করুন।",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "এই পেজের লগইন বা 2-ধাপের কোড পূরণ করুন",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Pabbel Vault দিয়ে লগইন পূরণ করুন",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "একটি শক্তিশালী পাসওয়ার্ড তৈরি করুন",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Pabbel Vault লক করুন",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "ওয়েবে Pabbel Vault খুলুন",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "আপনার পাসওয়ার্ড, নিরাপদে তালাবন্ধ।",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "আপনার Pabbel অ্যাকাউন্ট দিয়ে সাইন ইন করুন। আপনার ভল্টের সবকিছু সংরক্ষণের আগে এই ডিভাইসেই এনক্রিপ্ট করা হয়।",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Pabbel দিয়ে সাইন ইন করুন",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Pabbel-এর অপেক্ষায়…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "accounts.pabbel.com খুলবে। এখানে কোনো পাসওয়ার্ড টাইপ করতে হয় না।",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "গোপনীয়তা",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "সাইন ইন শেষ হয়নি। অনুগ্রহ করে আবার চেষ্টা করুন।",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "আগে Vault সেট আপ করুন",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "$EMAIL$-এর এখনো কোনো ভল্ট নেই। ওয়েবে একটি তৈরি করুন - এক মিনিটের কাজ - তারপর এখানে ফিরে আসুন।",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "ওয়েবে সেট আপ করুন",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "অ্যাকাউন্ট বদলান",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "আপনার ভল্ট আনলক করুন",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "ভল্ট পাসওয়ার্ড",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "আনলক করুন",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "আনলক হচ্ছে…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "আপনার ভল্ট পাসওয়ার্ড কখনো এই ডিভাইস থেকে বের হয় না।",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "এটি ভল্ট পাসওয়ার্ড নয়।",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "এখন আনলক করা যাচ্ছে না। আপনার সংযোগ পরীক্ষা করে আবার চেষ্টা করুন।",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "এই ব্রাউজারে আনলক রাখুন",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "এখানে 30 দিন পাসওয়ার্ড লাগবে না। যেকোনো সময় ওয়েব ভল্ট থেকে এই ব্রাউজারটি সরিয়ে দিতে পারেন।",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "এই ব্রাউজারের 30 দিন শেষ হয়েছে। আনলক রাখতে একবার আপনার পাসওয়ার্ড লিখুন।",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "এই ব্রাউজারটি আর বিশ্বস্ত নয়: এটি সরিয়ে দেওয়া হয়েছে, অথবা আপনার ভল্ট পাসওয়ার্ড বদলেছে। আপনার পাসওয়ার্ড লিখুন।",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "আনলক হয়েছে, কিন্তু এখন এই ব্রাউজারটিকে বিশ্বস্ত করা গেল না। সেটিংসে আবার চেষ্টা করুন।",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "এই ব্রাউজারে আনলক রাখুন",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "30 দিন পাসওয়ার্ড ছাড়াই ভল্ট খোলে। কী-এর অর্ধেক থাকে Pabbel-এর কাছে আর বাকি অর্ধেক এই ব্রাউজারে, তাই কেউই একা এটি খুলতে পারে না। এই কম্পিউটার হারিয়ে গেলে ওয়েব ভল্টের “বিশ্বস্ত ব্রাউজার” থেকে এটি সরিয়ে দিন।",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "$DATE$ পর্যন্ত চালু।",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "এটি চালু করতে আগে ভল্ট আনলক করুন।",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "ভল্ট পাসওয়ার্ড",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "নতুন ভল্ট পাসওয়ার্ড সেট করুন। আপনার অন্য ডিভাইসগুলো এটি চাইবে, আর বিশ্বস্ত ব্রাউজারগুলোকে আবার বিশ্বস্ত করতে হবে।",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "বদলান",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "নতুন ভল্ট পাসওয়ার্ড",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "নতুন পাসওয়ার্ড নিশ্চিত করুন",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "কমপক্ষে 12টি অক্ষর ব্যবহার করুন।",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "দুটি পাসওয়ার্ড মিলছে না।",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "আবার এনক্রিপ্ট করা হচ্ছে…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "ভল্ট পাসওয়ার্ড বদলানো হয়েছে।",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "ভল্ট পাসওয়ার্ড বদলানো যায়নি। আবার চেষ্টা করুন।",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "বাতিল করুন",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "ভল্ট পাসওয়ার্ড বদলান",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "আপনার ভল্ট পাসওয়ার্ড অন্য একটি ডিভাইসে বদলানো হয়েছে। ভল্ট লক করুন, নতুন পাসওয়ার্ড দিয়ে আনলক করুন, তারপর আবার চেষ্টা করুন।",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "দেখান",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "লুকান",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "আপনার ভল্টে খুঁজুন",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "ভল্ট",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "সব",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "ব্যক্তিগত",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "এই সাইটের জন্য",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "সব আইটেম",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "ফলাফল",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "এই সাইটের জন্য এখনো কিছু সেভ করা নেই।",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "আপনার খোঁজের সঙ্গে মেলে এমন কোনো আইটেম নেই।",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "আপনার ভল্ট খালি। আপনার প্রথম লগইন যোগ করুন।",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "নামহীন",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "ডিক্রিপ্ট করা যাচ্ছে না",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "নতুন আইটেম",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "আরও",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "লক করুন",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "এখনই সিঙ্ক করুন",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "ওয়েব ভল্ট খুলুন",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "সেটিংস",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "সাইন আউট",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "পূরণ করুন",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "এই পেজে পূরণ করুন",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "ইউজারনেম কপি করুন",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "পাসওয়ার্ড কপি করুন",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "কোড কপি করুন",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "নোট কপি করুন",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "$FIELD$ কপি করুন",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "ওয়েবসাইট খুলুন",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "এডিট করুন",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "ওপরে পিন করুন",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "আনপিন করুন",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "ফিরে যান",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "সেভ করুন",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "আপডেট করুন",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "মুছুন",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "চিরতরে মুছুন",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "একটি পাসওয়ার্ড তৈরি করুন",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "নতুন পাসওয়ার্ড",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "বন্ধ করুন",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "$SITE$ সরিয়ে দিন",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "বদলান",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "$FIELD$ কপি হয়েছে",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "ইউজারনেম কপি হয়েছে",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "পাসওয়ার্ড কপি হয়েছে - 45 সেকেন্ডে মুছে যাবে",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "2-ধাপের কোড কপি হয়েছে",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "নোট কপি হয়েছে",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "সেভ হয়েছে",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "মুছে ফেলা হয়েছে",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "পূরণ হয়েছে",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "শক্তিশালী পাসওয়ার্ড বসিয়ে দেওয়া হয়েছে",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "ক্লিপবোর্ডে কপি করা যায়নি।",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "এই পেজে পূরণ করার মতো কিছু নেই।",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "আপনার ভল্ট লোড করা যায়নি। আবার চেষ্টা করুন।",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "সেভ করা যায়নি। আবার চেষ্টা করুন।",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "এটি 2-ধাপের সেটআপ কী বা otpauth:// লিঙ্ক বলে মনে হচ্ছে না।",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "আইটেম",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "নতুন আইটেম",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "আইটেম এডিট করুন",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "সেভ হচ্ছে…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "ধরন",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "লগইন",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "2-ধাপের কোড",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "সুরক্ষিত নোট",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "নাম",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "যেমন: Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "ইউজারনেম",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "পাসওয়ার্ড",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "ওয়েবসাইট",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "নোট",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "নোট",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "সেটআপ কী বা otpauth:// লিঙ্ক",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "প্রদানকারী",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "অ্যাকাউন্ট",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "ভল্ট",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "ভল্ট (এখানে সরান)",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "সরালে আইটেমটি অন্য ভল্টের জন্য আবার এনক্রিপ্ট হয়।",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "ওপরে পিন করুন",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "পাসওয়ার্ড জেনারেটর",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "দৈর্ঘ্য",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "বড় হাতের অক্ষর",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "সংখ্যা",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "চিহ্ন",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "এই ডিভাইসেই একটি নিরাপদ র‍্যান্ডম জেনারেটর দিয়ে তৈরি। দেখতে একই রকম অক্ষরগুলো (l, 1, O, 0) বাদ রাখা হয়।",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "চলনসই",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "শক্তিশালী",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "চমৎকার",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ বিট",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Pabbel Vault দিয়ে পূরণ করুন",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "একটি শক্তিশালী পাসওয়ার্ড ব্যবহার করুন",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "এখানেই তৈরি, সাইন আপ করলেই সেভ হবে",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault লক করা আছে।",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "এই ফর্ম পূরণ করতে Pabbel Vault-এ সাইন ইন করুন।",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "সাইন ইন",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "$SITE$-এর জন্য কোনো সেভ করা লগইন নেই।",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "$SITE$-এর জন্য কোনো 2-ধাপের কোড নেই।",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "সেভ করা পাসওয়ার্ড আপডেট করবেন?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "“$NAME$” আপডেট হবে।",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "এই লগইন সেভ করতে Pabbel Vault আনলক করুন",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "কোথায় সেভ হবে",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "এই সাইটে কখনো নয়",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Pabbel Vault-এ সেভ হয়েছে",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "পাসওয়ার্ড আপডেট হয়েছে",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "লক করা",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "আনলক করা",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "সেটিংস",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "অ্যাকাউন্ট",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "সাইন ইন করা নেই",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "পাসওয়ার্ড পূরণ ও সেভ করতে সাইন ইন করুন।",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "নিরাপত্তা",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "অটো-লক",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "এতক্ষণ ভল্ট ব্যবহার না করলে। ব্রাউজার বন্ধ হলে ভল্ট সবসময় লক হয়ে যায়।",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "1 মিনিট পর",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "$MINUTES$ মিনিট পর",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "শুধু ব্রাউজার বন্ধ হলে",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "ওয়েবসাইটে",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "লগইন ফিল্ডে বোতাম",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "আপনি যে ফিল্ডে টাইপ করছেন, তার ভেতরে Pabbel Vault বোতাম দেখান।",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "লগইন সেভ করার প্রস্তাব দিন",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "এখনো সেভ করা নেই বা বদলে গেছে এমন পাসওয়ার্ড দিয়ে সাইন ইন করার পর জিজ্ঞেস করুন।",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "পূরণের পর 2-ধাপের কোড কপি করুন",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "কোনো লগইনের সঙ্গে মেলে এমন 2-ধাপের কোড থাকলে পরের ধাপের জন্য সেটি ক্লিপবোর্ডে রাখুন। 45 সেকেন্ড পর মুছে যায়।",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "স্বয়ংক্রিয়ভাবে 2-ধাপের কোড টাইপ করুন",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "পাসওয়ার্ডের পরে সাইন-ইন কোনো কোড চাইলে মিলে যাওয়া 2-ধাপের কোডটি সেখানে টাইপ হয়ে যায়। সাইন-ইন নিশ্চিত করবেন আপনি নিজেই।",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "2-ধাপের কোড পূরণ হয়েছে",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "কিবোর্ড শর্টকাট",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L আপনি যে পেজে আছেন, তার লগইন বা কোড পূরণ করে।",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "যেসব সাইটে কখনো সেভ হবে না",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "এখনো কোনো সাইট নেই। সেভ করার প্রস্তাবে “এই সাইটে কখনো নয়” বেছে নিলে সাইটটি এখানে যোগ হবে।",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "আপনার $SITE$ লগইন সেভ করবেন?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "পাসওয়ার্ড পূরণ হয়েছে",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "পাসওয়ার্ড পূরণ হয়েছে · 2-ধাপের কোড কপি হয়েছে",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "আপনার লগইন লোড হচ্ছে",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "আপনার লগইন লোড করা যায়নি",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "আবার চেষ্টা করুন",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "এই পেজ পূরণ করতে আনলক করুন",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "ওয়েবসাইটের আইকন দেখান",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "প্রতিটি আইকন সরাসরি সেই ওয়েবসাইট থেকে আসে, কখনো Pabbel-এর মাধ্যমে নয়। বন্ধ থাকলে তালিকায় অক্ষর দেখা যাবে।",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "নতুন ইমেল মাস্ক ব্যবহার করুন",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "এখানে পাঠানো মেইল আপনার Pabbel ইনবক্সে আসে",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "এই সাইটের জন্য আপনার ইমেল মাস্ক",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "ইমেল মাস্ক দিয়ে পূরণ করা হয়েছে",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "ইমেল মাস্ক তৈরি করা যায়নি",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "সম্প্রতি অনেক বেশি নতুন মাস্ক। পরে আবার চেষ্টা করুন।",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "ইমেল মাস্ক · মেইল আপনার Pabbel ইনবক্সে আসে",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "ইমেল মাস্ক · বিরতি দেওয়া হয়েছে, এখানে পাঠানো মেইল ফেরত যায়",
+    "description": "The same line when that mask is paused."
+  }
+}

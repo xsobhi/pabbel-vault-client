@@ -1,0 +1,860 @@
+{
+  "extName": {
+    "message": "Pabbel Vault: menedżer haseł i 2FA",
+    "description": "Store/manifest name. Max 45 characters. Keep 'Pabbel Vault' untranslated."
+  },
+  "extShortName": {
+    "message": "Pabbel Vault",
+    "description": "Short name. Brand, keep as is."
+  },
+  "extDescription": {
+    "message": "Menedżer haseł z szyfrowaniem zero-knowledge. Wypełnia hasła i kody 2FA, zapisuje nowe dane logowania i generuje silne hasła.",
+    "description": "Store/manifest description. Max 132 characters."
+  },
+  "commandFillLogin": {
+    "message": "Wypełnij dane logowania lub kod 2FA na tej stronie",
+    "description": "Keyboard shortcut description in the browser's shortcut settings."
+  },
+  "brandShort": {
+    "message": "Pabbel Vault",
+    "description": "Product name shown in the UI. Keep as is."
+  },
+  "brandPabbel": {
+    "message": "Pabbel",
+    "description": "Brand, small label above the wordmark. Keep as is."
+  },
+  "brandVault": {
+    "message": "Vault",
+    "description": "Product word in the popup wordmark (translate 'Vault' only if Pabbel Vault is known by a local name; usually keep)."
+  },
+  "menuFillLogin": {
+    "message": "Wypełnij dane logowania z Pabbel Vault",
+    "description": "Right-click menu on a text field."
+  },
+  "menuGenerate": {
+    "message": "Wygeneruj silne hasło",
+    "description": "Right-click menu on a text field."
+  },
+  "menuLock": {
+    "message": "Zablokuj Pabbel Vault",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "menuOpenWebVault": {
+    "message": "Otwórz Pabbel Vault w wersji internetowej",
+    "description": "Right-click menu on the toolbar icon."
+  },
+  "signInTitle": {
+    "message": "Twoje hasła pod kluczem.",
+    "description": "Sign-in screen headline. Short and warm."
+  },
+  "signInBody": {
+    "message": "Zaloguj się na konto Pabbel. Wszystko w Twoim sejfie jest szyfrowane na tym urządzeniu, zanim zostanie zapisane.",
+    "description": "Sign-in screen body."
+  },
+  "actionSignInWithPabbel": {
+    "message": "Zaloguj się przez Pabbel",
+    "description": "Primary sign-in button."
+  },
+  "signInWaiting": {
+    "message": "Oczekiwanie na Pabbel…",
+    "description": "Sign-in button while the sign-in window is open."
+  },
+  "signInFine": {
+    "message": "Otworzy się accounts.pabbel.com. Tutaj nie wpisujesz żadnego hasła.",
+    "description": "Small print under the sign-in button."
+  },
+  "linkPrivacy": {
+    "message": "Prywatność",
+    "description": "Link to the privacy policy."
+  },
+  "errorSignIn": {
+    "message": "Logowanie nie zostało dokończone. Spróbuj ponownie.",
+    "description": "Sign-in failed."
+  },
+  "noVaultTitle": {
+    "message": "Najpierw skonfiguruj sejf",
+    "description": "Shown when the account has no vault yet."
+  },
+  "noVaultBody": {
+    "message": "Konto $EMAIL$ nie ma jeszcze sejfu. Utwórz go w wersji internetowej – zajmie to minutę – a potem wróć tutaj.",
+    "description": "Body when the account has no vault.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "ada@pabbel.com"
+      }
+    }
+  },
+  "actionSetUpOnWeb": {
+    "message": "Skonfiguruj w wersji internetowej",
+    "description": "Button that opens the web vault."
+  },
+  "actionSwitchAccount": {
+    "message": "Przełącz konto",
+    "description": "Sign out and sign in with another account."
+  },
+  "unlockTitle": {
+    "message": "Odblokuj sejf",
+    "description": "Unlock screen headline."
+  },
+  "unlockPasswordLabel": {
+    "message": "Hasło do sejfu",
+    "description": "Label/placeholder of the vault password field."
+  },
+  "actionUnlock": {
+    "message": "Odblokuj",
+    "description": "Unlock button."
+  },
+  "unlockWorking": {
+    "message": "Odblokowywanie…",
+    "description": "Unlock button while deriving the key."
+  },
+  "unlockFine": {
+    "message": "Hasło do sejfu nigdy nie opuszcza tego urządzenia.",
+    "description": "Small print under the unlock form."
+  },
+  "errorWrongPassword": {
+    "message": "To nie jest Twoje hasło do sejfu.",
+    "description": "Wrong vault password."
+  },
+  "errorUnlock": {
+    "message": "Nie udało się teraz odblokować. Sprawdź połączenie i spróbuj ponownie.",
+    "description": "Unlock failed for another reason."
+  },
+  "unlockStay": {
+    "message": "Pozostaw sejf odblokowany w tej przeglądarce",
+    "description": "Opt-in checkbox on the unlock screen: this browser then opens the vault without the password for 30 days."
+  },
+  "unlockStayHint": {
+    "message": "Przez 30 dni bez hasła w tej przeglądarce. W każdej chwili możesz ją usunąć w wersji internetowej.",
+    "description": "Small print under that checkbox."
+  },
+  "unlockTrustExpired": {
+    "message": "Minęło 30 dni zaufania dla tej przeglądarki. Wpisz hasło jeszcze raz, aby sejf pozostał odblokowany.",
+    "description": "On the unlock screen when the 30 trusted days ended."
+  },
+  "unlockTrustEnded": {
+    "message": "Ta przeglądarka nie jest już zaufana: została usunięta albo hasło do sejfu zostało zmienione. Wpisz hasło.",
+    "description": "On the unlock screen when the trust was taken away."
+  },
+  "errorTrust": {
+    "message": "Odblokowano, ale nie udało się teraz dodać tej przeglądarki do zaufanych. Spróbuj ponownie w Ustawieniach.",
+    "description": "Toast after unlocking when trusting the browser failed."
+  },
+  "optionsStay": {
+    "message": "Pozostaw sejf odblokowany w tej przeglądarce",
+    "description": "Setting."
+  },
+  "optionsStayHint": {
+    "message": "Otwiera sejf bez hasła przez 30 dni. Pabbel przechowuje połowę klucza, a ta przeglądarka drugą połowę, więc żadne z nich nie otworzy sejfu samodzielnie. Jeśli zgubisz ten komputer, usuń go z listy „Zaufane przeglądarki” w wersji internetowej.",
+    "description": "Setting hint; explains the split key."
+  },
+  "optionsStayUntil": {
+    "message": "Włączone do $DATE$.",
+    "description": "Under the setting while it is on; DATE is a formatted date.",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "1 December 2026"
+      }
+    }
+  },
+  "optionsStayLocked": {
+    "message": "Najpierw odblokuj sejf, aby to włączyć.",
+    "description": "Under the setting while the vault is locked."
+  },
+  "optionsPassword": {
+    "message": "Hasło do sejfu",
+    "description": "Setting row title."
+  },
+  "optionsPasswordHint": {
+    "message": "Ustaw nowe hasło do sejfu. Pozostałe urządzenia poproszą o nie, a zaufane przeglądarki trzeba będzie ponownie dodać do zaufanych.",
+    "description": "Setting row hint."
+  },
+  "actionChangePassword": {
+    "message": "Zmień",
+    "description": "Opens the change-password form."
+  },
+  "passwordNew": {
+    "message": "Nowe hasło do sejfu",
+    "description": "Field label."
+  },
+  "passwordConfirm": {
+    "message": "Potwierdź nowe hasło",
+    "description": "Field label."
+  },
+  "passwordTooShort": {
+    "message": "Użyj co najmniej 12 znaków.",
+    "description": "Validation error."
+  },
+  "passwordMismatch": {
+    "message": "Hasła nie są zgodne.",
+    "description": "Validation error."
+  },
+  "passwordWorking": {
+    "message": "Ponowne szyfrowanie…",
+    "description": "Button while the password is being changed."
+  },
+  "passwordChanged": {
+    "message": "Hasło do sejfu zostało zmienione.",
+    "description": "Confirmation."
+  },
+  "errorPassword": {
+    "message": "Nie udało się zmienić hasła do sejfu. Spróbuj ponownie.",
+    "description": "Error."
+  },
+  "actionCancel": {
+    "message": "Anuluj",
+    "description": "Cancel button."
+  },
+  "menuChangePassword": {
+    "message": "Zmień hasło do sejfu",
+    "description": "Popup menu item; opens the change-password form in Settings."
+  },
+  "errorStaleSession": {
+    "message": "Twoje hasło do sejfu zostało zmienione na innym urządzeniu. Zablokuj sejf, odblokuj go nowym hasłem i spróbuj ponownie.",
+    "description": "When the vault open here still uses a password that was changed elsewhere."
+  },
+  "actionShow": {
+    "message": "Pokaż",
+    "description": "Show a hidden password."
+  },
+  "actionHide": {
+    "message": "Ukryj",
+    "description": "Hide a shown password."
+  },
+  "searchPlaceholder": {
+    "message": "Szukaj w sejfie",
+    "description": "Search field placeholder."
+  },
+  "vaultsLabel": {
+    "message": "Sejfy",
+    "description": "Accessible label of the vault filter chips."
+  },
+  "scopeAll": {
+    "message": "Wszystkie",
+    "description": "Filter chip: items from every vault."
+  },
+  "vaultPersonal": {
+    "message": "Osobisty",
+    "description": "Name of the person's own vault."
+  },
+  "sectionThisSite": {
+    "message": "Dla tej strony",
+    "description": "Section heading: items that match the open website."
+  },
+  "sectionAll": {
+    "message": "Wszystkie elementy",
+    "description": "Section heading: everything."
+  },
+  "sectionResults": {
+    "message": "Wyniki",
+    "description": "Section heading while searching."
+  },
+  "emptyThisSite": {
+    "message": "Dla tej strony nic jeszcze nie zapisano.",
+    "description": "No items match the open website."
+  },
+  "emptySearch": {
+    "message": "Żaden element nie pasuje do wyszukiwania.",
+    "description": "Search found nothing."
+  },
+  "emptyVault": {
+    "message": "Twój sejf jest pusty. Dodaj pierwsze dane logowania.",
+    "description": "Vault has no items."
+  },
+  "untitled": {
+    "message": "Bez nazwy",
+    "description": "Item without a name."
+  },
+  "brokenItem": {
+    "message": "Nie można odszyfrować",
+    "description": "An item whose data cannot be decrypted."
+  },
+  "actionNewItem": {
+    "message": "Nowy element",
+    "description": "Add a new item."
+  },
+  "actionMore": {
+    "message": "Więcej",
+    "description": "Overflow menu button."
+  },
+  "actionLock": {
+    "message": "Zablokuj",
+    "description": "Lock the vault."
+  },
+  "actionSync": {
+    "message": "Synchronizuj teraz",
+    "description": "Reload items from the server."
+  },
+  "actionOpenWebVault": {
+    "message": "Otwórz wersję internetową",
+    "description": "Open vault.pabbel.com."
+  },
+  "actionSettings": {
+    "message": "Ustawienia",
+    "description": "Open the settings page."
+  },
+  "actionSignOut": {
+    "message": "Wyloguj się",
+    "description": "Sign out of the extension."
+  },
+  "actionFill": {
+    "message": "Wypełnij",
+    "description": "Fill this item into the page."
+  },
+  "actionFillThisPage": {
+    "message": "Wypełnij na tej stronie",
+    "description": "Fill this item into the page behind the popup."
+  },
+  "actionCopyUsername": {
+    "message": "Kopiuj nazwę użytkownika",
+    "description": "Copy button."
+  },
+  "actionCopyPassword": {
+    "message": "Kopiuj hasło",
+    "description": "Copy button."
+  },
+  "actionCopyCode": {
+    "message": "Kopiuj kod",
+    "description": "Copy a 2-step code."
+  },
+  "actionCopyNote": {
+    "message": "Kopiuj notatkę",
+    "description": "Copy a secure note."
+  },
+  "actionCopyField": {
+    "message": "Kopiuj pole „$FIELD$”",
+    "description": "Copy one field; FIELD is its label, e.g. Username.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "actionOpenSite": {
+    "message": "Otwórz stronę",
+    "description": "Open the item's website."
+  },
+  "actionEdit": {
+    "message": "Edytuj",
+    "description": "Edit the item."
+  },
+  "actionPin": {
+    "message": "Przypnij na górze",
+    "description": "Pin an item."
+  },
+  "actionUnpin": {
+    "message": "Odepnij",
+    "description": "Unpin an item."
+  },
+  "actionBack": {
+    "message": "Wstecz",
+    "description": "Back to the list."
+  },
+  "actionSave": {
+    "message": "Zapisz",
+    "description": "Save button."
+  },
+  "actionUpdate": {
+    "message": "Aktualizuj",
+    "description": "Update a saved password."
+  },
+  "actionDelete": {
+    "message": "Usuń",
+    "description": "Delete the item."
+  },
+  "actionConfirmDelete": {
+    "message": "Usuń na zawsze",
+    "description": "Second, confirming tap on delete."
+  },
+  "actionGenerate": {
+    "message": "Wygeneruj hasło",
+    "description": "Generate a password into the field."
+  },
+  "actionRegenerate": {
+    "message": "Inne hasło",
+    "description": "Generate another password."
+  },
+  "actionClose": {
+    "message": "Zamknij",
+    "description": "Close button."
+  },
+  "actionRemoveSite": {
+    "message": "Usuń $SITE$",
+    "description": "Remove a site from the never-save list.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "actionChangeShortcut": {
+    "message": "Zmień",
+    "description": "Open the browser's keyboard shortcut settings."
+  },
+  "toastCopied": {
+    "message": "Skopiowano: $FIELD$",
+    "description": "After copying a field. Cleared from the clipboard after 45 s.",
+    "placeholders": {
+      "field": {
+        "content": "$1",
+        "example": "Username"
+      }
+    }
+  },
+  "toastUsernameCopied": {
+    "message": "Skopiowano nazwę użytkownika",
+    "description": "Toast."
+  },
+  "toastPasswordCopied": {
+    "message": "Skopiowano hasło – zniknie ze schowka za 45 s",
+    "description": "Toast after copying a password."
+  },
+  "toastCodeCopied": {
+    "message": "Skopiowano kod 2FA",
+    "description": "Toast after copying a 2-step (TOTP) code."
+  },
+  "toastNoteCopied": {
+    "message": "Skopiowano notatkę",
+    "description": "Toast."
+  },
+  "toastSaved": {
+    "message": "Zapisano",
+    "description": "Toast after saving an item."
+  },
+  "toastDeleted": {
+    "message": "Usunięto",
+    "description": "Toast after deleting an item."
+  },
+  "toastFilled": {
+    "message": "Wypełniono",
+    "description": "Toast after filling the page."
+  },
+  "toastGenerated": {
+    "message": "Wpisano silne hasło",
+    "description": "Toast after a generated password was filled into a sign-up form."
+  },
+  "errorClipboard": {
+    "message": "Nie udało się skopiować do schowka.",
+    "description": "Clipboard error."
+  },
+  "errorFill": {
+    "message": "Na tej stronie nie ma czego wypełnić.",
+    "description": "The page has no field to fill."
+  },
+  "errorLoad": {
+    "message": "Nie udało się wczytać sejfu. Spróbuj ponownie.",
+    "description": "Loading failed."
+  },
+  "errorSave": {
+    "message": "Nie udało się zapisać. Spróbuj ponownie.",
+    "description": "Saving failed."
+  },
+  "errorSecret": {
+    "message": "To nie wygląda na klucz tajny 2FA ani link otpauth://.",
+    "description": "Invalid TOTP secret."
+  },
+  "itemTitle": {
+    "message": "Element",
+    "description": "Header of the item screen."
+  },
+  "newTitle": {
+    "message": "Nowy element",
+    "description": "Header of the new-item screen."
+  },
+  "editTitle": {
+    "message": "Edytuj element",
+    "description": "Header of the edit screen."
+  },
+  "saving": {
+    "message": "Zapisywanie…",
+    "description": "Save button while saving."
+  },
+  "fieldType": {
+    "message": "Typ",
+    "description": "Item type picker."
+  },
+  "typeLogin": {
+    "message": "Dane logowania",
+    "description": "Item type: website login."
+  },
+  "typeTotp": {
+    "message": "Kod 2FA",
+    "description": "Item type: authenticator (TOTP) code."
+  },
+  "typeNote": {
+    "message": "Bezpieczna notatka",
+    "description": "Item type: encrypted note."
+  },
+  "fieldName": {
+    "message": "Nazwa",
+    "description": "Item name."
+  },
+  "fieldNamePlaceholder": {
+    "message": "np. Northwind",
+    "description": "Placeholder for the item name (a fictional company is fine)."
+  },
+  "fieldUsername": {
+    "message": "Nazwa użytkownika",
+    "description": "Field label."
+  },
+  "fieldPassword": {
+    "message": "Hasło",
+    "description": "Field label."
+  },
+  "fieldWebsite": {
+    "message": "Strona internetowa",
+    "description": "Field label (URL)."
+  },
+  "fieldNotes": {
+    "message": "Notatki",
+    "description": "Field label."
+  },
+  "fieldNote": {
+    "message": "Notatka",
+    "description": "Field label of a secure note's body."
+  },
+  "fieldSecret": {
+    "message": "Klucz tajny lub link otpauth://",
+    "description": "Label of the TOTP secret field."
+  },
+  "fieldSecretPlaceholder": {
+    "message": "JBSW Y3DP EHPK 3PXP",
+    "description": "Example secret. Keep as is."
+  },
+  "fieldIssuer": {
+    "message": "Wydawca",
+    "description": "Who issued the 2-step code (e.g. GitHub)."
+  },
+  "fieldAccount": {
+    "message": "Konto",
+    "description": "Account name of a 2-step code."
+  },
+  "fieldVault": {
+    "message": "Sejf",
+    "description": "Which vault to save into."
+  },
+  "fieldMoveTo": {
+    "message": "Przenieś do sejfu",
+    "description": "Vault picker when editing; changing it moves the item."
+  },
+  "moveHint": {
+    "message": "Przeniesienie ponownie szyfruje element dla drugiego sejfu.",
+    "description": "Hint under the vault picker."
+  },
+  "fieldPinned": {
+    "message": "Przypnij na górze",
+    "description": "Switch label."
+  },
+  "generatorTitle": {
+    "message": "Generator haseł",
+    "description": "Screen title."
+  },
+  "generatorLength": {
+    "message": "Długość",
+    "description": "Length slider."
+  },
+  "generatorUppercase": {
+    "message": "Wielkie litery",
+    "description": "Toggle."
+  },
+  "generatorNumbers": {
+    "message": "Cyfry",
+    "description": "Toggle."
+  },
+  "generatorSymbols": {
+    "message": "Symbole",
+    "description": "Toggle."
+  },
+  "generatorFine": {
+    "message": "Tworzone na tym urządzeniu przez bezpieczny generator losowy. Podobne do siebie znaki (l, 1, O, 0) są pomijane.",
+    "description": "Small print."
+  },
+  "strengthFair": {
+    "message": "Przeciętne",
+    "description": "Password strength."
+  },
+  "strengthStrong": {
+    "message": "Silne",
+    "description": "Password strength."
+  },
+  "strengthExcellent": {
+    "message": "Doskonałe",
+    "description": "Password strength."
+  },
+  "bits": {
+    "message": "$BITS$ bit",
+    "description": "Entropy of the generated password.",
+    "placeholders": {
+      "bits": {
+        "content": "$1",
+        "example": "118"
+      }
+    }
+  },
+  "inlineButtonLabel": {
+    "message": "Wypełnij z Pabbel Vault",
+    "description": "Tooltip of the small button inside a login field."
+  },
+  "inlineGenerate": {
+    "message": "Użyj silnego hasła",
+    "description": "Dropdown row on a sign-up field."
+  },
+  "inlineGenerateHint": {
+    "message": "Wygenerowane tutaj, zapisane, gdy się zarejestrujesz",
+    "description": "Sub-line of the generate row."
+  },
+  "inlineLocked": {
+    "message": "Pabbel Vault jest zablokowany.",
+    "description": "Dropdown when locked."
+  },
+  "inlineSignedOut": {
+    "message": "Zaloguj się do Pabbel Vault, aby wypełnić ten formularz.",
+    "description": "Dropdown when signed out."
+  },
+  "actionSignIn": {
+    "message": "Zaloguj się",
+    "description": "Button."
+  },
+  "inlineNoLogins": {
+    "message": "Brak zapisanych danych logowania dla $SITE$.",
+    "description": "Dropdown with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "inlineNoCodes": {
+    "message": "Brak kodów 2FA dla $SITE$.",
+    "description": "Dropdown on a code field with no matches.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "saveUpdateTitle": {
+    "message": "Zaktualizować zapisane hasło?",
+    "description": "Save prompt title when the password changed."
+  },
+  "saveUpdateDetail": {
+    "message": "Zaktualizuje element „$NAME$”.",
+    "description": "Which item would be updated.",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Northwind"
+      }
+    }
+  },
+  "saveLockedTitle": {
+    "message": "Odblokuj Pabbel Vault, aby zapisać te dane logowania",
+    "description": "Save prompt when the vault is locked."
+  },
+  "saveIn": {
+    "message": "Zapisz w",
+    "description": "Label of the vault picker in the save prompt."
+  },
+  "saveNever": {
+    "message": "Nigdy dla tej strony",
+    "description": "Stop offering to save on this site."
+  },
+  "saveSaved": {
+    "message": "Zapisano w Pabbel Vault",
+    "description": "Confirmation."
+  },
+  "saveUpdated": {
+    "message": "Zaktualizowano hasło",
+    "description": "Confirmation."
+  },
+  "stateLocked": {
+    "message": "Zablokowany",
+    "description": "Vault state."
+  },
+  "stateUnlocked": {
+    "message": "Odblokowany",
+    "description": "Vault state."
+  },
+  "optionsTitle": {
+    "message": "Ustawienia",
+    "description": "Options page title."
+  },
+  "optionsAccount": {
+    "message": "Konto",
+    "description": "Section."
+  },
+  "optionsSignedOut": {
+    "message": "Nie zalogowano",
+    "description": "Account row."
+  },
+  "optionsSignedOutHint": {
+    "message": "Zaloguj się, aby wypełniać i zapisywać hasła.",
+    "description": "Account row hint."
+  },
+  "optionsSecurity": {
+    "message": "Bezpieczeństwo",
+    "description": "Section."
+  },
+  "optionsAutoLock": {
+    "message": "Blokuj automatycznie",
+    "description": "Auto-lock setting."
+  },
+  "optionsAutoLockHint": {
+    "message": "Po takim czasie bez korzystania z sejfu. Sejf zawsze blokuje się po zamknięciu przeglądarki.",
+    "description": "Auto-lock hint."
+  },
+  "lockOneMinute": {
+    "message": "Po 1 minucie",
+    "description": "Auto-lock choice."
+  },
+  "lockMinutes": {
+    "message": "Po $MINUTES$ minutach",
+    "description": "Auto-lock choice (5, 15, 30 or 60).",
+    "placeholders": {
+      "minutes": {
+        "content": "$1",
+        "example": "15"
+      }
+    }
+  },
+  "lockOnClose": {
+    "message": "Tylko po zamknięciu przeglądarki",
+    "description": "Auto-lock choice."
+  },
+  "optionsAutofill": {
+    "message": "Na stronach internetowych",
+    "description": "Section about autofill."
+  },
+  "optionsInline": {
+    "message": "Przycisk w polach logowania",
+    "description": "Setting."
+  },
+  "optionsInlineHint": {
+    "message": "Pokazuj przycisk Pabbel Vault w polu, w którym piszesz.",
+    "description": "Setting hint."
+  },
+  "optionsSavePrompts": {
+    "message": "Proponuj zapisanie danych logowania",
+    "description": "Setting."
+  },
+  "optionsSavePromptsHint": {
+    "message": "Pytaj po zalogowaniu się hasłem, które nie jest jeszcze zapisane albo zostało zmienione.",
+    "description": "Setting hint."
+  },
+  "optionsCopyTotp": {
+    "message": "Kopiuj kod 2FA po wypełnieniu",
+    "description": "Setting."
+  },
+  "optionsCopyTotpHint": {
+    "message": "Gdy dane logowania mają pasujący kod 2FA, trafi on do schowka na następny krok. Schowek zostanie wyczyszczony po 45 sekundach.",
+    "description": "Setting hint."
+  },
+  "optionsTypeTotp": {
+    "message": "Automatycznie wpisuj kody 2FA",
+    "description": "Setting."
+  },
+  "optionsTypeTotpHint": {
+    "message": "Gdy logowanie po haśle prosi o kod, zostanie w nim wpisany pasujący kod 2FA. Logowanie potwierdzasz samodzielnie.",
+    "description": "Setting hint: the code goes in by itself; the person still confirms the sign-in."
+  },
+  "toastCodeFilled": {
+    "message": "Wpisano kod 2FA",
+    "description": "After a 2-step code was typed in by itself on a sign-in's code step."
+  },
+  "optionsShortcut": {
+    "message": "Skrót klawiszowy",
+    "description": "Setting."
+  },
+  "optionsShortcutHint": {
+    "message": "Ctrl+Shift+L wypełnia dane logowania lub kod na bieżącej stronie.",
+    "description": "Setting hint. Keep 'Ctrl+Shift+L'."
+  },
+  "optionsNever": {
+    "message": "Nigdy nie zapisuj na stronach",
+    "description": "Section: the never-save list."
+  },
+  "optionsNeverEmpty": {
+    "message": "Nie ma tu jeszcze żadnych stron. Wybranie „Nigdy dla tej strony” w propozycji zapisu doda stronę do tej listy.",
+    "description": "Empty never-save list."
+  },
+  "saveTitleFor": {
+    "message": "Zapisać dane logowania do $SITE$?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Wpisano hasło",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Wpisano hasło · skopiowano kod 2FA",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Wczytywanie danych logowania",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Nie udało się wczytać danych logowania",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Spróbuj ponownie",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Odblokuj, aby wypełnić tę stronę",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Pokazuj ikony stron",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Każda ikona pochodzi bezpośrednio z danej strony, nigdy przez Pabbel. Po wyłączeniu lista pokazuje litery.",
+    "description": "Setting detail; says where icons come from."
+  },
+  "inlineMaskNew": {
+    "message": "Użyj nowej maski e-mail",
+    "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
+  },
+  "inlineMaskHint": {
+    "message": "Poczta trafi do Twojej skrzynki Pabbel",
+    "description": "Sub-line of the new-mask row."
+  },
+  "inlineMaskExisting": {
+    "message": "Twoja maska e-mail dla tej strony",
+    "description": "Sub-line of a row showing a mask made for this site before."
+  },
+  "toastMaskFilled": {
+    "message": "Wpisano maskę e-mail",
+    "description": "Toast after a new mask was made and typed into the field."
+  },
+  "inlineMaskFailed": {
+    "message": "Nie udało się utworzyć maski e-mail",
+    "description": "Toast: making a mask failed."
+  },
+  "inlineMaskLimit": {
+    "message": "Zbyt wiele nowych masek w ostatnim czasie. Spróbuj ponownie później.",
+    "description": "Toast: the hourly or daily limit on new masks was reached."
+  },
+  "itemMaskActive": {
+    "message": "Maska e-mail · poczta trafia do Twojej skrzynki Pabbel",
+    "description": "Popup line under a login whose username is an email mask."
+  },
+  "itemMaskPaused": {
+    "message": "Maska e-mail · wstrzymana, poczta na ten adres jest odrzucana",
+    "description": "The same line when that mask is paused."
+  }
+}
