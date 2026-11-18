@@ -117,6 +117,20 @@
     "message": "این رمز گاوصندوق نیست.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel تنظیمی ناامن برای گاوصندوق درخواست کرد، به همین دلیل رمز شما استفاده نشد. بعداً دوباره امتحان کنید.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "«$TEAM$» به‌صورت ایمن باز نشد: کلید مشترک آن در بررسی امنیتی ناموفق بود. برای دیدن دلیل، گاوصندوق وب را باز کنید.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "الان قفل باز نشد. اتصال خود را بررسی کنید و دوباره تلاش کنید.",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "ماسک ایمیل · متوقف‌شده، ایمیل‌هایی که به آن فرستاده شود برگشت می‌خورد",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "اسکن این صفحه",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "چسباندن تصویر",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "بارگذاری تصویر",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "کد QR این صفحه را اسکن کنید، یک اسکرین‌شات بچسبانید (Ctrl+V) یا تصویری بارگذاری کنید. تصویر روی همین دستگاه خوانده می‌شود و به جایی فرستاده نمی‌شود.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "کد QR پیدا نشد",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "این کد QR، کد تأیید دومرحله‌ای نیست",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "گرفتن تصویر از این صفحه ممکن نشد. به جای آن یک اسکرین‌شات بچسبانید.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "تصویری در کلیپ‌بورد نیست",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "این کد چند حساب دارد. حسابی را که اکنون می‌خواهید اضافه کنید انتخاب کنید؛ برای بقیه دوباره اسکن کنید.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "اسکن شد: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$، $DIGITS$ رقم، $PERIOD$ ثانیه)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

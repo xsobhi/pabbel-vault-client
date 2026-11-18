@@ -11,6 +11,7 @@ import { API } from "../config";
 import type { ItemRow, ItemType, Mask, MaskList, MeResponse, VaultSummary } from "../vault-types";
 import type { PasswordChangeBody } from "@vault/crypto/rewrap";
 import type { KeyProofChallenge } from "@vault/crypto/key-proof";
+import type { IdentityBody } from "@vault/crypto/trust/identity-setup";
 import { accessToken, refresh } from "./auth";
 
 export class ApiError extends Error {
@@ -59,6 +60,8 @@ export const vaultApi = {
     request<{ ok: true }>("POST", `/items/${encodeURIComponent(id)}/read`, { what }),
   /** A one-time challenge, answered with the account's private key (@vault/crypto/key-proof). */
   keyProofChallenge: () => request<KeyProofChallenge>("POST", "/key-proof", {}),
+  setIdentity: (body: IdentityBody) => request<{ ok: true }>("POST", "/identity", body),
+  putTrust: (state: string, previous: string | null) => request<{ ok: true }>("PUT", "/trust", { state, previous }),
   changePassword: (body: PasswordChangeBody) => request<{ ok: true }>("POST", "/password", body),
   /** Trusted browsers (trust.ts): a new share S, S for a silent unlock, and removal. */
   trustBrowser: (currentMkCheck: string) => request<{ id: string; share: string; expiresAt: string }>("POST", "/devices", { currentMkCheck }),

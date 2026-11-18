@@ -117,6 +117,20 @@
     "message": "Đó không phải mật khẩu kho.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel yêu cầu một cài đặt kho không an toàn nên mật khẩu của bạn đã không được dùng. Hãy thử lại sau.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "Không thể mở \"$TEAM$\" một cách an toàn: khóa chia sẻ của nhóm không qua được kiểm tra bảo mật. Hãy mở kho trên web để xem lý do.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "Hiện chưa mở khóa được. Kiểm tra kết nối rồi thử lại.",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "Mặt nạ email · đã tạm dừng, thư gửi đến sẽ bị trả lại",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "Quét trang này",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "Dán hình ảnh",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "Tải hình ảnh lên",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "Quét mã QR trên trang này, dán ảnh chụp màn hình (Ctrl+V) hoặc tải hình ảnh lên. Ảnh được đọc ngay trên thiết bị này và không được gửi đi đâu.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "Không tìm thấy mã QR",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "Mã QR này không phải mã xác minh 2 bước",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "Không thể chụp trang này. Hãy dán ảnh chụp màn hình thay thế.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "Không có hình ảnh trong bộ nhớ tạm",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "Mã này chứa nhiều tài khoản. Hãy chọn tài khoản muốn thêm lúc này; quét lại để thêm các tài khoản còn lại.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "Đã quét: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$ chữ số, $PERIOD$ giây)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

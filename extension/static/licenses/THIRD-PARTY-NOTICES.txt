@@ -35,3 +35,6 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 
 Public Suffix List (vendor/public_suffix_list.dat) - https://publicsuffix.org - Mozilla Public License 2.0, https://mozilla.org/MPL/2.0/
+
+
+jsQR 1.4.0 (bundled in the popup; reads QR codes from images on the device, src/shared/qr-scan.ts) - https://github.com/cozmo/jsQR - Apache License 2.0, copyright Cosmo Wolfe. Full text: jsqr-Apache-2.0.txt in this folder. No changes were made to jsQR.

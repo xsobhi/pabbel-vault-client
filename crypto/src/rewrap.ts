@@ -3,6 +3,7 @@ import { wipe } from "./bytes";
 import { deriveMasterKey, makeMkCheck, newKdfParams } from "./kdf";
 import { aad, wrapPrivateKey } from "./keys";
 import { recoveryFields, type RecoveryFields } from "./recovery";
+import { rewrapSigningKey } from "./identity";
 import type { KeyProof } from "./key-proof";
 
 /** POST /vault/password. `recovery` is left out only when there is no recovery key to carry. */
@@ -10,6 +11,8 @@ export interface PasswordChangeBody {
   salt: string;
   iterations: number;
   encPrivateKey: string;
+  /** The identity key re-wrapped; required by the server once the account has one. */
+  encSignPrivateKey?: string;
   mkCheck: string;
   personalKeys: { vaultId: string; encKey: string }[];
   recovery?: RecoveryFields;
@@ -24,7 +27,8 @@ export interface PasswordChangeBody {
  * (however this client got it: the password, a trusted browser or the
  * recovery key). A new salt, a new MK, and under it the private key, every
  * personal vault key and the recovery key's wrap - the recovery key itself
- * stays the same, so the copy the person saved keeps working. Team keys are
+ * stays the same, so the copy the person saved keeps working. The identity
+ * key is re-wrapped as it is (its public half is pinned by contacts). Team keys are
  * wrapped to the public key, which does not change, so they are not touched.
  */
 export async function buildPasswordChange(input: {
@@ -33,6 +37,8 @@ export async function buildPasswordChange(input: {
   newPassword: string;
   personalVaults: { id: string; wrappedKey: string }[];
   recoveryKey: Uint8Array | null;
+  /** GET /vault/me encSignPrivateKey, when the account has an identity key. */
+  encSignPrivateKey?: string | null;
 }): Promise<{ mk: CryptoKey; body: PasswordChangeBody }> {
   const kdf = newKdfParams();
   const mk = await deriveMasterKey(input.newPassword, kdf, true);
@@ -51,6 +57,7 @@ export async function buildPasswordChange(input: {
     mkCheck: await makeMkCheck(mk),
     personalKeys,
   };
+  if (input.encSignPrivateKey) body.encSignPrivateKey = await rewrapSigningKey(input.oldMk, mk, input.encSignPrivateKey);
   if (input.recoveryKey) body.recovery = await recoveryFields(mk, input.recoveryKey);
   return { mk, body };
 }

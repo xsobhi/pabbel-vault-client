@@ -117,6 +117,20 @@
     "message": "یہ والٹ پاس ورڈ نہیں ہے۔",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel نے والٹ کی غیر محفوظ ترتیب مانگی، اس لیے آپ کا پاس ورڈ استعمال نہیں ہوا۔ بعد میں دوبارہ کوشش کریں۔",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "\"$TEAM$\" کو محفوظ طریقے سے نہیں کھولا جا سکا: اس کی مشترکہ کلید سکیورٹی چیک میں ناکام رہی۔ وجہ جاننے کے لیے ویب والٹ کھولیں۔",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "ابھی انلاک نہیں ہو سکا۔ اپنا کنکشن دیکھ کر دوبارہ کوشش کریں۔",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "ای میل ماسک · موقوف، اس پر آنے والی میل واپس لوٹ جاتی ہے",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "اس صفحے کو اسکین کریں",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "تصویر پیسٹ کریں",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "تصویر اپ لوڈ کریں",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "اس صفحے پر موجود QR کوڈ اسکین کریں، اسکرین شاٹ پیسٹ کریں (Ctrl+V) یا تصویر اپ لوڈ کریں۔ یہ اسی ڈیوائس پر پڑھی جاتی ہے اور کہیں نہیں بھیجی جاتی۔",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "کوئی QR کوڈ نہیں ملا",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "یہ QR کوڈ دو مرحلہ تصدیقی کوڈ نہیں ہے",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "اس صفحے کو کیپچر نہیں کیا جا سکا۔ اس کے بجائے اسکرین شاٹ پیسٹ کریں۔",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "کلپ بورڈ میں کوئی تصویر نہیں ہے",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "اس کوڈ میں کئی اکاؤنٹس ہیں۔ جسے ابھی شامل کرنا ہے اسے چنیں؛ باقی کے لیے دوبارہ اسکین کریں۔",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "اسکین ہو گیا: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$، $DIGITS$ ہندسے، $PERIOD$ سیکنڈ)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

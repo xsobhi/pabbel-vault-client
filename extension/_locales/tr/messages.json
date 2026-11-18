@@ -117,6 +117,20 @@
     "message": "Bu, kasa parolası değil.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel güvenli olmayan bir kasa ayarı istedi, bu yüzden parolanız kullanılmadı. Daha sonra tekrar deneyin.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "\"$TEAM$\" güvenli biçimde açılamadı: paylaşılan anahtarı bir güvenlik denetiminden geçemedi. Nedenini görmek için web kasasını açın.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "Kilit şu anda açılamadı. Bağlantınızı kontrol edip tekrar deneyin.",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "E-posta maskesi · duraklatıldı, gelen e-postalar geri döner",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "Bu sayfayı tara",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "Görsel yapıştır",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "Görsel yükle",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "Bu sayfadaki QR kodunu tarayın, bir ekran görüntüsü yapıştırın (Ctrl+V) ya da görsel yükleyin. Bu cihazda okunur, hiçbir yere gönderilmez.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "QR kodu bulunamadı",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "Bu QR kodu bir iki adımlı doğrulama kodu değil",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "Bu sayfa yakalanamadı. Bunun yerine bir ekran görüntüsü yapıştırın.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "Panoda görsel yok",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "Bu kod birden çok hesap içeriyor. Şimdi eklemek istediğinizi seçin; diğerleri için yeniden tarayın.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "Tarandı: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$ hane, $PERIOD$ sn)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

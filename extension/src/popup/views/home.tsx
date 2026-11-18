@@ -43,5 +43,8 @@ export function Home({ state, onState }: { state: StateView; onState: (s: StateV
   if (route.name === "view") return <ItemView id={route.id} data={data} onBack={back} onEdit={() => setRoute({ name: "edit", id: route.id })} />;
   if (route.name === "edit") return <ItemEdit id={route.id} data={data} site={data?.site ?? null} onDone={back} />;
   if (route.name === "generator") return <Generator onBack={back} />;
-  return <List state={state} data={data} loading={loading} onRoute={setRoute} onState={onState} onRefresh={() => load(true)} />;
+  const list = <List state={state} data={data} loading={loading} onRoute={setRoute} onState={onState} onRefresh={() => load(true)} />;
+  // A team whose shared key failed a check: say so, and send them to the web vault, which says why.
+  if (!data?.refused?.length) return list;
+  return <>{data.refused.map((name) => <p key={name} class="error refused" role="alert">{t("teamRefused", name)}</p>)}{list}</>;
 }

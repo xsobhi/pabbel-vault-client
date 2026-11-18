@@ -117,6 +117,20 @@
     "message": "รหัสผ่านตู้นิรภัยไม่ถูกต้อง",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel ขอการตั้งค่าตู้นิรภัยที่ไม่ปลอดภัย จึงไม่ได้ใช้รหัสผ่านของคุณ โปรดลองอีกครั้งภายหลัง",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "เปิด \"$TEAM$\" อย่างปลอดภัยไม่ได้ เพราะคีย์ที่แชร์ไม่ผ่านการตรวจสอบความปลอดภัย เปิดตู้นิรภัยบนเว็บเพื่อดูสาเหตุ",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "ยังปลดล็อกไม่ได้ในขณะนี้ ตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "อีเมลแฝง · หยุดชั่วคราว อีเมลที่ส่งมาจะถูกตีกลับ",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "สแกนหน้านี้",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "วางรูปภาพ",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "อัปโหลดรูปภาพ",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "สแกนคิวอาร์โค้ดในหน้านี้ วางภาพหน้าจอ (Ctrl+V) หรืออัปโหลดรูปภาพ ระบบอ่านบนอุปกรณ์นี้เท่านั้นและไม่ส่งไปที่ใด",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "ไม่พบคิวอาร์โค้ด",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "คิวอาร์โค้ดนี้ไม่ใช่รหัสยืนยันตัวตนสองขั้นตอน",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "ไม่สามารถจับภาพหน้านี้ได้ ให้วางภาพหน้าจอแทน",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "ไม่มีรูปภาพในคลิปบอร์ด",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "รหัสนี้มีหลายบัญชี เลือกบัญชีที่ต้องการเพิ่มตอนนี้ แล้วสแกนอีกครั้งสำหรับบัญชีอื่น",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "สแกนแล้ว: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$ หลัก, $PERIOD$ วินาที)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

@@ -4,6 +4,7 @@ import { t } from "../../shared/i18n";
 import type { ItemData } from "../../shared/items";
 import { api } from "../api";
 import { Icon } from "../components/icon";
+import { QrScan } from "../qr/qr-scan";
 
 function Text({ label, value, onInput, type = "text", mono, placeholder, autoFocus, children }: {
   label: string; value: string; onInput: (v: string) => void; type?: string; mono?: boolean; placeholder?: string; autoFocus?: boolean; children?: preact.ComponentChildren;
@@ -42,6 +43,7 @@ export function EditFields({ d, set, secretInput, setSecretInput }: {
     return (
       <>
         {name}
+        <QrScan onPick={(p) => { set({ issuer: p.issuer ?? "", account: p.account ?? "", algorithm: p.algorithm ?? "SHA1", digits: p.digits ?? 6, period: p.period ?? 30, name: d.name || p.issuer || p.account || "" }); setSecretInput(p.secret); }} />
         <Text label={t("fieldSecret")} mono value={secretInput} onInput={setSecretInput} placeholder={t("fieldSecretPlaceholder")} />
         <Text label={t("fieldIssuer")} value={d.issuer} onInput={(v) => set({ issuer: v })} />
         <Text label={t("fieldAccount")} value={d.account} onInput={(v) => set({ account: v })} />

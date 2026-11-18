@@ -37,5 +37,13 @@ Third-party material included in, or bundled into, this repository
    - Tajawal - Copyright 2018 Boutros International (https://github.com/googlefonts/tajawal)
    The fonts stay under the OFL; the licence text is in extension/static/licenses/fonts-OFL.txt.
 
-Development-only dependencies (TypeScript, esbuild, Vitest, @types/*) are
+5. jsQR 1.4.0 (Apache-2.0)
+   https://github.com/cozmo/jsQR - Copyright 2017 Cosmo Wolfe
+   Not copied into the repository: installed from npm by `npm ci` (pinned in
+   extension/package-lock.json) and bundled into the built extension, where it reads
+   2-step QR codes from the visible tab, a pasted image or a chosen file, on the device.
+   Licence text: extension/static/licenses/jsqr-Apache-2.0.txt, also shipped inside
+   every built extension.
+
+Development-only dependencies (TypeScript, esbuild, Vitest, qrcode, @types/*) are
 installed by npm, are not part of the built extension, and keep their own licences.

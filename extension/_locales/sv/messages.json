@@ -117,6 +117,20 @@
     "message": "Det är inte valvlösenordet.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel begärde en osäker valvinställning, så ditt lösenord användes inte. Försök igen senare.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "\"$TEAM$\" kunde inte öppnas på ett säkert sätt: den delade nyckeln klarade inte en säkerhetskontroll. Öppna webbvalvet för att se varför.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "Kunde inte låsa upp just nu. Kontrollera din anslutning och försök igen.",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "E-postmask · pausad, e-post till den studsar",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "Skanna den här sidan",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "Klistra in bild",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "Ladda upp bild",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "Skanna QR-koden på den här sidan, klistra in en skärmbild (Ctrl+V) eller ladda upp en bild. Den läses på den här enheten och skickas ingenstans.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "Ingen QR-kod hittades",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "Den här QR-koden är ingen kod för tvåstegsverifiering",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "Sidan kunde inte fångas. Klistra in en skärmbild i stället.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "Ingen bild i urklipp",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "Koden innehåller flera konton. Välj det du vill lägga till nu och skanna igen för de andra.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "Skannad: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$ siffror, $PERIOD$ s)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

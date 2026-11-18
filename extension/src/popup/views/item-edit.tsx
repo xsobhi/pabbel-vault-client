@@ -43,7 +43,9 @@ export function ItemEdit({ id, data, site, onDone }: { id?: string; data: DataVi
     if (out.t === "totp") {
       const p = parseTotpInput(secretInput);
       if (!p) { setError(t("errorSecret")); return; }
-      out = { ...out, secret: p.secret, algorithm: p.algorithm ?? out.algorithm, digits: p.digits ?? out.digits, period: p.period ?? out.period,
+      // A bare secret says nothing about the settings, so it keeps the form's (a scanned 8-digit code, or an edited item); an otpauth link sets them.
+      const link = /^otpauth:/i.test(secretInput.trim());
+      out = { ...out, secret: p.secret, algorithm: link ? p.algorithm ?? out.algorithm : out.algorithm, digits: link ? p.digits ?? out.digits : out.digits, period: link ? p.period ?? out.period : out.period,
         issuer: out.issuer || p.issuer || "", account: out.account || p.account || "" };
     }
     setBusy(true); setError(null);

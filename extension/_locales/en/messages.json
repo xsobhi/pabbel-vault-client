@@ -117,6 +117,20 @@
     "message": "That's not the vault password.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel asked for an unsafe vault setting, so your password was not used. Try again later.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "\"$TEAM$\" couldn't be opened safely: its shared key failed a security check. Open the web vault to see why.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "Couldn't unlock right now. Check your connection and try again.",
     "description": "Unlock failed for another reason."
@@ -639,6 +653,48 @@
       }
     }
   },
+  "saveTitleFor": {
+    "message": "Save your $SITE$ login?",
+    "description": "Save prompt title; SITE is the site's name, like Google.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "Google"
+      }
+    }
+  },
+  "toastPasswordFilled": {
+    "message": "Password filled",
+    "description": "After the password goes in on the second page of a sign-in."
+  },
+  "toastPasswordFilledCode": {
+    "message": "Password filled · 2-step code copied",
+    "description": "The same, when the 2-step code was also copied."
+  },
+  "inlineLoading": {
+    "message": "Loading your logins",
+    "description": "Screen-reader label while the dropdown loads."
+  },
+  "inlineLoadFailed": {
+    "message": "Couldn't load your logins",
+    "description": "Dropdown could not load."
+  },
+  "inlineRetry": {
+    "message": "Try again",
+    "description": "Under the failure line."
+  },
+  "inlineLockedHint": {
+    "message": "Unlock to fill this page",
+    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
+  },
+  "optionsIcons": {
+    "message": "Show website icons",
+    "description": "Setting."
+  },
+  "optionsIconsHint": {
+    "message": "Each icon comes straight from that website, never through Pabbel. Turned off, the list shows letters instead.",
+    "description": "Setting detail; says where icons come from."
+  },
   "saveUpdateTitle": {
     "message": "Update the saved password?",
     "description": "Save prompt title when the password changed."
@@ -783,48 +839,6 @@
     "message": "No sites yet. Choosing \"Never for this site\" on a save prompt adds one here.",
     "description": "Empty never-save list."
   },
-  "saveTitleFor": {
-    "message": "Save your $SITE$ login?",
-    "description": "Save prompt title; SITE is the site's name, like Google.",
-    "placeholders": {
-      "site": {
-        "content": "$1",
-        "example": "Google"
-      }
-    }
-  },
-  "toastPasswordFilled": {
-    "message": "Password filled",
-    "description": "After the password goes in on the second page of a sign-in."
-  },
-  "toastPasswordFilledCode": {
-    "message": "Password filled · 2-step code copied",
-    "description": "The same, when the 2-step code was also copied."
-  },
-  "inlineLoading": {
-    "message": "Loading your logins",
-    "description": "Screen-reader label while the dropdown loads."
-  },
-  "inlineLoadFailed": {
-    "message": "Couldn't load your logins",
-    "description": "Dropdown could not load."
-  },
-  "inlineRetry": {
-    "message": "Try again",
-    "description": "Under the failure line."
-  },
-  "inlineLockedHint": {
-    "message": "Unlock to fill this page",
-    "description": "Under \"Pabbel Vault is locked.\" in the dropdown."
-  },
-  "optionsIcons": {
-    "message": "Show website icons",
-    "description": "Setting."
-  },
-  "optionsIconsHint": {
-    "message": "Each icon comes straight from that website, never through Pabbel. Turned off, the list shows letters instead.",
-    "description": "Setting detail; says where icons come from."
-  },
   "inlineMaskNew": {
     "message": "Use a new email mask",
     "description": "Dropdown row on a sign-up form's email field: make a random address for this site and type it in."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "Email mask · paused, mail to it bounces",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "Scan this page",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "Paste image",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "Upload image",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "Scan the QR code on this page, paste a screenshot (Ctrl+V) or upload an image. It is read on this device and never sent anywhere.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "No QR code found",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "This QR code isn't a 2-step verification code",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "Couldn't capture this page. Paste a screenshot instead.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "No image on the clipboard",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "This code holds several accounts. Pick the one to add now; scan again for the others.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "Scanned: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$ digits, $PERIOD$ s)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

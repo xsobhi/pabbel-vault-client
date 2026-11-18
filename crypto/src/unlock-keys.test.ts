@@ -15,7 +15,7 @@ import { deriveMasterKey, makeMkCheck, verifyMkCheck } from "./kdf";
 
 const fromHex = (h: string) => new Uint8Array(h.match(/../g)!.map((x) => parseInt(x, 16)));
 const fill = (n: number, v: number) => new Uint8Array(n).fill(v);
-const params = { salt: b64(fill(16, 7)), iterations: 1000 }; // low count: tests, not security
+const params = { salt: b64(fill(16, 7)), iterations: 600_000 }; // the client floor (kdf.ts MIN_KDF_ITERATIONS)
 const mkOf = (pw: string) => deriveMasterKey(pw, params, true);
 const rawOf = async (k: CryptoKey) => new Uint8Array(await crypto.subtle.exportKey("raw", k));
 

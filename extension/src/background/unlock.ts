@@ -4,7 +4,8 @@
  * and iteration count, checked against mk_check BEFORE anything else is
  * touched, then the account private key unwrapped under it.
  */
-import { deriveMasterKey, verifyMkCheck } from "@vault/crypto/kdf";
+import { deriveMasterKey, KdfParamsError, verifyMkCheck } from "@vault/crypto/kdf";
+import { ensureIdentity } from "@vault/crypto/trust/identity-setup";
 import { unwrapPrivateKey } from "@vault/crypto/keys";
 import type { UnlockResult, VaultState } from "../shared/messages";
 import { ApiError, vaultApi } from "./api";
@@ -31,11 +32,18 @@ export async function unlock(password: string, trust?: boolean): Promise<UnlockR
   }
   await setLocal(LOCAL.hasVault, { userId: who.id, setUp: me.setUp } satisfies HasVault);
   if (!me.setUp || !me.kdf || !me.encPrivateKey || !me.mkCheck || !me.publicKey) return { ok: false, error: "no-vault" };
-  const mk = await deriveMasterKey(password, me.kdf, true);
+  let mk: CryptoKey;
+  // A server asking for fewer iterations than the floor gets no derivation at all (kdf.ts).
+  try { mk = await deriveMasterKey(password, me.kdf, true); } catch (e) {
+    if (e instanceof KdfParamsError) return { ok: false, error: "unsafe-kdf" };
+    throw e;
+  }
   if (!(await verifyMkCheck(mk, me.mkCheck))) return { ok: false, error: "wrong-password" };
   const priv = await unwrapPrivateKey(mk, me.encPrivateKey);
   await setKeys({ mk, priv, publicRaw: me.publicKey, userId: who.id });
   await removeSession(SESSION.manualLock);
+  // An account from before signed team keys gets its identity now (docs/crypto.md "Identity keys").
+  await ensureIdentity({ mk, encPrivateKey: priv, encPublicRaw: me.publicKey, userId: who.id, me }, vaultApi).catch(() => null);
   const trusted = (await trustView()).on;
   if (trust === false && trusted) await forgetThisBrowser();
   if (trust === true && !trusted) {

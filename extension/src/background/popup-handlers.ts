@@ -1,5 +1,6 @@
 /** What the popup and the options page can ask the worker for. Trusted callers only (router.ts). */
 import { byPinnedThenName, vaultInfo } from "../shared/items";
+import { refusedTeams } from "./pins";
 import { matchesFor } from "../shared/match";
 import { siteOf } from "../shared/site";
 import { generatePassword } from "../shared/generator";
@@ -38,6 +39,7 @@ async function dataView(refresh = false): Promise<DataView> {
     items: rows,
     icons: await iconsFor([...new Set(rows.map((r) => r.iconKey).filter((k): k is string => !!k))]),
     stale: isStale(),
+    refused: [...refusedTeams.keys()].map((id) => vaults().find((v) => v.id === id)?.name ?? id),
     site: site ? { host: site.host, site: site.site } : null,
     matches: m ? [...m.logins, ...m.totps].map((i) => i.id) : [],
   };

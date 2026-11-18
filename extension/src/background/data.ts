@@ -14,6 +14,7 @@ import type { Item, ItemData } from "../shared/items";
 import { vaultApi } from "./api";
 import { getSession, SESSION, setSession } from "./storage";
 import { forgetVaultKeys, openVaultKey } from "./vault-keys";
+import { TeamKeyError } from "@vault/crypto/trust/team-wrap";
 import { getKeys } from "./session";
 
 interface Snapshot { userId: number; at: number; vaults: VaultSummary[]; rows: Record<string, ItemRow[]> }
@@ -38,6 +39,8 @@ export async function decryptRow(v: VaultSummary, row: ItemRow): Promise<Item> {
 async function index(s: Snapshot): Promise<void> {
   const next = new Map<string, Item>();
   for (const v of s.vaults) {
+    // A team whose key was refused (signed team keys) lists nothing: the popup names it instead (pins.ts refusedTeams).
+    if (v.kind === "team" && !(await openVaultKey(v).then(() => true, (e) => !(e instanceof TeamKeyError)))) continue;
     for (const row of s.rows[v.id] ?? []) {
       if (!row.ciphertext) continue; // a reserved id whose bytes never arrived
       next.set(row.id, await decryptRow(v, row));

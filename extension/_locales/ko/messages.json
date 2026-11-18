@@ -117,6 +117,20 @@
     "message": "보관함 비밀번호가 올바르지 않아요.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel이 안전하지 않은 보관함 설정을 요청해서 비밀번호를 사용하지 않았어요. 나중에 다시 시도해 주세요.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "\"$TEAM$\"을(를) 안전하게 열 수 없어요. 공유 키가 보안 검사를 통과하지 못했어요. 이유는 웹 보관함에서 확인해 주세요.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "지금은 잠금을 해제할 수 없어요. 연결 상태를 확인하고 다시 시도해 주세요.",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "이메일 마스크 · 일시중지됨, 이 주소로 오는 메일은 반송돼요",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "이 페이지 스캔",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "이미지 붙여넣기",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "이미지 업로드",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "이 페이지의 QR 코드를 스캔하거나, 스크린샷을 붙여넣거나(Ctrl+V), 이미지를 업로드하세요. 이 기기에서만 읽으며 어디로도 전송되지 않습니다.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "QR 코드를 찾을 수 없습니다",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "이 QR 코드는 2단계 인증 코드가 아닙니다",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "이 페이지를 캡처할 수 없습니다. 대신 스크린샷을 붙여넣으세요.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "클립보드에 이미지가 없습니다",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "이 코드에는 여러 계정이 들어 있습니다. 지금 추가할 계정을 선택하세요. 나머지는 다시 스캔하세요.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "스캔됨: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$자리, $PERIOD$초)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

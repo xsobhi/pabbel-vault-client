@@ -42,7 +42,7 @@ export function manifestFor({ target, local, version }) {
     homepage_url: "https://pabbel.com/vault",
     icons,
     action: { default_popup: "popup.html", default_title: "__MSG_extName__", default_icon: { 16: icons[16], 32: icons[32] } },
-    permissions: ["storage", "identity", "alarms", "contextMenus", "clipboardWrite"],
+    permissions: ["storage", "identity", "alarms", "contextMenus", "clipboardWrite", "activeTab"],
     host_permissions: PAGES,
     content_scripts: [{ matches: PAGES, js: ["content.js"], all_frames: true, run_at: "document_idle" }],
     options_ui: { page: "options.html", open_in_tab: true },

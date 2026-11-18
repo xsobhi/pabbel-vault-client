@@ -117,6 +117,20 @@
     "message": "保管庫のパスワードが違います。",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel が安全でない保管庫の設定を要求したため、パスワードは使用されませんでした。後でもう一度お試しください。",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "「$TEAM$」を安全に開けませんでした。共有キーがセキュリティチェックに失敗しました。理由はウェブの保管庫で確認してください。",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "現在ロックを解除できません。接続を確認して、もう一度お試しください。",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "メールマスク · 一時停止中、メールは送信者に返送されます",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "このページをスキャン",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "画像を貼り付け",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "画像をアップロード",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "このページのQRコードをスキャンするか、スクリーンショットを貼り付け(Ctrl+V)、または画像をアップロードしてください。読み取りはこのデバイス内で行われ、外部には送信されません。",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "QRコードが見つかりません",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "このQRコードは2段階認証コードではありません",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "このページをキャプチャできませんでした。代わりにスクリーンショットを貼り付けてください。",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "クリップボードに画像がありません",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "このコードには複数のアカウントが含まれています。今回追加するものを選んでください。残りはもう一度スキャンしてください。",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "スキャン済み: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$、$DIGITS$桁、$PERIOD$秒)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

@@ -83,6 +83,8 @@ WebCrypto on every supported browser. Argon2 would be the stronger password KDF;
 | `mk_check` | `enc(MK, "pabbel-vault-check", aad "mk-check")` | at setup and at every password change | server. Lets a client tell a right password from a wrong one before it touches data. |
 | Account private key | P-256 | random, once per account | server, as `enc(MK, pkcs8, aad "account-private-key")` |
 | Account public key | P-256 point | with the private key | server, in the clear |
+| Identity key `IK` | ECDSA P-256 key pair | random, once per account (made at the first unlock by a 1.2.1+ client) | server: public half in the clear, private half as `enc(MK, pkcs8, aad "account-signing-key")`; `encKeySig` = the identity's signature over the account's user id and ECDH public key |
+| Trust state | the pinned identity keys of contacts and the highest verified key version per team | on the device, at first use (section 5) | server as `enc(personal VK, json, aad "trust-state")`, plus a copy on each device |
 | Vault key `VK` | AES-256 | random per vault, and again at each rotation | server, wrapped: personal vault by `MK`, team vault by ECIES to each member's public key |
 | Item data | JSON | the person | server, `enc(VK, json, aad "item:<item id>")` |
 | Recovery key `RK` | 32 random bytes | on the device, once | with the person. On the server only as `recovery_wrap` and `recovery_key_enc` (section 4). |
@@ -174,11 +176,12 @@ These are the flows the extension and library implement. `crypto/` holds the pri
   tokens reach ciphertext only; they decrypt nothing. (`background/auth.ts`, `pkce.ts`)
 - **Unlock.** The popup passes the typed password to the background worker. The worker
   fetches `GET /vault/me` (salt, iteration count, `mk_check`, encrypted private key,
-  public key), derives `MK`, checks it against `mk_check`, and only then unwraps the
-  private key. The password reaches only the worker, and `MK` stays inside the extension
+  public key), refuses an iteration count outside 600,000 to 10,000,000, derives `MK`,
+  checks it against `mk_check`, and only then unwraps the private key. An account without
+  an identity key gets one here (`trust/identity-setup.ts`, with a key proof). The password reaches only the worker, and `MK` stays inside the extension
   (worker memory and `chrome.storage.session`, section 7). (`background/unlock.ts`)
 - **Reading.** For each vault the worker opens its key (personal: decrypt with `MK`; team:
-  ECIES-unwrap with the private key), downloads the item ciphertext and decrypts it in the
+  verify the signed wrap, then ECIES-unwrap with the private key, section 5a), downloads the item ciphertext and decrypts it in the
   worker. A content script receives the fields of one item only after the person picks
   it. (`background/vault-keys.ts`, `data.ts`, `fill.ts`)
 - **Writing.** Item and mask ids are minted by the server and sit inside the AAD, so a new
@@ -199,12 +202,51 @@ These are the flows the extension and library implement. `crypto/` holds the pri
   every sign-out, and the server revokes all records on a password change.
 - **Recovery** (web vault, primitives in `recovery.ts`): `RK` opens `recovery_wrap` to give
   `MK`, then a new vault password is required.
-- **Teams** (web vault): one `VK` per team, wrapped to each member's public key. Removing a
-  member generates a new `VK`, re-encrypts every item and re-wraps for the remaining
-  members in one transaction. Invites show the invitee's public key fingerprint so
-  members can compare it out of band.
+- **Teams** (web vault): one `VK` per team, wrapped to each member's public key and signed
+  by the member who made the wrap (section 5a). Removing a member generates a new `VK`,
+  re-encrypts every item and re-wraps for the remaining members in one transaction.
+  Invites show the invitee's identity fingerprint so members can compare it out of band.
 - **TOTP.** Codes are computed on the device from the decrypted secret. Nothing about codes
   is sent to the server.
+
+## 5a. Signed team keys (format 2, extension 1.2.1)
+
+An ECIES wrap is not authenticated: whoever knows a member's public key, the server
+above all, can make a wrap of any key. So since 1.2.1 a team key is used only if a
+person the member can name made it for them.
+
+- **Identity.** Each account has an identity key `IK` (section 3). `encKeySig` binds the
+  account's ECDH public key to it, so whoever pins the identity also knows the right
+  ECDH key. On unlock a client checks that the identity public key the server serves
+  belongs to its own decrypted private half, and refuses to sign otherwise.
+- **Signed wrap.** Every wrap made by a 1.2.1+ client carries `wrapSig`: an ECDSA
+  signature by its maker over the vault id, the recipient's user id, the key version, the
+  wrap, the recipient's ECDH public key and the signer's user id
+  (`crypto/src/identity.ts`, `crypto/src/trust/team-wrap.ts`). The server records the
+  signer as the account that uploaded the wrap.
+- **Pins (trust on first use).** The trust state maps contacts to their identity keys and
+  each team to the highest key version verified. It is kept on the device and on the
+  server (sealed under the personal vault key), merged on every load; where the copies
+  disagree the device copy wins and the contact counts as changed (`trust/state.ts`,
+  `trust/book.ts`, `extension/src/background/pins.ts`).
+- **Opening a team key.** A team counts as migrated when the server says so or the trust
+  state already holds it; a client never un-learns that. No signature: accepted only
+  before migration (shown as legacy), refused after it (downgrade). With a signature: the
+  signer must match its pin (a new contact is pinned; a different key is refused until
+  the person compares fingerprints and trusts the new key in the web vault), the
+  signature must verify over the statement rebuilt from the row and this account's own
+  ECDH key, and the key version must not be below the highest one seen (rollback). A team
+  that fails any check does not open: no item is shown and nothing is written to it.
+- **Migration.** The server holds no private keys and cannot migrate anything. When an
+  owner or admin unlocks a 1.2.1+ web vault, each legacy team they manage is rotated (new
+  key, every item re-encrypted, a signed wrap for every member, one transaction). From then
+  on the server refuses unsigned wraps for that team.
+
+What signing does not stop: the first contact (a server that substitutes keys before two
+people ever met is caught only by comparing fingerprints), a fake member the server
+enrols in the membership table (the signature proves who made a key, not that the person
+belongs in the team), and teams whose admins never run a 1.2.1+ client, which stay
+unsigned.
 
 ## 6. What the server sees, and what it does not
 
@@ -271,10 +313,13 @@ Extension:
   frame whose top page is also secure, with both in the same registrable domain (`background/fill.ts`,
   `shared/site.ts`, `frameMayFill`). Their UI sits in a closed shadow root.
 
-Web vault (not in this repository, but it uses `crypto/session.ts` and
-`crypto/session-store.ts`): `MK` is held in module memory, and a copy of the raw `MK`
-(base64) is also kept in `sessionStorage` for that tab so a reload does not ask for the
-password again. It is removed on lock, on a closed tab and after the auto-lock period.
+Web vault (not in this repository, but it uses `crypto/session.ts`,
+`crypto/session-store.ts` and `crypto/session-idb.ts`): `MK` is held in module memory. So
+that a reload does not ask for the password again, `MK` is encrypted under a random
+AES-GCM key that is created non-extractable and kept in IndexedDB (a structured clone of
+the `CryptoKey`, so script cannot read its bytes), and only that ciphertext is kept in
+`sessionStorage` for the tab. Both are removed on lock, on a closed tab and after the
+auto-lock period. Before 1.2.1 the raw `MK` sat in `sessionStorage`.
 
 JavaScript cannot guarantee that memory is erased. `wipe()` zeroes buffers the code is done
 with, as best effort.
@@ -313,15 +358,15 @@ What it does not protect against, and where trust remains:
 2. **The extension is still a client of the server.** The server can lie to it in the ways
    listed in section 6, and it holds `S` for trusted browsers. It cannot decrypt anything
    with what it holds.
-3. **Team vault keys are not authenticated.** A wrapped team key (the `0x02` blob) is
-   public-key encryption: anyone who knows a member's public key can produce one that
-   opens, and the server knows every public key. A malicious server could therefore give a
-   member a vault key of its own choosing for a team vault. Items written afterwards would be
-   encrypted under a key the server knows. The fingerprints guard against the server
-   substituting a public key at invite time, not against this. Personal vaults are not
-   affected, because their key is wrapped under `MK`, which the server never holds.
-4. **Rollback and withholding are not detected.** Item timestamps and key versions are
-   visible to clients, but no client checks them against earlier state.
+3. **Team vault keys are authenticated only after migration.** Since 1.2.1 a team key is
+   signed by the member who wrapped it and checked against pinned identities (section 5a).
+   A team whose owner and admins have not yet opened a 1.2.1+ web vault is still unsigned
+   (legacy): there, a malicious server could give a member a key of its own choosing, as
+   before. Trust on first use leaves the first contact open; compare fingerprints out of
+   band. Personal vaults never had this problem, because their key is wrapped under `MK`.
+4. **Rollback and withholding are only partly detected.** A team key version below the
+   highest one seen is refused. Items themselves carry no version history, so a server can
+   still withhold an item or serve an older copy of it.
 5. **Endpoint compromise is out of scope.** Malware, a malicious browser extension with
    broad permissions, or a compromised operating system can read an unlocked vault,
    the clipboard, and keystrokes. A page you fill a password into can read what was filled
@@ -333,11 +378,9 @@ What it does not protect against, and where trust remains:
 6. **Metadata is visible** to the server (section 6), including item counts, types and
    ciphertext lengths.
 7. **Password strength is the person's responsibility.** There is no secret key mixed into the
-   derivation. The library's `passwordStrength` is a nudge, not a gate. The client uses the
-   iteration count the server returns for the account and enforces no minimum of its own;
-   unlock does not send `MK` or anything derived from it to the server, and ciphertext made
-   under the original count does not open under a lowered one, but a client-side floor
-   would be a reasonable addition.
+   derivation. The library's `passwordStrength` is a nudge, not a gate. The client refuses
+   an iteration count from the server below 600,000 or above 10,000,000 (`kdf.ts`), so a
+   server cannot make a guess cheaper by lowering it.
 8. **No recovery by the operator.** Lose the vault password and the recovery key, and the
    data is gone; erase and start over is the last resort.
 9. **Side channels.** The code runs on the browser's WebCrypto and relies on it for

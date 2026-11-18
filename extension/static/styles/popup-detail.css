@@ -33,6 +33,11 @@
 .segmented button { min-height: 30px; padding: 4px 6px; border: 0; border-radius: 8px; background: transparent; color: var(--muted); font-size: 12.5px;
   line-height: 1.15; font-weight: 600; cursor: pointer; overflow-wrap: anywhere; hyphens: auto; }
 .segmented button.is-on { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(28, 25, 23, .12); }
+.qr-scan, .qr-choices { display: grid; gap: 6px; }
+.qr-actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.qr-actions .btn { flex: 1 1 auto; min-width: 0; }
+.qr-choices .btn { justify-content: flex-start; text-align: start; height: auto; min-height: 36px; padding-block: 6px; }
+.qr-picked { margin: 0; font-size: 13px; color: var(--ink-2); overflow-wrap: anywhere; }
 .editor-actions { display: flex; justify-content: space-between; gap: 8px; padding-top: 4px; position: sticky; bottom: -16px;
   background: linear-gradient(transparent, var(--paper) 30%); padding-bottom: 2px; }
 .editor-actions .btn-primary { margin-inline-start: auto; min-width: 110px; }

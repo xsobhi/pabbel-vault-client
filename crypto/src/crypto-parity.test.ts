@@ -13,13 +13,13 @@ import { deriveMasterKey, makeMkCheck, verifyMkCheck } from "./kdf";
 import { aad, generateAccountKeys, unwrapWithPrivate, wrapToPublic } from "./keys";
 import { base32Encode, hotp, totp } from "./totp";
 
-const params = { salt: b64(new Uint8Array(16).fill(7)), iterations: 1000 };
+const params = { salt: b64(new Uint8Array(16).fill(7)), iterations: 600_000 };
 
 describe("PBKDF2 master key = OpenSSL's", () => {
   it("derives the same 32 bytes (NFKC-normalised password)", async () => {
     const mk = await deriveMasterKey("correct horse ﬁ", params, true);
     const ours = Buffer.from(await crypto.subtle.exportKey("raw", mk));
-    const theirs = pbkdf2Sync(Buffer.from("correct horse fi", "utf8"), Buffer.from(unb64(params.salt)), 1000, 32, "sha256");
+    const theirs = pbkdf2Sync(Buffer.from("correct horse fi", "utf8"), Buffer.from(unb64(params.salt)), params.iterations, 32, "sha256");
     expect(ours.toString("hex")).toBe(theirs.toString("hex"));
   });
   it("mk_check tells passwords apart", async () => {

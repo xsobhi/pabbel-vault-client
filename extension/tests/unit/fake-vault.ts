@@ -45,7 +45,7 @@ interface Device { share: string; createdAt: number; expiresAt: number; revoked:
 
 /** An account with one personal vault and (optionally) a recovery key, served over a fake fetch. */
 export async function fakeVault(opts: { recovery?: boolean } = {}) {
-  const kdf = { salt: b64(random(16)), iterations: 1000 }; // low count: tests, not security
+  const kdf = { salt: b64(random(16)), iterations: 600_000 }; // the client floor (kdf.ts MIN_KDF_ITERATIONS)
   const mk = await deriveMasterKey(PASSWORD, kdf, true);
   const keys = await generateAccountKeys();
   const vk = await generateAesKeyBytes();

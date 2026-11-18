@@ -37,7 +37,7 @@ export async function changeVaultPassword(next: string): Promise<ChangePasswordR
     // A key we cannot open is a key we cannot carry: the server then marks it for replacing.
     recoveryKey = me.recovery ? await recoveryKeyFrom(k.mk, me.recovery.keyEnc).catch(() => null) : null;
     const personalVaults = (await vaultApi.vaults()).filter((v) => v.kind === "personal");
-    const { mk, body } = await buildPasswordChange({ oldMk: k.mk, privateKey: k.priv, newPassword: next, personalVaults, recoveryKey });
+    const { mk, body } = await buildPasswordChange({ oldMk: k.mk, privateKey: k.priv, newPassword: next, personalVaults, recoveryKey, encSignPrivateKey: me.encSignPrivateKey });
     // The server replaces key material only for a client that proves it holds the private key.
     const keyProof = await answerKeyProof(k.priv, await vaultApi.keyProofChallenge());
     await vaultApi.changePassword({ ...body, currentMkCheck: me.mkCheck, keyProof });

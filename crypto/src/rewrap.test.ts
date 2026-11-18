@@ -7,7 +7,7 @@ import { aad, generateAccountKeys, unwrapPrivateKey, unwrapWithPrivate, wrapToPu
 import { newRecoveryKey, openWithRecoveryKey, recoveryFields, recoveryKeyFrom } from "./recovery";
 import { buildPasswordChange } from "./rewrap";
 
-const params = { salt: b64(new Uint8Array(16).fill(7)), iterations: 1000 };
+const params = { salt: b64(new Uint8Array(16).fill(7)), iterations: 600_000 };
 const raw = async (k: CryptoKey) => hex(new Uint8Array(await crypto.subtle.exportKey("raw", k)));
 
 async function account() {

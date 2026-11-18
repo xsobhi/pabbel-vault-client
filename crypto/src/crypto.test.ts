@@ -5,7 +5,7 @@ import { deriveMasterKey, makeMkCheck, verifyMkCheck } from "./kdf";
 import { aad, generateAccountKeys, unwrapPrivateKey, unwrapWithPrivate, wrapPrivateKey, wrapToPublic } from "./keys";
 import { base32Decode, base32Encode, hotp, parseOtpauth, parseTotpInput, totp } from "./totp";
 
-const params = { salt: b64(new Uint8Array(16).fill(7)), iterations: 1000 }; // low count: tests, not security
+const params = { salt: b64(new Uint8Array(16).fill(7)), iterations: 600_000 }; // the client floor (kdf.ts MIN_KDF_ITERATIONS)
 
 describe("aead", () => {
   it("round-trips and binds the context", async () => {

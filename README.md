@@ -15,8 +15,8 @@ No independent security audit of this code has been published, and none is claim
 
 | Path | What |
 |---|---|
-| `crypto/` | The vault cryptography as a standalone TypeScript package: PBKDF2 key derivation, AES-256-GCM envelopes, P-256 ECDH key pair and ECIES key wrapping, HKDF, recovery key, trusted-browser key, key proof, email-mask sealing, TOTP, Google Authenticator import parsing, the password generator, and the unlocked-session holder. WebCrypto only, no runtime dependencies. With its tests and the OpenSSL parity vectors. |
-| `extension/` | The browser extension (Manifest V3, TypeScript, Preact, esbuild): sign-in with Pabbel (OAuth code with PKCE), unlock, autofill, save prompts, 2-step codes, the generator, trusted browser, email masks. It imports `crypto/` from the sibling folder, so there is one copy of the crypto. |
+| `crypto/` | The vault cryptography as a standalone TypeScript package: PBKDF2 key derivation, AES-256-GCM envelopes, P-256 ECDH key pair and ECIES key wrapping, ECDSA P-256 identity keys with signed team-key wraps and trust-on-first-use pins (`src/trust/`), HKDF, recovery key, trusted-browser key, key proof, email-mask sealing, TOTP, Google Authenticator import parsing, the password generator, and the unlocked-session holder. WebCrypto only, no runtime dependencies. With its tests and the OpenSSL parity vectors. |
+| `extension/` | The browser extension (Manifest V3, TypeScript, Preact, esbuild): sign-in with Pabbel (OAuth code with PKCE), unlock, autofill, save prompts, 2-step codes (typed, or read from a QR code on the device), the generator, trusted browser, email masks, and the checks on signed team keys. It imports `crypto/` from the sibling folder, so there is one copy of the crypto. |
 | `docs/crypto.md` | Algorithms and parameters, byte formats, what the server sees and does not see, where keys live, the threat model and its limits. |
 
 ## What is not here
@@ -42,15 +42,15 @@ lockfile; nothing else is fetched.
 # the crypto library
 cd crypto
 npm ci
-npm test            # 47 tests, including the OpenSSL parity vectors
+npm test            # 63 tests, including the OpenSSL parity vectors
 npm run typecheck
 
 # the extension
 cd ../extension
 npm ci
-npm test            # 242 unit tests
+npm test            # 251 unit tests
 npm run typecheck
-npm run build       # -> extension/dist/ and pabbel-vault-extension-1.2.0.zip (Chrome package)
+npm run build       # -> extension/dist/ and pabbel-vault-extension-1.2.1.zip (Chrome package)
 ```
 
 | Command (in `extension/`) | Output |
@@ -95,17 +95,21 @@ A local build talks to the real Pabbel service.
    and the `// path/to/module.ts` comments esbuild writes, and exits non-zero on any other
    difference.
 
-   **Status of this comparison, honestly.** The Chrome and Firefox packages published as
-   1.2.0 were built from Pabbel's private repository before this one existed, and they
-   predate the key-proof change in this source (the server now asks for a proof of the
-   account private key when key material is replaced). So today `background.js`, `popup.js`
-   and `options.js` differ from this tree's build; every other file, and the manifest, are
-   identical. The comparison becomes exact for a release that is built and published from
-   this repository. Until then you can still compare, and read the differences.
+   **Status of this comparison, honestly.** The store packages, 1.2.1 included, are built
+   from Pabbel's private repository, where the extension imports the crypto from the web
+   vault's source tree and carries test hooks that are inert in store builds. This tree is
+   the same code arranged to stand alone, so the manifest and every other file are
+   identical, while `background.js`, `popup.js` and `options.js` differ. For 1.2.1 the
+   differences are: module order and the names esbuild picks; the private bundle also
+   contains code it never runs (an endpoint override map and a message filter used only by
+   the private test harness, and parts of the web vault's own client pulled in by an
+   import); and the popup sends an unused `tabId` field. None of it touches keys, the
+   network calls or what is filled. Until a release is built and published from this
+   repository, the comparison will show those differences, and you can read them.
 4. Check the permissions in `extension/scripts/manifest.mjs` against the code. In short:
    host access to every https page (it has to find sign-in forms; it never runs on plain
    http except localhost), `storage`, `identity` (only for the Pabbel sign-in window), `alarms`
-   (auto-lock, token refresh, clipboard clearing), `contextMenus`, `clipboardWrite` and
+   (auto-lock, token refresh, clipboard clearing), `contextMenus`, `activeTab` (only for "Scan this page" when adding a 2-step code: the visible tab is captured once and decoded on the device), `clipboardWrite` and
    `offscreen` (copying and clearing the clipboard), and a Content Security Policy of
    `script-src 'self'`.
 

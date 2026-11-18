@@ -17,6 +17,12 @@ export interface MeResponse {
   recovery?: (RecoveryFields & { createdAt: string | null }) | null;
   /** A password change from a client that cannot carry the recovery key dropped it: it needs replacing. */
   recoveryStale?: boolean;
+  /** The identity key (docs/crypto.md "Identity keys"); absent until a 1.2.1+ client made one. */
+  signPublicKey?: string | null;
+  encSignPrivateKey?: string | null;
+  encKeySig?: string | null;
+  /** The pins, sealed under the personal vault key (crypto/src/trust/state.ts). */
+  trustState?: string | null;
 }
 
 export interface VaultSummary {
@@ -29,6 +35,12 @@ export interface VaultSummary {
   memberKeyVersion: number;
   memberCount: number;
   itemCount: number;
+  /** Format 2: the server refuses unsigned wraps for this vault. */
+  signed?: boolean;
+  /** This member's wrap signature, who uploaded it, and that person's identity key (crypto/src/trust/team-wrap.ts). */
+  wrapSig?: string | null;
+  wrapSigner?: number | null;
+  signerKey?: string | null;
 }
 
 export type ItemType = "login" | "totp" | "note";

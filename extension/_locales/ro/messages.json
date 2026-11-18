@@ -117,6 +117,20 @@
     "message": "Aceasta nu este parola seifului.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel a cerut o setare nesigură a seifului, așa că parola ta nu a fost folosită. Încearcă din nou mai târziu.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "\"$TEAM$\" nu a putut fi deschis în siguranță: cheia sa partajată a picat o verificare de securitate. Deschide seiful web ca să vezi motivul.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "Nu s-a putut debloca acum. Verifică-ți conexiunea și încearcă din nou.",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "Mască de e-mail · în pauză, e-mailurile trimise la ea sunt respinse",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "Scanează această pagină",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "Lipește imaginea",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "Încarcă o imagine",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "Scanează codul QR de pe această pagină, lipește o captură de ecran (Ctrl+V) sau încarcă o imagine. Este citită pe acest dispozitiv și nu este trimisă nicăieri.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "Nu a fost găsit niciun cod QR",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "Acest cod QR nu este un cod de verificare în doi pași",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "Pagina nu a putut fi capturată. Lipește în schimb o captură de ecran.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "Nu există nicio imagine în clipboard",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "Acest cod conține mai multe conturi. Alege contul pe care vrei să-l adaugi acum; scanează din nou pentru celelalte.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "Scanat: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$ cifre, $PERIOD$ s)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

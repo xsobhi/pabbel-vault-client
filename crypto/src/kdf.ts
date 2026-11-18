@@ -15,12 +15,29 @@ const MK_CHECK_AAD = "mk-check";
 
 export interface KdfParams { salt: string; iterations: number }
 
+/**
+ * The client's own bounds on the server-supplied iteration count
+ * (docs/crypto.md "Floor"): fewer would hand a malicious server a fast
+ * offline guess at the password, more would hang the device. Every stored
+ * account had exactly 600 000 when the floor was set (2026-11-17).
+ */
+export const MIN_KDF_ITERATIONS = 600_000;
+export const MAX_KDF_ITERATIONS = 10_000_000;
+export class KdfParamsError extends Error {
+  constructor(readonly iterations: unknown) { super("the server asked for an unsafe key-derivation setting"); }
+}
+export function assertKdfParams(params: KdfParams): void {
+  const n = params.iterations;
+  if (!Number.isInteger(n) || n < MIN_KDF_ITERATIONS || n > MAX_KDF_ITERATIONS) throw new KdfParamsError(n);
+}
+
 export function newKdfParams(): KdfParams {
   return { salt: b64(random(16)), iterations: KDF_ITERATIONS };
 }
 
 /** Derive the master key. The raw bytes are wiped; only the CryptoKey survives (extractable when the session must survive a reload). */
 export async function deriveMasterKey(password: string, params: KdfParams, extractable = false): Promise<CryptoKey> {
+  assertKdfParams(params);
   const pw = utf8(password.normalize("NFKC"));
   const base = await crypto.subtle.importKey("raw", pw as BufferSource, "PBKDF2", false, ["deriveBits"]);
   const bits = new Uint8Array(await crypto.subtle.deriveBits(

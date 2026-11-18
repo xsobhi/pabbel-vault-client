@@ -117,6 +117,20 @@
     "message": "Esa no es la contraseña de tu bóveda.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel solicitó un ajuste de bóveda poco seguro, así que no se usó tu contraseña. Inténtalo de nuevo más tarde.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "No se pudo abrir \"$TEAM$\" de forma segura: su clave compartida no superó una comprobación de seguridad. Abre la bóveda web para ver el motivo.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "No se ha podido desbloquear ahora mismo. Comprueba tu conexión y vuelve a intentarlo.",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "Máscara de correo · en pausa, el correo que recibe se devuelve al remitente",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "Escanear esta página",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "Pegar imagen",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "Subir imagen",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "Escanea el código QR de esta página, pega una captura de pantalla (Ctrl+V) o sube una imagen. Se lee en este dispositivo y no se envía a ningún sitio.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "No se encontró ningún código QR",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "Este código QR no es un código de verificación en dos pasos",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "No se pudo capturar esta página. Pega una captura de pantalla.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "No hay ninguna imagen en el portapapeles",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "Este código contiene varias cuentas. Elige la que quieras añadir ahora y vuelve a escanear para las demás.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "Escaneado: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$ dígitos, $PERIOD$ s)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

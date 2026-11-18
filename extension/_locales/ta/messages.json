@@ -117,6 +117,20 @@
     "message": "அது பெட்டகக் கடவுச்சொல் அல்ல.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Pabbel பாதுகாப்பற்ற பெட்டக அமைப்பைக் கேட்டது, அதனால் உங்கள் கடவுச்சொல் பயன்படுத்தப்படவில்லை. பிறகு மீண்டும் முயலவும்.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "\"$TEAM$\" குழுவைப் பாதுகாப்பாகத் திறக்க முடியவில்லை: அதன் பகிர்ந்த சாவி பாதுகாப்புச் சரிபார்ப்பில் தோல்வியடைந்தது. காரணத்தைப் பார்க்க இணையப் பெட்டகத்தைத் திறக்கவும்.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "இப்போது திறக்க முடியவில்லை. உங்கள் இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்.",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "மின்னஞ்சல் மாஸ்க் · இடைநிறுத்தப்பட்டது, இதற்கு வரும் அஞ்சல் திருப்பி அனுப்பப்படும்",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "இந்தப் பக்கத்தை ஸ்கேன் செய்",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "படத்தை ஒட்டு",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "படத்தைப் பதிவேற்று",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "இந்தப் பக்கத்திலுள்ள QR குறியீட்டை ஸ்கேன் செய்யுங்கள், ஸ்கிரீன்ஷாட்டை ஒட்டுங்கள் (Ctrl+V) அல்லது படத்தைப் பதிவேற்றுங்கள். இது இந்தச் சாதனத்திலேயே படிக்கப்படும்; எங்கும் அனுப்பப்படாது.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "QR குறியீடு எதுவும் கிடைக்கவில்லை",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "இந்த QR குறியீடு 2-படி சரிபார்ப்புக் குறியீடு அல்ல",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "இந்தப் பக்கத்தைப் பிடிக்க முடியவில்லை. அதற்குப் பதிலாக ஸ்கிரீன்ஷாட்டை ஒட்டுங்கள்.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "கிளிப்போர்டில் படம் இல்லை",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "இந்தக் குறியீட்டில் பல கணக்குகள் உள்ளன. இப்போது சேர்க்க வேண்டியதைத் தேர்ந்தெடுங்கள்; மற்றவற்றுக்கு மீண்டும் ஸ்கேன் செய்யுங்கள்.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "ஸ்கேன் செய்யப்பட்டது: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$ இலக்கங்கள், $PERIOD$ வி)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

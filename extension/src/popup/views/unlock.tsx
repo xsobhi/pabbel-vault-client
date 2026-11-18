@@ -29,7 +29,8 @@ export function Unlock({ state, onState, onUnlocked }: { state: StateView; onSta
     try {
       const res = await api.unlock(pw, stay);
       if (res.ok) { setPw(""); if (res.trustFailed) toast(t("errorTrust")); onUnlocked(); return; }
-      if (res.error === "wrong-password") { setError(t("errorWrongPassword")); setShake((n) => n + 1); input.current?.select(); }
+      if (res.error === "unsafe-kdf") setError(t("errorUnsafeKdf"));
+      else if (res.error === "wrong-password") { setError(t("errorWrongPassword")); setShake((n) => n + 1); input.current?.select(); }
       else if (res.error === "signed-out") onState(await api.state());
       else if (res.error === "no-vault") onState(await api.state());
       else setError(t("errorUnlock"));

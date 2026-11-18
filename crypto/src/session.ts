@@ -1,8 +1,9 @@
 /**
  * The unlocked state: master key, account private key and the vault keys
- * opened so far. Module-level memory, plus one per-tab copy of the master
- * key in sessionStorage (session-store.ts) so a reload does not ask for the
- * password again; a closed tab or the auto-lock timer leaves nothing behind.
+ * opened so far. Module-level memory, plus the master key WRAPPED under a
+ * non-extractable per-tab session key (session-store.ts: blob in
+ * sessionStorage, key in IndexedDB) so a reload does not ask for the password
+ * again; lock, the auto-lock period or a closed tab leave nothing usable.
  */
 import { wipe } from "./bytes";
 import { clearStored, persistMasterKey, touchStored } from "./session-store";

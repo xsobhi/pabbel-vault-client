@@ -117,6 +117,20 @@
     "message": "Hindi iyan ang password ng vault mo.",
     "description": "Wrong vault password."
   },
+  "errorUnsafeKdf": {
+    "message": "Humiling ang Pabbel ng hindi ligtas na setting ng vault, kaya hindi ginamit ang password mo. Subukan ulit mamaya.",
+    "description": "Unlock refused: the server sent a key-derivation setting below the safe minimum. The password was never used."
+  },
+  "teamRefused": {
+    "message": "Hindi ligtas na mabuksan ang \"$TEAM$\": nabigo ang shared key nito sa security check. Buksan ang web vault para makita kung bakit.",
+    "description": "Shown above the list when a team vault's signed key did not verify (possible tampering or a changed key).",
+    "placeholders": {
+      "team": {
+        "content": "$1",
+        "example": "Marketing"
+      }
+    }
+  },
   "errorUnlock": {
     "message": "Hindi ma-unlock sa ngayon. Suriin ang koneksyon mo at subukan ulit.",
     "description": "Unlock failed for another reason."
@@ -856,5 +870,69 @@
   "itemMaskPaused": {
     "message": "Email mask · naka-pause, nagba-bounce ang mail na ipapadala rito",
     "description": "The same line when that mask is paused."
+  },
+  "qrScanPage": {
+    "message": "I-scan ang page na ito",
+    "description": "Button in the 2-step form: capture the visible browser tab and look for QR codes in it."
+  },
+  "qrPaste": {
+    "message": "I-paste ang larawan",
+    "description": "Button: paste a screenshot or copied QR image from the clipboard."
+  },
+  "qrUpload": {
+    "message": "Mag-upload ng larawan",
+    "description": "Button: pick an image file that holds a QR code."
+  },
+  "qrHint": {
+    "message": "I-scan ang QR code sa page na ito, mag-paste ng screenshot (Ctrl+V) o mag-upload ng larawan. Binabasa ito sa device na ito at hindi ipinapadala kahit saan.",
+    "description": "Help text under the three QR buttons. Privacy promise: nothing leaves the device."
+  },
+  "qrNone": {
+    "message": "Walang nakitang QR code",
+    "description": "Error: the image has no readable QR code."
+  },
+  "qrNotOtp": {
+    "message": "Hindi 2-step verification code ang QR code na ito",
+    "description": "Error: a QR code was read but it is not a 2-step verification (otpauth) code."
+  },
+  "qrCaptureFail": {
+    "message": "Hindi makuhanan ang page na ito. Mag-paste na lang ng screenshot.",
+    "description": "Error: the browser refused to capture the page (e.g. a browser-internal page)."
+  },
+  "qrNoClip": {
+    "message": "Walang larawan sa clipboard",
+    "description": "Error: the clipboard has no image."
+  },
+  "qrPick": {
+    "message": "Maraming account ang code na ito. Piliin ang idaragdag ngayon; mag-scan ulit para sa iba.",
+    "description": "Shown when one QR code holds several accounts; the person picks one."
+  },
+  "qrScanned": {
+    "message": "Na-scan: $ACCOUNT$",
+    "description": "Confirmation after a scan; ACCOUNT is issuer and account name, e.g. Example · ada@example.com.",
+    "placeholders": {
+      "account": {
+        "content": "$1",
+        "example": "Example · ada@example.com"
+      }
+    }
+  },
+  "qrDetails": {
+    "message": "($ALGORITHM$, $DIGITS$ digit, $PERIOD$ s)",
+    "description": "Shown only when the code is not the default SHA1 / 6 digits / 30 s. ALGORITHM e.g. SHA256, DIGITS e.g. 8, PERIOD in seconds, e.g. 60.",
+    "placeholders": {
+      "algorithm": {
+        "content": "$1",
+        "example": "SHA256"
+      },
+      "digits": {
+        "content": "$2",
+        "example": "8"
+      },
+      "period": {
+        "content": "$3",
+        "example": "60"
+      }
+    }
   }
 }

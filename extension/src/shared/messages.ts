@@ -48,6 +48,8 @@ export interface DataView {
   icons: Record<string, string>;
   /** This copy is older than the refresh interval: one is under way. */
   stale: boolean;
+  /** Teams whose key was refused (signed team keys): names only; their items are not listed. */
+  refused?: string[];
 }
 
 export type PopupRequest =
@@ -75,7 +77,7 @@ export type PopupRequest =
   | { type: "changePassword"; password: string }
   | { type: "maskState"; address: string };
 
-export type UnlockResult = { ok: true; trustFailed?: boolean } | { ok: false; error: "wrong-password" | "no-vault" | "signed-out" | "failed"; message?: string };
+export type UnlockResult = { ok: true; trustFailed?: boolean } | { ok: false; error: "wrong-password" | "no-vault" | "signed-out" | "unsafe-kdf" | "failed"; message?: string };
 export type ChangePasswordResult = { ok: true; trustFailed?: boolean } | { ok: false; error: "locked" | "too-short" | "stale" | "failed" };
 
 /** A row of the in-page dropdown: never a secret. */

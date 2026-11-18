@@ -1,0 +1,2 @@
+# ENC_KEY_LABEL is a public HKDF/signature domain-separation label ("pabbel-vault-enc-key-v1"), not a secret.
+crypto/src/identity.ts:generic-api-key:17
